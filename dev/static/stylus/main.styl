@@ -10,9 +10,16 @@ html
 
 body
 	font-family mainFont
+	background-color bgColor
+	color textColor
 	height 100%
 
-h1,h2,h3,h4,h5,h6
+h1,h2
+	font-weight 400
+	font-size titleFontSize
+	margin 0
+
+h3,h4,h5,h6
 	margin 0
 
 ul,li
@@ -30,7 +37,6 @@ a
 audio,
 canvas,
 iframe,
-img,
 svg,
 video
 	vertical-align middle
@@ -42,9 +48,15 @@ section
 	position relative
 
 input,
-select,
-button
+select
 	outline none
+
+button
+	border 1,6px
+	border-radius 24px
+	border-color textColor
+	background bgColor
+	color textColor
 
 *, *:before, *:after
 	box-sizing border-box

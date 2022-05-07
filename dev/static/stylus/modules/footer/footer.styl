@@ -1,2 +1,94 @@
 footer
-  flex 0 0 auto
+  display grid
+  grid-template-rows repeat(10, 1fr)
+  grid-template-columns repeat(9, 1fr)
+  height 70vh
+  padding 0 1vw 2vw 1vw
+
+.footer__title
+  display flex
+  align-items center
+  grid-row-start 1
+  grid-column-start 1
+  grid-row-end 6
+  grid-column-end 10
+
+.footer__item21
+  display flex
+  align-items center
+  grid-row-start 6
+  grid-column-start 1
+  grid-row-end 9
+  grid-column-end 4
+  font-family headerFont
+  font-size footerFontSize
+
+.footer__item22
+  display flex
+  align-items center
+  grid-row-start 6
+  grid-column-start 4
+  grid-row-end 9
+  grid-column-end 7
+  font-family headerFont
+  font-size footerFontSize
+
+.footer__item23
+  display flex
+  align-items center
+  justify-content center
+  grid-row-start 6
+  grid-column-start 7
+  grid-row-end 9
+  grid-column-end 9
+  font-family headerFont
+  font-size footerFontSize
+
+.footer__item24
+  display flex
+  align-items center
+  justify-content flex-end
+  grid-row-start 6
+  grid-column-start 9
+  grid-row-end 9
+  grid-column-end 10
+  font-family headerFont
+  font-size footerFontSize
+
+.footer__button
+  width 320px
+  height 48px
+
+.footer__item31
+  display flex
+  align-items flex-end
+  align-content flex-end
+  flex-wrap wrap
+  grid-row-start 9
+  grid-column-start 1
+  grid-row-end 11
+  grid-column-end 4
+  font-family headerFont
+  width 205px
+
+.footer__item32
+  display flex
+  align-items flex-end
+  align-content flex-end
+  flex-wrap wrap
+  grid-row-start 9
+  grid-column-start 4
+  grid-row-end 11
+  grid-column-end 7
+  font-family headerFont
+  width 230px
+
+.footer__item33
+  display flex
+  align-items flex-end
+  justify-content flex-end
+  grid-row-start 9
+  grid-column-start 7
+  grid-row-end 11
+  grid-column-end 10
+  font-family headerFont
