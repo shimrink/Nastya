@@ -16,7 +16,7 @@ body
 
 h1
 	font-weight 400
-	font-size titleHeaderFontSize
+	font-size titleFontSize
 	line-height 1
 	margin 0
 
@@ -25,7 +25,13 @@ h2
 	font-size titleFooterFontSize
 	margin 0
 
-h3,h4,h5,h6
+h3
+	font-weight 400
+	font-family headerFont
+	font-size servicesFontSize
+	margin 0
+
+h4,h5,h6
 	margin 0
 
 ul,li
@@ -56,7 +62,8 @@ select
 	outline none
 
 button
-	border 1,6px
+	border 1px
+	border-style solid
 	border-radius 24px
 	border-color textColor
 	background bgColor
@@ -80,3 +87,4 @@ button
 // СТРАНИЦЫ
 // Главная страница
 @import 'pages/index/index.styl'
+@import 'pages/services/services.styl'
