@@ -4,6 +4,17 @@
     grid-template-columns repeat(4, 1fr)
     padding 0 1vw 0 1vw
     min-height 90vh
+    transform translateZ(0)
+
+.offer__item5
+    position absolute
+    top -55vh
+    right 25vw
+    transform translateZ(-1px)
+
+.offer__img
+    position absolute
+    width 90vw
 
 .offer__title
     display flex
@@ -12,6 +23,20 @@
     grid-column-start 1
     grid-row-end 4
     grid-column-end 3
+    max-height 361.4px
+
+.animSlidein
+    animation-name slidein
+    animation-duration 0.6s
+
+@keyframes slidein
+    from
+        transform translateY(50%)
+        opacity 0%
+        animation-timing-function cubic-bezier(0, 0, .40, 1)
+    to
+        transform translateY(0)
+        opacity 100%
 
 .offer__hi
     display flex
@@ -27,7 +52,7 @@
     grid-row-start 6
     grid-column-start 1
     grid-row-end 7
-    grid-column-end 5
+    grid-column-end 3
     padding 1vw 0 0 0
 
 .offer__button
@@ -60,6 +85,7 @@
     grid-column-gap 2.2vw
     padding 0 1vw 0 1vw
     min-height 78vh
+    transform translateZ(0)
 
 .services__item11
     display flex
@@ -148,8 +174,139 @@
     font-family headerFont
     font-size servicesFontSize
 
-/*.mainPage
-    display none
+.cases
+    transform translateZ(0)
+    min-height 78vh
 
-.servicesPage
-    padding 9vw 1vw 0 1vw*/
+.cases__title
+    padding 0 1vw 0 1vw
+
+.arrow
+    width 1.3vw
+    height 1.3vw
+    margin-left 0.5vw
+
+.cases__items
+    display grid
+    grid-template-rows repeat(4, 1fr)
+    grid-template-columns repeat(6, 1fr)
+    min-height 30vh
+
+.cases__item11
+    display flex
+    align-items center
+    grid-row-start 1
+    grid-column-start 1
+    grid-row-end 2
+    grid-column-end 3
+    border-top 1px solid
+    border-bottom 1px solid
+    padding-left 1vw
+
+.cases__item12
+    display flex
+    align-items center
+    grid-row-start 1
+    grid-column-start 3
+    grid-row-end 2
+    grid-column-end 5
+    border-top 1px solid
+    border-bottom 1px solid
+
+.cases__item13
+    display flex
+    align-items center
+    grid-row-start 1
+    grid-column-start 5
+    grid-row-end 2
+    grid-column-end 7
+    border-top 1px solid
+    border-bottom 1px solid
+    padding-right 1vw
+
+.cases__item21
+    display flex
+    align-items center
+    grid-row-start 2
+    grid-column-start 1
+    grid-row-end 3
+    grid-column-end 3
+    border-bottom 1px solid
+    padding-left 1vw
+
+.cases__item22
+    display flex
+    align-items center
+    grid-row-start 2
+    grid-column-start 3
+    grid-row-end 3
+    grid-column-end 5
+    border-bottom 1px solid
+
+.cases__item23
+    display flex
+    align-items center
+    grid-row-start 2
+    grid-column-start 5
+    grid-row-end 3
+    grid-column-end 7
+    border-bottom 1px solid
+    padding-right 1vw
+
+.cases__item31
+    display flex
+    align-items center
+    grid-row-start 3
+    grid-column-start 1
+    grid-row-end 4
+    grid-column-end 3
+    border-bottom 1px solid
+    padding-left 1vw
+
+.cases__item32
+    display flex
+    align-items center
+    grid-row-start 3
+    grid-column-start 3
+    grid-row-end 4
+    grid-column-end 5
+    border-bottom 1px solid
+
+.cases__item33
+    display flex
+    align-items center
+    grid-row-start 3
+    grid-column-start 5
+    grid-row-end 4
+    grid-column-end 7
+    border-bottom 1px solid
+    padding-right 1vw
+
+.cases__item41
+    display flex
+    align-items center
+    grid-row-start 4
+    grid-column-start 1
+    grid-row-end 5
+    grid-column-end 3
+    border-bottom 1px solid
+    padding-left 1vw
+
+.cases__item42
+    display flex
+    align-items center
+    grid-row-start 4
+    grid-column-start 3
+    grid-row-end 5
+    grid-column-end 5
+    border-bottom 1px solid
+
+.cases__item43
+    display flex
+    align-items center
+    grid-row-start 4
+    grid-column-start 5
+    grid-row-end 5
+    grid-column-end 7
+    border-bottom 1px solid
+    padding-right 1vw
