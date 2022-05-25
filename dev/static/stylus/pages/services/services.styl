@@ -1,28 +1,26 @@
 .servicesTitle
     padding 9vw 1vw 0 1vw
 
-.serviceHead
+.allServices
+    display flex
+    flex-direction column
+    align-items center
+    padding 0 1vw 0 1vw
+
+.allServicesMenu
     display grid
     grid-template-rows 1fr
-    grid-template-columns repeat(5, 1fr)
+    grid-template-columns repeat(7, 1fr)
 
-.serviceHead1
+.allServicesMenu1
     display flex
-    justify-content center
+    justify-content flex-end
     grid-row-start 1
-    grid-column-start 2
-    grid-row-end 2
-    grid-column-end 3
-
-.serviceHead2
-    display flex
-    justify-content center
-    grid-row-start 1
-    grid-column-start 3
+    grid-column-start 1
     grid-row-end 2
     grid-column-end 4
 
-.serviceHead3
+.allServicesMenu2
     display flex
     justify-content center
     grid-row-start 1
@@ -30,30 +28,51 @@
     grid-row-end 2
     grid-column-end 5
 
-.serviceBody
-    display grid
-    grid-template-rows repeat(5, 1fr)
-    grid-template-columns repeat(10, 1fr)
-
-.serviceTitle1
+.allServicesMenu3
     display flex
     grid-row-start 1
-    grid-column-start 3
+    grid-column-start 5
     grid-row-end 2
-    grid-column-end 6
+    grid-column-end 8
 
-.serviceDiscription1
+.allServicesHead
     display flex
-    justify-content flex-end
-    grid-row-start 1
-    grid-column-start 6
-    grid-row-end 2
-    grid-column-end 9
+    justify-content space-between
+    width 1140px
 
-.serviceTable1
+.serviceDiscription
+    width 50%
+
+.allServicesCards
     display flex
+    align-items center
+    justify-content center
     grid-row-start 2
-    grid-column-start 3
+    grid-column-start 1
     grid-row-end 3
-    grid-column-end 9
-    border 1px
+    grid-column-end 3
+
+.allServicesCards__card
+    border 1px solid
+    width 360px
+    height 685px
+    padding 40px 30px
+
+.allServicesCards__card_left
+    margin-right 15px
+
+.allServicesCards__card_right
+    margin-left 15px
+
+.allServicesCards__card_main
+    border 1px solid
+    width 380px
+    height 700px
+    margin 0 15px 0 15px
+    padding 50px 30px
+
+.cardName
+    display flex
+    justify-content center
+    font-family headerFont
+    font-size cardName

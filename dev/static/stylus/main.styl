@@ -15,17 +15,48 @@ body
 	color textColor
 	height 100%
 
+@media screen and (max-width:1199px) {
+  .cursor-dot, .cursor-dot-outline {
+    display: none;
+  }
+}
+
+
+.cursor-dot,
+.cursor-dot-outline
+	mix-blend-mode normal
+	pointer-events none
+	position absolute
+	top 50%
+	left 50%
+	border-radius 50%
+	opacity 0
+	position fixed
+	-webkit-transform translate(-50%, -50%)
+	transform translate(-50%, -50%)
+	-webkit-transition opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out
+	transition opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out
+	transition opacity 0.3s ease-in-out, transform 0.3s ease-in-out
+	transition opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out
+
+.cursor-dot
+	z-index 99999999
+	width 8px
+	height 8px
+	background-color rgba(255, 255, 255, 0.72)
+	border solid
+	border-radius 50%
+	border-width 0px
+	border-color #ffffff
+
+.cursor-dot-outline
+	z-index 99999998
+	width 36px
+	height 36px
+	background-color rgba(255, 255, 255, 0.00)
+
 ::-webkit-scrollbar
-	width 0.55vw
-	background-color rgba(194, 166, 205, 0.19)
-
-/* ползунок скроллбара */
-::-webkit-scrollbar-thumb
-	background-color accentColor
-	border-radius 9em
-
-::-webkit-scrollbar-thumb:hover
-	background-color textColor
+	display none
 
 ::selection
 	color bgColor
@@ -35,27 +66,26 @@ body
 	color bgColor
 	background accentColor
 
-
 h1
 	font-weight 400
-	font-size titleFontSize
-	line-height 1
+	font-size mainTitleFontSize
+	line-height 1.1
 	margin 0
 
 h2
 	font-weight 400
-	font-size titleFooterFontSize
+	font-size titleFontSize
 	margin 0
 
 h3
 	font-weight 400
 	font-family headerFont
-	font-size servicesFontSize
+	font-size subTitleFontSize
 	margin 0
 
 h4
 	font-weight 400
-	font-size serviceNameFontSize
+	font-size smallTitleFontSize
 	margin 0
 
 h5,h6
