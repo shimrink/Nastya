@@ -5,59 +5,295 @@ block variables
     - var pageClass = 'services-page'
 
 block content
-    h2.servicesTitle УСЛУГИ И СТОИМОСТЬ
-    .allServices
-        .allServicesMenu
-            p.allServicesMenu1 ВЕБ-ДИЗАЙН
-            p.allServicesMenu2 БРЕНДИНГ
-            p.allServicesMenu3 SMM И РЕКЛАМА
-        .allServicesHead
-            h4.serviceTitle ЛЕНДИНГ
-            .serviceDiscription
-                p Лендинг — одностраничный сайт, ориентированный на продвижение одного типа товара или услуги. Основная задача такого ресурса — побудить посетителя к выполнению целевого действия.<br><br>От обычного сайта и сайта-визитки лендинг отличается «продающей» структурой: он является презентацией продукта и имеет много маркетинговых хитростей.<br><br>Я разрабатываю разные виды лендингов в зависимости от Вашего бюджета и задач.
-        .allServicesCards
-            .allServicesCards__card.allServicesCards__card_left
-                .cardName
-                    p ЭКОНОМ
-                p ОДНОСТРАНИЧНЫЙ САЙТ В КОРОТКИЕ СРОКИ СО СТАНДАРТНЫМ ДИЗАЙНОМ
-                p СРОК РАЗРАБОТКИ: 5 - 7 дней
-                p ОТ 8000 ₽
-                ul
-                    li ⦁ Подбор дизайн-концепции, прототип
-                    li ⦁ Подбор фотографий со стоков
-                    li ⦁ 5 - 6 информационных блоков на странице
-                    li ⦁ Страница «Политика конфиденциальности»
-                    li ⦁ Подключение сбора заявок и систем оплаты
-                    li ⦁ Дизайн блоков, меню, всплывающих окон, виджетов – стандартный, с использованием шаблонов
-                    li ⦁ Без анимации
-                button ЗАКАЗАТЬ
-            .allServicesCards__card.allServicesCards__card_main
-                .cardName
-                    p СТАНДАРТ
-                p САЙТ С ПРОСТОЙ АНИМАЦИЕЙ, НЕСКОЛЬКО УНИКАЛЬНЫХ БЛОКОВ
-                p СРОК РАЗРАБОТКИ: 7 - 10 дней
-                p ОТ 12 000 ₽
-                ul
-                    li ⦁ Подбор дизайн-концепции, прототип
-                    li ⦁ Подбор фотографий со стоков
-                    li ⦁ <u>6 - 8</u> информационных блоков на странице
-                    li ⦁ Страница «Политика конфиденциальности»
-                    li ⦁ Подключение сбора заявок и систем оплаты
-                    li ⦁ Дизайн блоков, меню, всплывающих окон, виджетов – стандартный + <u>несколько блоков с уникальным дизайном</u>
-                    li ⦁ <u>Простая анимация</u>
-                button ЗАКАЗАТЬ
-            .allServicesCards__card.allServicesCards__card_right
-                .cardName
-                    p ПРЕМИУМ
-                p ЭФФЕКТНЫЙ САЙТ С УНИКАЛЬНЫМ ДИЗАЙНОМ И СЛОЖНОЙ АНИМАЦИЕЙ
-                p СРОК РАЗРАБОТКИ: 10 - 16 дней
-                p ОТ 18 000 ₽
-                ul
-                    li ⦁ Подбор дизайн-концепции, прототип
-                    li ⦁ Подбор фотографий со стоков + <u>редактирование ваших фото</u>
-                    li ⦁ <u>6 - 8</u> информационных блоков на странице
-                    li ⦁ Страница «Политика конфиденциальности»
-                    li ⦁ Подключение сбора заявок и систем оплаты
-                    li ⦁ Дизайн блоков, меню, всплывающих окон, виджетов – все блоки со <u>сложным уникальным дизайном</u>
-                    li ⦁ <u>Сложная анимация</u>
-                button ЗАКАЗАТЬ
+    .offer
+        img.offer__img(src="static/img/content/servicesAsya.png")
+        p.offer__hi Список услуг, которые может выполнить для Вас моя команда. Обратите внимание: стоимость услуг указана приблизительно. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
+        h1.offer__title.animSlidein УСЛУГИ И СТОИМОСТЬ
+        p.offer__free СВОБОДНА ДЛЯ ПРОЕКТОВ НА ИЮНЬ 2022
+    
+    .service
+        .service-title
+            .circle.circle_margin-r.circle_black
+            span ЛЕНДИНГ
+        p.service__disc Лендинг — одностраничный сайт, ориентированный на продвижение одного типа товара или услуги. Основная задача такого ресурса — побудить посетителя к выполнению целевого действия. От обычного сайта и сайта-визитки лендинг отличается «продающей» структурой: он является презентацией продукта и имеет много маркетинговых хитростей.<br><br>Я разрабатываю разные виды лендингов в зависимости от Вашего бюджета и задач.
+    
+    .tariffs
+        h2 ТАРИФЫ
+        .tariffs__cards
+            .card
+                .card-head
+                    span.card-name ЭКОНОМ
+                p.card-disc.card-disc-tariffs ОДНОСТРАНИЧНЫЙ САЙТ В КОРОТКИЕ СРОКИ СО СТАНДАРТНЫМ ДИЗАЙНОМ
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор дизайн-концепции, прототип
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фотографий со стоков
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 5 - 6 информационных блоков на странице
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Страница «Политика конфиденциальности»
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подключение сбора заявок и систем оплаты
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Дизайн блоков, меню, всплывающих окон, виджетов – стандартный, с использованием шаблонов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Без анимации
+                .card-tag.card-tag_tag21 ОТ 8000 ₽
+                .card-tag.card-tag_tag22 5 - 7 ДНЕЙ
+            .card
+                .card-head
+                    span.card-name СТАНДАРТ
+                p.card-disc.card-disc-tariffs ОДНОСТРАНИЧНЫЙ САЙТ С ПРОСТОЙ АНИМАЦИЕЙ, ИМЕЮЩИЙ НЕСКОЛЬКО УНИКАЛЬНЫХ БЛОКОВ
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор дизайн-концепции, прототип
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фотографий со стоков
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 6 - 8 информационных блоков на странице
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Страница «Политика конфиденциальности»
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подключение сбора заявок и систем оплаты
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Дизайн блоков, меню, всплывающих окон, виджетов – стандартный, + <u>несколько блоков с уникальным дизайном</u>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span <u>Простая анимация</u>
+                .card-tag.card-tag_tag21 ОТ 12 000 ₽
+                .card-tag.card-tag_tag22 7 - 10 ДНЕЙ
+            .card
+                .card-head
+                    span.card-name ПРЕМИУМ
+                p.card-disc.card-disc-tariffs ЭФФЕКТНЫЙ САЙТ С УНИКАЛЬНЫМ ДИЗАЙНОМ И СЛОЖНОЙ АНИМАЦИЕЙ
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор дизайн-концепции, прототип
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фотографий со стоков + <u>редактирование ваших фото</u>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 6 - 8 информационных блоков на странице
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Страница «Политика конфиденциальности»
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подключение сбора заявок и систем оплаты
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Дизайн блоков, меню, всплывающих окон, виджетов – <u>все блоки со сложным уникальным дизайном</u>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span <u>Сложная анимация</u>
+                .card-tag.card-tag_tag21 ОТ 18 000 ₽
+                .card-tag.card-tag_tag22 10 - 15 ДНЕЙ
+    
+    .service
+        .service-title
+            .circle.circle_margin-r.circle_black
+            span МНОГОСТРАНИЧНЫЕ САЙТЫ
+        p.service__disc Это общее название для разных видов сайтов с большим количеством страниц и информации на них. Сюда можно отнести:<br><br>– сайты-визитки, личные сайты с портфолио работ<br>– сайты компаний<br>– интернет-магазины<br><br>Я создаю удобные многостраничные сайты, которые знакомят посетителей с Вашим брендом, демонстрируют правильный имидж, помогают с выбором Ваших продуктов и услуг.
+    
+    .tariffs
+        h2 ТАРИФЫ
+        .tariffs__cards
+            .card
+                .card-head
+                    span.card-name САЙТ-ВИЗИТКА
+                p.card-disc.card-disc-tariffs МНОГОСТРАНИЧНЫЙ САЙТ-ВИЗИТКА ДЛЯ ЭКСПЕРТА ИЛИ БРЕНДА С ИНФОРМАЦИЕЙ И ПОРТФОЛИО РАБОТ
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Составление структуры сайта, дизайн-концепции, прототипа
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фотографий со стоков (при необходимости)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Количество страниц: 3 - 5
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 5 - 6 информационных блоков на каждой странице
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Страницы «Политика конфиденциальности» и «404»
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подключение сбора заявок, необходимых виджетов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Анимация и дизайн - обсуждаются индивидуально; уникальный дизайн и сложная анимация увеличивают стоимость
+                .card-tag.card-tag_tag21 ОТ 25 000 ₽
+                .card-tag.card-tag_tag22 ОТ 14 ДНЕЙ
+            .card
+                .card-head
+                    span.card-name САЙТ БРЕНДА/КОМПАНИИ
+                p.card-disc.card-disc-tariffs МНОГОСТРАНИЧНЫЙ САЙТ ДЛЯ КОМПАНИИ С БОЛЬШИМ КОЛИЧЕСТВОМ ИНФОРМАЦИИ, КАТАЛОГАМИ И СТАТЬЯМИ
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Составление структуры сайта, дизайн-концепции, прототипа
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фотографий со стоков (при необходимости)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Количество страниц: 6 - 8
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 5 - 6 информационных блоков на каждой странице
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Страницы «Политика конфиденциальности» и «404»
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подключение сбора заявок, необходимых виджетов, прайс-каталогов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Начальная SEO-настройка (для продвижения в поисковиках)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Анимация и дизайн - обсуждаются индивидуально; уникальный дизайн и сложная анимация увеличивают стоимость
+                .card-tag.card-tag_tag21 ОТ 28 000 ₽
+                .card-tag.card-tag_tag22 ОТ 16 ДНЕЙ
+            .card
+                .card-head
+                    span.card-name ИНТЕРНЕТ-МАГАЗИН
+                p.card-disc.card-disc-tariffs МНОГОСТРАНИЧНЫЙ САЙТ ДЛЯ КОМПАНИИ С КАТАЛОГОМ ТОВАРОВ И ОНЛАЙН-ОПЛАТОЙ
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Составление структуры сайта, дизайн-концепции, прототипа
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фотографий со стоков (при необходимости)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Количество страниц: 6 - 8
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 5 - 6 информационных блоков на каждой странице
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Страницы «Политика конфиденциальности» и «404»
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подключение сбора заявок, необходимых виджетов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подключение каталога товаров и систем оплаты
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Начальная SEO-настройка (для продвижения в поисковиках)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Анимация и дизайн - обсуждаются индивидуально; уникальный дизайн и сложная анимация увеличивают стоимость
+                .card-tag.card-tag_tag21 ОТ 35 000 ₽
+                .card-tag.card-tag_tag22 ОТ 20 ДНЕЙ
+    
+    .service
+        .service-title
+            .circle.circle_margin-r.circle_black
+            span АЙДЕНТИКА
+        p.service__disc Это визуальная составляющая вашей компании. Именно она формирует имидж и восприятие бренда со стороны клиента, повышает узнаваемость в глазах ЦА и помогает сформировать первое впечатление. К ключевым элементам айдентики, помимо названия, относятся:<br><br>– логотип<br>– фирменные шрифты и цвета<br>– фирменные паттерны, графические элементы и общий стиль<br><br>Я создаю стильные логотипы и айдентику, которые отражают идеи Вашего бренда. Вы сможете использовать их при оформлении соцсетей, создании визиток, листовок, презентаций, гайдов – всего, что необходимо.
+    
+    .tariffs
+        h2 ТАРИФЫ
+        .tariffs__cards
+            .card
+                .card-head
+                    span.card-name ЛОГОТИП (ЛАЙТ)
+                p.card-disc.card-disc-tariffs УНИКАЛЬНЫЙ ЛОГОТИП ДЛЯ ВАШЕГО БРЕНДА
+                .tariffs__list
+                    p При отсутствии у Вашего бренда или продукта своего логотипа, при заказе сайта я могу предложить простой, но стильный вариант шрифтового логотипа для быстрого старта
+                .card-tag.card-tag_tag21 БЕСПЛАТНО
+                .card-tag.card-tag_tag22 1 ЧАС
+            .card
+                .card-head
+                    span.card-name ЛОГОТИП
+                p.card-disc.card-disc-tariffs УНИКАЛЬНЫЙ ЛОГОТИП ДЛЯ ВАШЕГО БРЕНДА
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Анализ бренда, ниши и конкурентов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Составление мудборда
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фирменных цветов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фирменных шрифтов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 1 вариант логотипа
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 2 бесплатных правки/доработок концепции
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Логобук - pdf-инструкция по использованию логотипа<br><br>
+                    p СРОК РАЗРАБОТКИ – от 7 дней
+                .card-tag.card-tag_tag21 ОТ 8 000 ₽
+                .card-tag.card-tag_tag22 От 7 ДНЕЙ
+            .card
+                .card-head
+                    span.card-name АЙДЕНТИКА
+                p.card-disc.card-disc-tariffs УНИКАЛЬНЫЙ ЛОГОТИП И ФИРМЕННЫЙ СТИЛЬ ДЛЯ ВАШЕГО БРЕНДА
+                .tariffs__list
+                    p В ТАРИФ ВХОДИТ:<br><br>
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Анализ бренда, ниши и конкурентов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Составление мудборда
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фирменных цветов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Подбор фирменных шрифтов
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Разработка стилеобразующих элементов (узоры/паттерны, подложки)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 2 варианта логотипа на выбор
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 2 бесплатных правки (на этап)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span 2 любых макета* носителей на выбор (визитка, флаер, макет для соцсети и так далее)
+                    .tariffs__list-row
+                        .circle.circle_margin-r.circle_white
+                        span Гайдлайн - pdf-инструкция по использованию логотипа и фирменного стиля<br><br>
+                    p *Другие необходимые макеты заказываются и оплачиваются дополнительно (при необходимости)
+                .card-tag.card-tag_tag21 ОТ 15 000 ₽
+                .card-tag.card-tag_tag22 От 20 ДНЕЙ
