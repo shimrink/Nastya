@@ -6,60 +6,118 @@ block variables
 
 block content
 	.offer
-		.offer__item1
-			h1.animSlidein САЙТЫ И ДИЗАЙН ДЛЯ БИЗНЕСА
-			p.offer__hi Привет, я Ася Дулова, UX/UI и веб-дизайнер<br>из Архангельска. В настоящее время дизайню<br>на фрилансе и помогаю брендам и бизнесам быть яркими, удобными и уникальными.
-		.offer__item3
-			a.button.offer__button(href="#serv") ОБО МНЕ
+		img.offer__img(src="static/img/content/mainAsya.png")
+		p.offer__hi Привет, я Ася Дулова, UX/UI дизайнер из Архангельска.<br>В настоящее время дизайню на фрилансе и вместе<br>со своей командой помогаю брендам и бизнесам быть яркими, удобными и уникальными.
+		h1.offer__title.animSlidein САЙТЫ<br>И ДИЗАЙН<br>ДЛЯ БИЗНЕСА
 		p.offer__free СВОБОДНА ДЛЯ ПРОЕКТОВ НА ИЮНЬ 2022
-		.offer__item42
-			a.linkUnderLine(href="https://www.behance.net/asyadulova" target="_blank") BEHANCE
-			a.linkUnderLine(href="https://vk.com/asyadulova" target="_blank") VK
-			a.linkUnderLine(href="https://tenchat.ru/asyadulova" target="_blank") TENCHAT
-	.offer__item5
-		img.offer__img(src="static/img/content/circle.png", alt="circle")
 
-	.services(id="serv")
-		.services__item11
-			img(src="static/img/content/asya.png" alt="Ася" class="services__img")
-		p.services__discription Я UX/UI и веб-дизайнер с навыками маркетинга. В своей работе я создаю не просто красивую картинку, а эффектную и стильную упаковку для бизнеса онлайн и оффлайн.<br>Мне нравится работать с проектами и людьми, которые хотят стать ближе для своих клиентов и рассказывать им о себе ярко и удобно.
-		h3.services__uxui-h UX/UI ДИЗАЙН
-		p.services__uxui-p Я разрабатываю разные виды веб-проектов в зависимости от задач бизнеса: лендинги, сайты-визитки, интернет-магазины и другие.<br>В создании сайта для меня главное — соблюсти баланс между интересным дизайном и его удобством для зрителя.
-		h3.services__aidentika-h АЙДЕНТИКА
-		p.services__aidentika-p Мне нравится выражать идеи и настроение бизнеса через цвета, шрифты и визуальные образы. Это помогает при создании айдентики, которая формирует имидж бренда в глазах клиентов, вызывает их доверие и лояльность.
-		h3.services__smm-h SMM И РЕКЛАМА
-		p.services__smm-p Я постоянно улучшаю навыки в дизайне и маркетинге, чтобы помогать бизнесу с оформлением в Интернете.<br>Разрабатываю яркие рекламные макеты и оформление соцсетей, чтобы зацепить и заинтересовать аудиторию.
-		.services__item24
-			a.button.services__button(href="../services.html") ВСЕ УСЛУГИ
+	.main-services(id="serv")
+		.main-services__item11
+			img(src="static/img/content/asya.png" alt="Ася" class="main-services__img")
+		p.main-services__discription Я UX/UI дизайнер с навыками маркетинга. В своей работе я создаю не просто красивую картинку, а эффективную и стильную упаковку для бизнеса онлайн и оффлайн.<br>Мне нравится работать с проектами и людьми, которые хотят стать ближе для своих клиентов, рассказывать им о себе ярко, красиво и удобно.
+		.main-services__uxui-title
+			.circle.main-services__circle_uxui
+			h3.main-services__uxui-h UX/UI ДИЗАЙН
+		p.main-services__uxui-p Я разрабатываю разные виды веб-проектов в зависимости от задач бизнеса: лендинги, сайты-визитки, интернет-магазины и другие. В создании сайта для меня главное — соблюсти баланс между интересным дизайном и его удобством для зрителя.
+		.main-services__aidentika-title
+			.circle.main-services__circle_aidentika
+			h3.main-services__aidentika-h АЙДЕНТИКА
+		p.main-services__aidentika-p Мне нравится выражать идеи и настроение бизнеса через цвета, шрифты и визуальные образы. Это помогает при создании айдентики, которая формирует имидж бренда в глазах клиентов, вызывает их доверие и лояльность.
+		.main-services__smm-title
+			.circle.main-services__circle_smm
+			h3.main-services__smm-h SMM И РЕКЛАМА
+		p.main-services__smm-p Я постоянно улучшаю навыки в дизайне и маркетинге, чтобы помогать бизнесу с оформлением в Интернете.<br>Разрабатываю яркие рекламные макеты и оформление соцсетей, чтобы зацепить и заинтересовать аудиторию.
+		.main-services__item24
+			a.button.main-services__button(href="../services.html") ВСЕ УСЛУГИ
 
-	.cases
-		h2.cases__title ПОСЛЕДНИЕ РАБОТЫ
-		.cases__items
-			.cases__item11
-				a.linkUnderLine(href="http://kuzmol29.tilda.ws/" target="_blank") КУЗНЕЦЫ МОЛОДЦЫ
-				svg.arrow(viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-					path(d="M2 22L22 2" stroke="white" stroke-width="3")
-					path(d="M1 2H22.5V23" stroke="white" stroke-width="3")
-			p.cases__item12 05/2022
-			p.cases__item13 Сайт-визитка для студии сварки и ковки
-			.cases__item21
-				a.linkUnderLine(href="" target="_blank") ASYA DULOVA
-				svg.arrow(viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-					path(d="M2 22L22 2" stroke="white" stroke-width="3")
-					path(d="M1 2H22.5V23" stroke="white" stroke-width="3")
-			p.cases__item22 04/2022
-			p.cases__item23 Персональный сайт-визитка и логотип для дизайнера
-			.cases__item31
-				a.linkUnderLine(href="https://www.behance.net/gallery/123167773/UIV-production" target="_blank") UIV PRODUCTION
-				svg.arrow(viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-					path(d="M2 22L22 2" stroke="white" stroke-width="3")
-					path(d="M1 2H22.5V23" stroke="white" stroke-width="3")
-			p.cases__item32 07/2021
-			p.cases__item33 Нейминг, логотип, айдентика для студии видеопродакшена
-			.cases__item41
-				a.linkUnderLine(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank") КРАСИВЫЙ БИЗНЕС
-				svg.arrow(viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg")
-					path(d="M2 22L22 2" stroke="white" stroke-width="3")
-					path(d="M1 2H22.5V23" stroke="white" stroke-width="3")
-			p.cases__item42 02/2022
-			p.cases__item43 Лендинг онлайн-форума в сфере бьюти и макеты для таргета
+	.cases.cases_main
+		h2 МОИ РАБОТЫ
+		.cases__cards
+			a(href="../index.html" target="_blank")
+				.cases__card
+					.cases__card-head
+						span.cases__card-name Asya Dulova
+						span.cases__card-date 05/2022
+					p.cases__card-disc Персональный сайт-визитка<br>для UX/UI дизайнера
+					.tag.cases__tag21 UX/UI, Веб-дизайн
+					.tag.cases__tag22 Сайт-визитка
+			a(href="http://kuzmol29.tilda.ws/" target="_blank")
+				.cases__card
+					.cases__card-head
+						span.cases__card-name Кузнецы Молодцы
+						span.cases__card-date 04/2022
+					p.cases__card-disc Сайт-визитка<br>для студии сварки и ковки
+					.tag.cases__tag21 Веб-дизайн
+					.tag.cases__tag22 Сайт-визитка
+			a(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank")
+				.cases__card
+					.cases__card-head
+						span.cases__card-name Красивый Бизнес
+						span.cases__card-date 02/2022
+					p.cases__card-disc Лендинг<br>для онлайн форума в сфере бьюти
+					.tag.cases__tag31 Веб-дизайн
+					.tag.cases__tag32 Лендинг
+					.tag.cases__tag33 SMM
+			a(href="https://www.behance.net/gallery/123167773/UIV-production" target="_blank")
+				.cases__card
+					.cases__card-head
+						span.cases__card-name UIV Production
+						span.cases__card-date 07/2021
+					p.cases__card-disc Нейминг, логотип, айдентика<br>для студии видеопродакшена
+					.tag.cases__tag31 Брендинг
+					.tag.cases__tag32 Логотип
+					.tag.cases__tag33 Айдентика
+			a(href="" target="_blank")
+				.cases__card
+					.cases__card-head
+						span.cases__card-name Россиянка
+						span.cases__card-date 07/2021
+					p.cases__card-disc Логотип для образцового<br>хореографического ансамбля
+					.tag.cases__tag31 Брендинг
+					.tag.cases__tag32 Логотип
+					.tag.cases__tag33 Концепт
+			a(href="https://www.behance.net/gallery/116807759/kafedra-s%28a%29fu-imeni-mv-lomonosova" target="_blank")
+				.cases__card
+					.cases__card-head
+						span.cases__card-name КПИиИБ САФУ
+						span.cases__card-date 05/2021
+					p.cases__card-disc Логотип, айдентика и макеты<br>для кафедры университета
+					.tag.cases__tag31 Брендинг
+					.tag.cases__tag32 Айдентика
+					.tag.cases__tag33 Полиграфия
+
+	.about
+		.about__education
+			.about__education-title
+				.circle.about__circle
+				span ОБРАЗОВАНИЕ
+			p.about__narfu САФУ, Высшая школа информационных технологий и автоматизированных систем, специальность «Разработчик Web и мультимедийных приложений», бакалавр, 2018-2022 гг.
+			p.about__samsung Программа обучения «IT Академия Samsung: Мобильная разработка», разработчик мобильных приложений для платформы Android на языке программирования Java, сентябрь 2020-май 2021
+			.about__skills
+				.about__skills-title
+					.circle.about__circle
+					span НАВЫКИ
+				.about__all-skills
+					p PHOTOSHOP
+					p HTML
+					p PROTOTYPE/ANALYTICS
+					p ILLUSTRATOR
+					p CSS
+					p UX
+					p FIGMA
+					p JAVASCRIPT
+					p UI
+		.about__clients
+			.about__clients-title
+				.circle.about__circle
+				span КЛИЕНТЫ
+			.about__all-clients
+				p АДМИНИСТРАЦИЯ АО
+				p UIV PRODUCTION
+				p КАФЕДА ПИИБ САФУ
+				p АРР АО
+				p PRIDE BARBERSHOP
+				p SAN PAOLO PRODUCTION GROUP
+				p ДМИТРИЙ МОРЕВ
+				p КУЗНЕЦЫ МОЛОДЦЫ
+				p БИЗНЕС-ФОРУМ «СО-ДЕЙСТВИЕ»

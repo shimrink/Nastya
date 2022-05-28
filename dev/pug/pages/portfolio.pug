@@ -1,0 +1,67 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Портфолио'
+    - var pageClass = 'portfolio-page'
+
+block content
+    .offer
+        img.offer__img(src="static/img/content/portaolioAsya.png")
+        p.offer__hi Здесь можно взглянуть на мое портфолио.<br>Разрабатываю сайты на Tilda и Wordpress и дизайн-макеты для дальнейшей верстки, создаю логотипы, фирменный стиль, гайды, презентации.
+        h1.offer__title.offer__title_bottom.animSlidein ПОРТФОЛИО
+        p.offer__free СВОБОДНА ДЛЯ ПРОЕКТОВ НА ИЮНЬ 2022
+
+    .cases.cases_portfolio
+        .cases__cards
+            a(href="../index.html" target="_blank")
+                .cases__card
+                    .cases__card-head
+                        span.cases__card-name Asya Dulova
+                        span.cases__card-date 05/2022
+                    p.cases__card-disc Персональный сайт-визитка<br>для UX/UI дизайнера
+                    .tag.cases__tag21 UX/UI, Веб-дизайн
+                    .tag.cases__tag22 Сайт-визитка
+            a(href="http://kuzmol29.tilda.ws/" target="_blank")
+                .cases__card
+                    .cases__card-head
+                        span.cases__card-name Кузнецы Молодцы
+                        span.cases__card-date 04/2022
+                    p.cases__card-disc Сайт-визитка<br>для студии сварки и ковки
+                    .tag.cases__tag21 Веб-дизайн
+                    .tag.cases__tag22 Сайт-визитка
+            a(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank")
+                .cases__card
+                    .cases__card-head
+                        span.cases__card-name Красивый Бизнес
+                        span.cases__card-date 02/2022
+                    p.cases__card-disc Лендинг<br>для онлайн форума в сфере бьюти
+                    .tag.cases__tag31 Веб-дизайн
+                    .tag.cases__tag32 Лендинг
+                    .tag.cases__tag33 SMM
+            a(href="https://www.behance.net/gallery/123167773/UIV-production" target="_blank")
+                .cases__card
+                    .cases__card-head
+                        span.cases__card-name UIV Production
+                        span.cases__card-date 07/2021
+                    p.cases__card-disc Нейминг, логотип, айдентика<br>для студии видеопродакшена
+                    .tag.cases__tag31 Брендинг
+                    .tag.cases__tag32 Логотип
+                    .tag.cases__tag33 Айдентика
+            a(href="" target="_blank")
+                .cases__card
+                    .cases__card-head
+                        span.cases__card-name Россиянка
+                        span.cases__card-date 07/2021
+                    p.cases__card-disc Логотип для образцового<br>хореографического ансамбля
+                    .tag.cases__tag31 Брендинг
+                    .tag.cases__tag32 Логотип
+                    .tag.cases__tag33 Концепт
+            a(href="https://www.behance.net/gallery/116807759/kafedra-s%28a%29fu-imeni-mv-lomonosova" target="_blank")
+                .cases__card
+                    .cases__card-head
+                        span.cases__card-name КПИиИБ САФУ
+                        span.cases__card-date 05/2021
+                    p.cases__card-disc Логотип, айдентика и макеты<br>для кафедры университета
+                    .tag.cases__tag31 Брендинг
+                    .tag.cases__tag32 Айдентика
+                    .tag.cases__tag33 Полиграфия

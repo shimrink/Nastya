@@ -1,298 +1,199 @@
-.offer
+.main-services
     display grid
-    grid-template-rows repeat(5, 1fr)
-    grid-template-columns repeat(6, 1fr)
-    padding 0 1vw 0 1vw
-    min-height 92vh
-    transform translateZ(0)
+    grid-template-rows repeat(6, 1fr)
+    grid-template-columns repeat(12, 1fr)
+    grid-gap 1.6vw
+    align-items center
+    margin-top 25vh
+    min-height 78vh
+    padding 0 2.13vw 0 2.13vw
 
-.offer__item5
-    position absolute
-    top -55vh
-    right 25vw
-    transform translateZ(-1px)
+.main-services__item11
+    justify-self end
+    padding-right 4vw
+    grid-row 3/5
+    grid-column 1/7
 
-.offer__img
-    position absolute
-    width 90vw
+.main-services__img
+    height 15.32vw
 
-.offer__item1
-    display flex
-    flex-direction column
-    justify-content flex-end
-    grid-row-start 1
-    grid-column-start 1
-    grid-row-end 4
-    grid-column-end 7
-    max-width 700px
-
-.offer__hi
+.main-services__discription
+    grid-row 3/5
+    grid-column 7/13
     font-size offerFontSize
-    margin-top 10px
 
-.offer__item3
-    display flex
-    align-items center
-    grid-row-start 4
-    grid-column-start 1
-    grid-row-end 5
-    grid-column-end 7
+.circle
+    border-radius 50%
+    background-color textColor
+    width 0.5vw
+    height 0.5vw
 
-.offer__button
-    width 13.5vw
-    height 2.5vw
-    font-family headerFont
-    font-size footerFontSize
-
-.offer__free
-    display flex
-    align-items flex-end
-    grid-row-start 5
-    grid-column-start 1
-    grid-row-end 6
-    grid-column-end 6
-
-.offer__item42
-    display flex
-    align-items flex-end
-    justify-content space-between
-    grid-row-start 5
-    grid-column-start 6
-    grid-row-end 6
-    grid-column-end 7
-
-.services
+.main-services__uxui-title
+    grid-row 5/6
+    grid-column 1/4
     display grid
-    grid-template-rows repeat(5, 1fr)
-    grid-template-columns repeat(4, 1fr)
-    grid-column-gap 2.2vw
-    padding 0 1vw 0 1vw
-    min-height 78vh
-    transform translateZ(0)
-
-.services__item11
-    display flex
+    grid-template-rows 1fr
+    grid-template-columns 1fr 10fr
     align-items center
-    justify-content center
-    grid-row-start 1
-    grid-column-start 2
-    grid-row-end 4
-    grid-column-end 3
+    padding-top 1vw
+    border-top 1px solid
 
-.services__img
-    height 18vw
+.main-services__circle_uxui
+    grid-row 1/2
+    grid-column 1/2
 
-.services__discription
-    display flex
-    align-items center
-    grid-row-start 1
-    grid-column-start 3
-    grid-row-end 4
-    grid-column-end 5
-    font-size subTitleFontSize
+.main-services__uxui-h
+    grid-row 1/2
+    grid-column 2/3
 
-.services__uxui-h
-    display flex
-    align-items flex-end
-    grid-row-start 4
-    grid-column-start 1
-    grid-row-end 5
-    grid-column-end 2
-    padding 0 0 2vw 0
+.main-services__uxui-p
+    grid-row 6/7
+    grid-column 1/4
+    align-self start
+    font-size main-services-font
 
-.services__uxui-p
-    display flex
-    align-items flex-end
-    grid-row-start 4
-    grid-column-start 1
-    grid-row-end 6
-    grid-column-end 2
-
-.services__aidentika-h
-    display flex
-    align-items flex-end
-    grid-row-start 4
-    grid-column-start 2
-    grid-row-end 5
-    grid-column-end 3
-    padding 0 0 2vw 0
-
-.services__aidentika-p
-    display flex
-    align-items flex-end
-    grid-row-start 4
-    grid-column-start 2
-    grid-row-end 6
-    grid-column-end 3
-
-.services__smm-h
-    display flex
-    align-items flex-end
-    grid-row-start 4
-    grid-column-start 3
-    grid-row-end 5
-    grid-column-end 4
-    padding 0 0 2vw 0
-
-.services__smm-p
-    display flex
-    align-items flex-end
-    grid-row-start 4
-    grid-column-start 3
-    grid-row-end 6
-    grid-column-end 4
-
-.services__item24
-    display flex
-    align-items flex-end
-    justify-content flex-end
-    grid-row-start 4
-    grid-column-start 4
-    grid-row-end 6
-    grid-column-end 5
-
-.services__button
-    width 13.5vw
-    height 2.5vw
-    font-family headerFont
-    font-size servicesFontSize
-
-.cases
-    transform translateZ(0)
-    min-height 78vh
-
-.cases__title
-    padding 0 1vw 0 1vw
-
-.arrow
-    width 1.3vw
-    height 1.3vw
-    margin-left 0.5vw
-
-.cases__items
+.main-services__aidentika-title
+    grid-row 5/6
+    grid-column 4/7
     display grid
-    grid-template-rows repeat(4, 1fr)
-    grid-template-columns repeat(6, 1fr)
-    min-height 30vh
-
-.cases__item11
-    display flex
+    grid-template-rows 1fr
+    grid-template-columns 1fr 10fr
     align-items center
-    grid-row-start 1
-    grid-column-start 1
-    grid-row-end 2
-    grid-column-end 3
+    padding-top 1vw
     border-top 1px solid
-    border-bottom 1px solid
-    padding-left 1vw
 
-.cases__item12
-    display flex
+.main-services__circle_aidentika
+    grid-row 1/2
+    grid-column 1/2
+
+.main-services__aidentika-h
+    grid-row 1/2
+    grid-column 2/3
+
+.main-services__aidentika-p
+    grid-row 6/7
+    grid-column 4/7
+    align-self start
+    font-size main-services-font
+
+.main-services__smm-title
+    grid-row 5/6
+    grid-column 7/10
+    display grid
+    grid-template-rows 1fr
+    grid-template-columns 1fr 10fr
     align-items center
-    grid-row-start 1
-    grid-column-start 3
-    grid-row-end 2
-    grid-column-end 5
+    padding-top 1vw
     border-top 1px solid
-    border-bottom 1px solid
 
-.cases__item13
-    display flex
-    align-items center
-    grid-row-start 1
-    grid-column-start 5
-    grid-row-end 2
-    grid-column-end 7
+.main-services__circle_smm
+    grid-row 1/2
+    grid-column 1/2
+
+.main-services__smm-h
+    grid-row 1/2
+    grid-column 2/3
+
+.main-services__smm-p
+    grid-row 6/7
+    grid-column 7/10
+    align-self start
+    font-size main-services-font-size
+
+.main-services__item24
+    grid-row 6/7
+    grid-column 10/13
+    align-self end
+    justify-self end
+
+.main-services__button
+    width 11vw
+    height 2.6vw
+    font-family headerFont
+    font-size main-services-button-font-size
+
+.about
+    margin-top 25vw
+    padding 0 2.13vw 0 2.13vw
+
+.about__circle
+    margin-right 1vw
+
+.about__education
+    display grid
+    grid-template-rows 0.2fr 1fr 1fr 1.5fr
+    grid-template-columns 1fr 1fr
+    grid-gap 1.6vw
     border-top 1px solid
-    border-bottom 1px solid
-    padding-right 1vw
+    padding 0.5vw 0 5vw 0
 
-.cases__item21
+.about__education-title
     display flex
+    flex-direction row
     align-items center
-    grid-row-start 2
-    grid-column-start 1
-    grid-row-end 3
-    grid-column-end 3
-    border-bottom 1px solid
-    padding-left 1vw
+    align-self flex-start
+    grid-row 1/2
+    grid-column 1/2
+    font-family headerFont
 
-.cases__item22
-    display flex
-    align-items center
-    grid-row-start 2
-    grid-column-start 3
-    grid-row-end 3
-    grid-column-end 5
-    border-bottom 1px solid
+.about__narfu
+    grid-row 2/3
+    grid-column 2/3
+    font-size offerFontSize
 
-.cases__item23
-    display flex
-    align-items center
-    grid-row-start 2
-    grid-column-start 5
-    grid-row-end 3
-    grid-column-end 7
-    border-bottom 1px solid
-    padding-right 1vw
+.about__samsung
+    grid-row 3/4
+    grid-column 2/3
+    font-size offerFontSize
 
-.cases__item31
-    display flex
-    align-items center
-    grid-row-start 3
-    grid-column-start 1
-    grid-row-end 4
-    grid-column-end 3
-    border-bottom 1px solid
-    padding-left 1vw
+.about__skills
+    grid-row 4/5
+    grid-column 2/3
+    border-top 1px solid
+    padding-top 0.5vw
 
-.cases__item32
+.about__skills-title
     display flex
+    flex-direction row
     align-items center
-    grid-row-start 3
-    grid-column-start 3
-    grid-row-end 4
-    grid-column-end 5
-    border-bottom 1px solid
+    align-self flex-start
+    font-family headerFont
+    padding-bottom 1.5vw
 
-.cases__item33
-    display flex
-    align-items center
-    grid-row-start 3
-    grid-column-start 5
-    grid-row-end 4
-    grid-column-end 7
-    border-bottom 1px solid
-    padding-right 1vw
+.about__all-skills
+    display grid
+    grid-template-rows 1fr 1fr 1fr
+    grid-template-columns 1fr 1fr 1fr
+    grid-column-gap 1.6vw
+    grid-row-gap 0.7vw
+    font-family headerFont
 
-.cases__item41
-    display flex
-    align-items center
-    grid-row-start 4
-    grid-column-start 1
-    grid-row-end 5
-    grid-column-end 3
-    border-bottom 1px solid
-    padding-left 1vw
+.about__clients
+    display grid
+    grid-template-rows 0.2fr 1.5fr
+    grid-template-columns 1fr 1fr
+    grid-gap 1.6vw
+    border-top 1px solid
+    padding-top 0.5vw
 
-.cases__item42
+.about__clients-title
     display flex
+    flex-direction row
     align-items center
-    grid-row-start 4
-    grid-column-start 3
-    grid-row-end 5
-    grid-column-end 5
-    border-bottom 1px solid
+    align-self flex-start
+    grid-row 1/2
+    grid-column 1/2
+    font-family headerFont
 
-.cases__item43
-    display flex
-    align-items center
-    grid-row-start 4
-    grid-column-start 5
-    grid-row-end 5
-    grid-column-end 7
-    border-bottom 1px solid
-    padding-right 1vw
+.about__all-clients
+    grid-row 2/3
+    grid-column 2/3
+    display grid
+    grid-template-rows 1fr 1fr 1fr
+    grid-template-columns 1fr 1fr 1fr
+    grid-column-gap 1.6vw
+    grid-row-gap 0.7vw
+    font-family headerFont
 
 .animSlidein
     animation-name slidein

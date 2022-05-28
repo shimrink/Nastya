@@ -1,89 +1,62 @@
 footer
   display grid
-  grid-template-rows repeat(10, 1fr)
-  grid-template-columns repeat(9, 1fr)
-  min-height 60vh
-  padding 0 1vw 2vw 1vw
+  grid-template-rows 2fr 1fr 1fr
+  grid-template-columns repeat(12, 1fr)
+  grid-gap 1.6vw
+  min-height 70vh
   position relative
-  height 100vh
-  transform-style preserve-3d
+  align-items center
+  margin-top 25vw
+  padding 0 2.13vw 2vw 2.13vw
 
 .footer__title
-  display flex
-  align-items center
-  grid-row-start 1
-  grid-column-start 1
-  grid-row-end 6
-  grid-column-end 10
+  grid-row 1/2
+  grid-column 1/13
+  align-self start
+  font-family headerFont
+  font-size footerTitleFontSize
 
 .footer__item21
-  display flex
-  align-items center
-  grid-row-start 6
-  grid-column-start 1
-  grid-row-end 9
-  grid-column-end 4
-  font-size footerFontSize
+  grid-row 2/3
+  grid-column 1/5
+  font-size main-services-button-font-size
 
 .footer__item22
-  display flex
-  align-items center
-  grid-row-start 6
-  grid-column-start 4
-  grid-row-end 9
-  grid-column-end 7
-  font-size footerFontSize
+  grid-row 2/3
+  grid-column 5/8
+  font-size main-services-button-font-size
 
 .footer__item23
-  display flex
-  align-items center
-  justify-content center
-  grid-row-start 6
-  grid-column-start 7
-  grid-row-end 9
-  grid-column-end 9
-  font-size footerFontSize
-
-.footer__item24
-  display flex
-  align-items center
-  justify-content flex-end
-  grid-row-start 6
-  grid-column-start 9
-  grid-row-end 9
-  grid-column-end 10
+  grid-row 2/3
+  grid-column 8/11
+  justify-self end
+  font-size main-services-button-font-size
 
 .footer__button
-  width 16.5vw
-  height 2.5vw
+  grid-row 2/3
+  grid-column 11/13
+  width 13vw
+  height 2.6vw
+  border 1px solid
+  border-radius 9em
+  color textColor
+  background-color rgba(30, 30, 30, 0)
+  justify-self end
   font-family headerFont
-  font-size footerFontSize
+  font-size main-services-button-font-size
 
 .footer__item31
-  display flex
-  align-items flex-end
-  align-content flex-end
-  flex-wrap wrap
-  grid-row-start 9
-  grid-column-start 1
-  grid-row-end 11
-  grid-column-end 4
+  grid-row 3/4
+  grid-column 1/5
+  align-self end
 
 .footer__item32
-  display flex
-  align-items flex-end
-  align-content flex-end
-  flex-wrap wrap
-  grid-row-start 9
-  grid-column-start 4
-  grid-row-end 11
-  grid-column-end 7
+  grid-row 3/4
+  grid-column 5/10
+  align-self end
 
 .footer__item33
-  display flex
-  align-items flex-end
-  justify-content flex-end
-  grid-row-start 9
-  grid-column-start 7
-  grid-row-end 11
-  grid-column-end 10
+  grid-row 3/4
+  grid-column 10/13
+  align-self end
+  justify-self end
