@@ -13,6 +13,14 @@ header
     -webkit-backdrop-filter blur(6px)
     backdrop-filter blur(6px)
 
+.header_opened
+    transition transform 0.5s
+    transform translateY(0)
+
+.header_closed
+    transition transform 0.5s
+    transform translateY(-100%)
+
 .header__svg
     grid-row 1/2
     grid-column 1/9
@@ -37,3 +45,23 @@ svg
     grid-row 1/2
     grid-column 12/13
     justify-self end
+
+.drop-menu
+    display flex
+    flex-direction column
+    position absolute
+    transition height 0.5s 0.3s
+    height 0
+    margin-top 2vw
+    transform translateX(-2.5vw)
+    overflow hidden
+    background-color rgba(30, 30, 30, 0.8)
+    -webkit-backdrop-filter blur(6px)
+    backdrop-filter blur(6px)
+
+.drop-menu a
+    margin 1.5vw 1vw 0 1vw
+
+.nav__item1:hover .drop-menu
+    transition height 0.5s
+    height 9.5vw

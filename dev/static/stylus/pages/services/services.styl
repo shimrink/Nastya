@@ -76,6 +76,7 @@
     margin-top 5vw
     -webkit-user-select none
     -moz-user-select none
+    overflow hidden
 
 .method:active
     cursor grabbing
@@ -111,19 +112,53 @@
     display flex
     align-items center
     justify-content space-between
-    padding-top 1.5vw
+    padding 1.5vw 0 1.5vw 0
     border-top 1px solid
     font-size main-services-button-font-size
 
 .faq__plus
     display flex
     justify-content center
+    align-items center
     padding 0.5vw
     border-radius 50%
-
-.faq__plus:hover
-    background-color accentColor
+    transition background-color 0.3s
+    transition-timing-function ease-out
+    background-color rgba(30, 30, 30, 0)
 
 .faq__svg
-    width 24px
-    height 24px
+    width 1.25vw
+    height 1.25vw
+    stroke none
+    stroke-width 0.05vw
+    fill none
+    fill-rule evenodd
+    stroke-linecap square
+    stroke #fff
+
+.faq__name:hover
+    cursor pointer
+
+.faq__name:hover .faq__plus
+    transition background-color 0.3s
+    transition-timing-function ease-out
+    background-color accentColor
+
+.faq__name:hover .faq__svg
+    transition stroke 0.3s
+    stroke #1e1e1e
+
+.faq__answer
+    overflow hidden
+
+.faq__answer_closed
+    height 0
+
+.faq__answer_opened
+    height 7vw
+
+.faq__svg_closed
+    transform rotate(0)
+
+.faq__svg_opened
+    transform rotate(45deg)

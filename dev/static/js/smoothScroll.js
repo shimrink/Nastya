@@ -1,4 +1,3 @@
-//script(src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js")
 SmoothScroll({
     // Время скролла 400 = 0.4 секунды
     animationTime    : 800,

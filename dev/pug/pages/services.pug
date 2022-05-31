@@ -11,7 +11,7 @@ block content
         h2.offer__title.animSlidein УСЛУГИ И СТОИМОСТЬ
         p.offer__free СВОБОДНА ДЛЯ ПРОЕКТОВ НА ИЮНЬ 2022
     
-    .service
+    .service(id="webDes")
         .service__title
             .circle.circle_margin-r.circle_black
             span ЛЕНДИНГ
@@ -214,7 +214,7 @@ block content
                 .card-tag.card-tag_tag21 ОТ 35 000 ₽
                 .card-tag.card-tag_tag22 ОТ 20 ДНЕЙ
     
-    .service
+    .service(id="brand")
         .service__title
             .circle.circle_margin-r.circle_black
             span АЙДЕНТИКА
@@ -298,7 +298,7 @@ block content
                 .card-tag.card-tag_tag21 ОТ 15 000 ₽
                 .card-tag.card-tag_tag22 От 20 ДНЕЙ
     
-    .service
+    .service(id="moreServ")
         .service__title
             .circle.circle_margin-r.circle_black
             span ПРОЧИЕ УСЛУГИ
@@ -349,7 +349,67 @@ block content
     
     h2.faq-title ВОПРОС-ОТВЕТ
     .faq
-        .faq__name
+        .faq__name(id="faq__name_name1" onclick='showCloseItem(this)')
             p Вы работаете официально?
             .faq__plus
-                <svg role="presentation" class="faq__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1px" fill="none" fill-rule="evenodd" stroke-linecap="square"><g transform="translate(1.000000, 1.000000)" stroke="#fff"><path d="M0,11 L22,11"></path><path d="M11,0 L11,22"></path></g></g></svg>
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer1")
+            p Да, я работаю официально в статусе самозанятой, выдаю чеки об оплате услуг и плачу налоги ;)
+        .faq__name(id="faq__name_name2")
+            p Есть ли возможность составить договор?
+            .faq__plus
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer2")
+            p Для Вашего спокойствия и полной прозрачности работы заключается договор подряда, в котором прописывается объем работ, их этапы, сроки и стоимость. Этот документ защищает Вас, как заказчика, и меня, как исполнителя.
+        .faq__name(id="faq__name_name3")
+            p Есть ли предоплата?
+            .faq__plus
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer3")
+            p Я работаю по предоплате и поэтапной оплате. Сроки определяются индивидуально в ходе составления договора.
+        .faq__name(id="faq__name_name4")
+            p Стоимость указана фиксированная и уже не изменится?
+            .faq__plus
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer4")
+            p Стоимость работ в тарифах указана приблизительно, чтобы было легче сориентироваться. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
+        .faq__name(id="faq__name_name5")
+            p Можно ли вносить правки в ходе работы над проектом?
+            .faq__plus
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer5")
+            p Да. Для любой из моих услуг предусмотрено бесплатное количество правок для каждого из этапов работы. Дополнительные правки осуществляются на платной основе.<br><br>Пожалуйста, обратите внимание, что работа согласуется поэтапно, и правки ранее согласованных этапов <u>не осуществляются.</u>
+        .faq__name(id="faq__name_name6")
+            p Мне непонятно, что такое лендинг, брендинг, прототип... какая услуга нужна мне?
+            .faq__plus
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer6")
+            p В ходе бесплатной консультации перед началом нашей работы я отвечаю на все вопросы и консультирую по поводу необходимости той или иной услуги.
+        .faq__name(id="faq__name_name7")
+            p Сложно ли будет управлять созданным сайтом?
+            .faq__plus
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer7")
+            p В конце нашего сотрудничества я пришлю гайд с текстовыми и видеоуроками по управлению Вашим новым сайтом, а также не пропадаю и остаюсь на связи. Вы всегда можете связаться со мной, если возникнут дополнительные вопросы ;)
+        .faq__name(id="faq__name_name8")
+            p А если мне не понравится дизайн?
+            .faq__plus
+                svg.faq__svg.faq__svg_closed(id="faq__svg_svg8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    path(d="M0,11 L22,11")
+                    path(d="M11,0 L11,22")
+        .faq__answer.faq__answer_closed(id="faq__answer_answer8")
+            p В ходе работы предусмотрено согласование дизайна поэтапно, а значит, Вы имеете возможность:<br><br>- следить за ходом работы;<br>- понимать, в каком направлении я двигаюсь;<br>- вносить правки на каждом из согласуемых этапов.<br>При таком порядке работы Вы можете напрямую влиять на результат, и он не станет для вас неприятным сюрпризом! ;)
