@@ -29,12 +29,6 @@ body
 .circle_black
 	background-color bgColor
 
-@media screen and (max-width:1199px) {
-	.cursor-dot, .cursor-dot-outline {
-		display: none;
-	}
-}
-
 .cursor-dot,
 .cursor-dot-outline
 	mix-blend-mode normal
@@ -200,6 +194,7 @@ select
 	grid-column 1/13
 	justify-self end
 	height 100%
+	-webkit-user-drag none
 	order 1
 
 .offer__hi
@@ -310,9 +305,11 @@ select
 @import "modules/modules.styl"
 
 // СТРАНИЦЫ
-// Главная страница
 @import 'pages/index/index.styl'
 @import 'pages/services/services.styl'
 @import 'pages/portfolio/portfolio.styl'
 @import 'pages/useful/useful.styl'
 @import 'pages/policy/policy.styl'
+
+//Медиа-запросы
+@import "media/media.styl"

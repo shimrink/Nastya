@@ -1,0 +1,46 @@
+@media screen and (max-width 1240px)
+    //Target laptop
+
+@media screen and (max-width 768px)
+    //Target tablet
+    .cursor-dot, .cursor-dot-outline
+        display none
+
+    header
+        grid-template-columns 1fr 2fr 1fr
+        grid-gap 1.1vw
+        padding 1vh 1.1vw 1vh 1.1vw
+
+    .header__svg
+        grid-row 1/2
+        grid-column 1/2
+
+    .header__logo
+        fill #fff
+        height 8vw
+
+    .header__contacts
+        border 1px solid
+        border-radius 9em
+        font-size 4.7vw //16px for width 320px
+
+    .header__item5
+        display block
+        grid-row 1/2
+        grid-column 2/3
+        justify-self center
+
+    .header__item6
+        grid-row 1/2
+        grid-column 3/4
+        justify-self end
+
+    .header__burger
+        display block
+        height 6vw
+    
+    .nav__item1, .nav__item2, .nav__item3, .nav__item4
+        display none
+
+//@media screen and (max-width 480px)
+    //Target smartphone
