@@ -18,8 +18,37 @@ header
     .header__item5
         a.header__contacts(href="#foot") КОНТАКТЫ
     .header__item6
-        a(href="#")
-            svg.header__burger(viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg")
-                line(y1="1" x2="21" y2="1" stroke="white" stroke-width="2")
-                line(y1="9" x2="21" y2="9" stroke="white" stroke-width="2")
-                line(y1="18" x2="21" y2="18" stroke="white" stroke-width="2")
+        svg.header__burger(id="burger" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg")
+            line(y1="1" x2="21" y2="1" stroke="white" stroke-width="2")
+            line(y1="9" x2="21" y2="9" stroke="white" stroke-width="2")
+            line(y1="18" x2="21" y2="18" stroke="white" stroke-width="2")
+
+.burger-menu.burger-menu_closed
+    .burger-menu__logo
+        a(href="../index.html")
+            svg.header__logo(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500")
+                path(d="M487.79,170q-11.7-36.51-35.12-62.44T394.41,67.38q-34.86-14.22-80.57-14.22H146.13L-.5,447.33H51.91l31.22-84.74H278.26l31.22,84.74.38,0v.09c30.85,0,61.78-4.79,84.83-14.26S437,410.26,452.39,393s27-38,34.84-62.16,11.9-50.92,12.27-80.28Q499.5,206.49,487.79,170ZM99.3,318.54l81.4-223,81.39,223Zm342.22-5.85q-8.37,28.15-26.21,48.78-19.51,23.41-47.11,32.62a177.31,177.31,0,0,1-23.53,6.05L232.18,97.21h81.11q35.11,0,60.77,11.7t42.37,31.78q16.72,20.07,25.09,47.39t8.36,62.45Q449.88,284.53,441.52,312.69Z")
+    .burger-menu__close
+        svg.burger-menu__svg(id="burger-menu__close" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            path(d="M0,11 L22,11")
+            path(d="M11,0 L11,22")
+    .burger-menu__nav
+        a.linkUnderLine(href="../services.html") УСЛУГИ
+        <br>
+        a.linkUnderLine(href="../portfolio.html") ПОРТФОЛИО
+        <br>
+        a.linkUnderLine(href="../useful.html") ПОЛЕЗНОЕ
+        <br>
+        a.linkUnderLine(href="#foot") КОНТАКТЫ
+    .burger-menu__social
+        a.linkUnderLine(href="https://www.behance.net/asyadulova" target="_blank") BEHANCE
+        <br>
+        a.linkUnderLine(href="https://vk.com/asyadulova" target="_blank") VK
+        <br>
+        a.linkUnderLine(href="https://tenchat.ru/asyadulova" target="_blank") TENCHAT
+    .burger-menu__copyright
+        p © 2022 АСЯ ДУЛОВА
+        p UX/UI ДИЗАЙНЕР
+    .burger-menu__free
+        p СВОБОДНА ДЛЯ ПРОЕКТОВ
+        p НА ИЮНЬ 2022

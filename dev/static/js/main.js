@@ -74,3 +74,12 @@ $(window).scroll(function() {
     }
     scrollPrev = scrolled;
 });
+
+//burger
+$('#burger').click(function(){
+    $('.burger-menu').toggleClass('burger-menu_closed burger-menu_opened');
+});
+
+$('#burger-menu__close').click(function(){
+    $('.burger-menu').toggleClass('burger-menu_closed burger-menu_opened');
+});
