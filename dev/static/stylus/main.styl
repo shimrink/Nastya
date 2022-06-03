@@ -16,9 +16,8 @@ body
 
 .circle
 	border-radius 50%
-	min-width 0.45vw
-	min-height 0.45vw
-	transform translate(50%, 50%)
+	min-width calc(6px + 2 * (100vw / 1920)) //8px
+	min-height calc(6px + 2 * (100vw / 1920)) //8px
 
 .circle_margin-r
 	margin-right 1vw
@@ -226,6 +225,9 @@ select
 	min-height 78vh
 	padding 0 2.13vw 0 2.13vw
 
+.casesGrab, .cases-title
+	display none
+
 .cases_main
 	margin-top 20vw
 
@@ -272,7 +274,7 @@ select
 	display flex
 	border 1px solid
 	border-radius 9em
-	height 2vw
+	padding 0.4vw 0
 	justify-content center
 	align-items center
 	align-self flex-end

@@ -83,3 +83,26 @@ $('#burger').click(function(){
 $('#burger-menu__close').click(function(){
     $('.burger-menu').toggleClass('burger-menu_closed burger-menu_opened');
 });
+
+// casesGrab - блок с горизонтальным скроллом
+casesGrab.onmousedown = () => {
+    let pageX = 0;
+
+    document.onmousemove = e => {
+    if (pageX !== 0) {
+        casesGrab.scrollLeft = casesGrab.scrollLeft + (pageX - e.pageX);
+    }
+    pageX = e.pageX;
+    };
+
+    // заканчиваем выполнение событий
+    casesGrab.onmouseup = () => {
+    document.onmousemove = null;
+    casesGrab.onmouseup = null;
+    };
+
+    // отменяем браузерный drag
+    casesGrab.ondragstart = () => {
+    return false;
+    };
+};
