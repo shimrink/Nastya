@@ -27,7 +27,7 @@ header
 
 .header__logo
     fill #fff
-    height 1.6vw
+    height calc(31px + 10 * (100vw / 1920))
 
 .nav__item1
     grid-row 1/2
@@ -60,7 +60,7 @@ header
     -webkit-backdrop-filter blur(6px)
     backdrop-filter blur(6px)
 
-.drop-menu a
+.drop-menu .drop-menu__item
     margin 1.5vw 1vw 0 1vw
 
 .nav__item1:hover .drop-menu

@@ -6,8 +6,10 @@ block variables
 
 block content
     .offer
-        .offer__bg
+        .offer__bg.offer__bg_end
             img.offer__img(src="static/img/content/servicesAsya.png")
+        .offer__bg-mobile
+            img.offer__img(src="static/img/content/servicesAsyaMobile.png")
         p.offer__hi Список услуг, которые может выполнить для Вас моя команда. Обратите внимание: стоимость услуг указана приблизительно. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
         h2.offer__title.animSlidein УСЛУГИ И&nbspСТОИМОСТЬ
         p.offer__free СВОБОДНА ДЛЯ ПРОЕКТОВ НА ИЮНЬ 2022
@@ -113,7 +115,7 @@ block content
         h2.faq-title ТАРИФЫ
         .faq
             .faq__name(id="faqName9" onclick='showCloseItem(this)')
-                p.faq__p ЭКОНОМ – ОТ 8000 ₽
+                p.faq__p ЭКОНОМ – ОТ&nbsp8000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName9" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
@@ -124,7 +126,7 @@ block content
                     p ⦁ Подбор дизайн-концепции, прототип<br>⦁ Подбор фотографий со стоков<br>⦁ 5 - 6 информационных блоков на странице<br>⦁ Страница «Политика конфиденциальности»<br>⦁ Подключение сбора заявок и систем оплаты<br>⦁ Дизайн блоков, меню, всплывающих окон, виджетов – стандартный, с использованием шаблонов<br>⦁ Без анимации
                     p СРОК РАЗРАБОТКИ – 5 - 7 дней
             .faq__name(id="faqName10")
-                p.faq__p СТАНДАРТ – ОТ 12 000 ₽
+                p.faq__p СТАНДАРТ – ОТ&nbsp12&nbsp000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
@@ -135,7 +137,7 @@ block content
                     p ⦁ Подбор дизайн-концепции, прототип<br>⦁ Подбор фотографий со стоков<br>⦁ 6 - 8 информационных блоков на странице<br>⦁ Страница «Политика конфиденциальности»<br>⦁ Подключение сбора заявок и систем оплаты<br>⦁ Дизайн блоков, меню, всплывающих окон, виджетов – стандартный, + несколько блоков с уникальным дизайном<br>⦁ Простая анимация
                     p СРОК РАЗРАБОТКИ – 7 - 10 дней
             .faq__name(id="faqName11")
-                p.faq__p ПРЕМИУМ – ОТ 18 000 ₽
+                p.faq__p ПРЕМИУМ – ОТ&nbsp18&nbsp000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName11" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
@@ -256,7 +258,7 @@ block content
         h2.faq-title ТАРИФЫ
         .faq
             .faq__name(id="faqName12" onclick='showCloseItem(this)')
-                p.faq__p САЙТ-ВИЗИТКА – ОТ 25 000 ₽
+                p.faq__p САЙТ-ВИЗИТКА – ОТ&nbsp25&nbsp000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
@@ -267,7 +269,7 @@ block content
                     p ⦁ Составление структуры сайта, дизайн-концепции, прототипа<br>⦁ Подбор фотографий со стоков (при необходимости)<br>⦁ Количество страниц: 3 - 5<br>⦁ 5 - 6 информационных блоков на каждой странице<br>⦁ Страницы «Политика конфиденциальности» и «404»<br>⦁ Подключение сбора заявок, необходимых виджетов<br>⦁ Анимация и дизайн - обсуждаются индивидуально; уникальный дизайн и сложная анимация увеличивают стоимость.
                     p СРОК РАЗРАБОТКИ – от 14 дней
             .faq__name(id="faqName13")
-                p.faq__p САЙТ БРЕНДА/КОМПАНИИ – ОТ 28 000 ₽
+                p.faq__p САЙТ БРЕНДА/КОМПАНИИ – ОТ&nbsp28&nbsp000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName13" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
@@ -278,7 +280,7 @@ block content
                     p ⦁ Составление структуры сайта, дизайн-концепции, прототипа<br>⦁ Подбор фотографий со стоков (при необходимости)<br>⦁ Количество страниц: 6 - 8<br>⦁ 5 - 6 информационных блоков на каждой странице<br>⦁ Страницы «Политика конфиденциальности» и «404»<br>⦁ Подключение сбора заявок, необходимых виджетов, прайс-каталогов<br>⦁ Начальная SEO-настройка (для продвижения в поисковиках)<br>⦁ Анимация и дизайн - обсуждаются индивидуально; уникальный дизайн и сложная анимация увеличивают стоимость.
                     p СРОК РАЗРАБОТКИ – от 16 дней
             .faq__name(id="faqName14")
-                p.faq__p ИНТЕРНЕТ-МАГАЗИН – ОТ 32 000 ₽
+                p.faq__p ИНТЕРНЕТ-МАГАЗИН – ОТ&nbsp32&nbsp000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName14" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
@@ -386,7 +388,7 @@ block content
                     p При отсутствии у Вашего бренда или продукта своего логотипа, <u>при заказе сайта</u> я могу предложить простой, но стильный вариант шрифтового логотипа для быстрого старта.
                     p СРОК ИСПОЛНЕНИЯ: 1 час
             .faq__name(id="faqName16")
-                p.faq__p ЛОГОТИП — ОТ 8000 ₽
+                p.faq__p ЛОГОТИП — ОТ&nbsp8000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
@@ -397,7 +399,7 @@ block content
                     p ⦁ Анализ бренда, ниши и конкурентов<br>⦁ Составление мудборда<br>⦁ Подбор фирменных цветов<br>⦁ Подбор фирменных шрифтов<br>⦁ 1 вариант логотипа<br>⦁ 2 бесплатных правки/доработок концепции<br>⦁ Логобук - pdf-инструкция по использованию логотипа
                     p СРОК РАЗРАБОТКИ – от 7 дней
             .faq__name(id="faqName17")
-                p.faq__p АЙДЕНТИКА — ОТ 18 000 ₽
+                p.faq__p АЙДЕНТИКА — ОТ&nbsp18&nbsp000&nbsp₽
                 .faq__plus
                     svg.faq__svg(id="faqSvg_faqName17" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
