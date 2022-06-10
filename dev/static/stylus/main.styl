@@ -85,17 +85,11 @@ body
 .toTopButton__path
 	fill #fff
 
-h1
+h1, h2
 	font-weight 500
 	font-family headerFont
 	font-size titleFontSize
 	line-height 1.1
-	margin 0
-
-h2
-	font-weight 500
-	font-family headerFont
-	font-size titleFontSize
 	margin 0
 
 h3
@@ -133,6 +127,7 @@ a
 	height 1px
 	background textColor
 	content ""
+	transform translateY(-0.2em)
 	transition width 0.2s cubic-bezier(0, 0, .40, 1)
 
 .linkUnderLine:hover:after, .linkUnderLine:focus:after
@@ -191,16 +186,19 @@ select
 .offer__bg
 	grid-row 1/6
 	grid-column 1/13
-	justify-self center
+	justify-self end
 	height 100%
-	-webkit-user-drag none
 	order 1
+	overflow hidden
 
 .offer__bg-mobile
 	display none
 
-.offer__bg_end
-	justify-self end
+.offer__img
+	width 100%
+	height 100%
+	object-fit cover
+	-webkit-user-drag none
 
 .offer__hi
 	font-size offerFontSize
@@ -230,23 +228,24 @@ select
 
 .cases
 	min-height 78vh
-	padding 0 2.13vw 0 2.13vw
+	padding defIndent 2.13vw
+
+.cases_portfolio
+	padding 0 2.13vw
 
 .casesGrab, .cases-title
 	display none
-
-.cases_main
-	margin-top 20vw
-
-.cases_portfolio
-	margin-top 20vh
 
 .cases__cards
 	display grid
 	grid-template-rows repeat(2, 1fr)
 	grid-template-columns repeat(3, 1fr)
 	grid-gap 1.6vw
+	padding-top miniIndent
 	min-height 30vh
+
+.cases__cards_portfolio
+	padding-top 0.1vh
 
 .card
 	display grid

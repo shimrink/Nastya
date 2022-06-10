@@ -2,15 +2,15 @@ $(document).ready(function () {
     svg4everybody({});
 });
 
-$('.faq__answer').slideUp(500);
+$('.faq__answer').slideUp(300);
 // show and hide faq-block
 $('.faq__name').click(function(){
     var id=$(this).attr('id');
-    $('.faq__answer').slideUp(500);
+    $('.faq__answer').slideUp(300);
     if(!$(this).hasClass('faq__name_active')){
         $('.faq__name').removeClass('faq__name_active');
         $(this).addClass('faq__name_active');
-        $('#faqAnswer_'+id).slideDown(500);
+        $('#faqAnswer_'+id).slideDown(300);
         $('.faq__svg').removeClass('faq__svg_opened');
         $('#faqSvg_'+id).addClass('faq__svg_opened');
         $('#faqSvg_'+id).css('transition', 'transform 0.3s');
@@ -61,20 +61,55 @@ casesGrab.onmousedown = () => {
     let pageX = 0;
 
     document.onmousemove = e => {
-    if (pageX !== 0) {
-        casesGrab.scrollLeft = casesGrab.scrollLeft + (pageX - e.pageX);
-    }
-    pageX = e.pageX;
+        if (pageX !== 0) {
+            casesGrab.scrollLeft = casesGrab.scrollLeft + (pageX - e.pageX);
+        }
+        pageX = e.pageX;
     };
 
     // заканчиваем выполнение событий
-    casesGrab.onmouseup = () => {
-    document.onmousemove = null;
-    casesGrab.onmouseup = null;
+    document.onmouseup = () => {
+        document.onmousemove = null;
+        casesGrab.onmouseup = null;
     };
 
     // отменяем браузерный drag
     casesGrab.ondragstart = () => {
-    return false;
+        return false;
     };
 };
+/*
+var movement = false;
+var mousedown = false;
+
+function onMouseMove(e){
+    e.preventDefault();
+    e.stopPropagation();
+    if(mousedown) {
+        movement = true;
+        this.scrollLeft -= event.movementX;
+        this.scrollTop -= event.movementY;
+    }
+}
+
+function onMouseDown(){
+    mousedown = true;
+    movement = false;
+}
+
+function onMouseUp(e){
+    mousedown = false;
+    setTimeout(()=>movement = false, 10);
+}
+
+function onMouseClick(e){
+    if(movement){
+        e.preventDefault();
+        e.stopPropagation();
+    }
+}
+
+function onDragStart(e){
+    e.preventDefault();
+    e.stopPropagation();
+}*/
