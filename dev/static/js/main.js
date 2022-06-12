@@ -57,7 +57,7 @@ $('.burger-menu__contacts').click(function(){
 });
 
 // casesGrab - блок с горизонтальным скроллом
-casesGrab.onmousedown = () => {
+/*casesGrab.onmousedown = () => {
     let pageX = 0;
 
     document.onmousemove = e => {
@@ -78,7 +78,7 @@ casesGrab.onmousedown = () => {
         return false;
     };
 };
-/*
+
 var movement = false;
 var mousedown = false;
 

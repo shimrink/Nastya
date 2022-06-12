@@ -176,13 +176,6 @@
 
     .main-services__svg
         display block
-        height calc(16px + 4 * (100vw / 1240)) //20px
-        transition transform 0.2s
-        transform translateX(1vw)
-
-    .main-services__item24:hover .main-services__svg
-        transition transform 0.2s
-        transform translateX(4vw)
 
     .casesGrab
         display flex
@@ -200,15 +193,6 @@
     .cases-title
         display block
         padding-left 2.13vw
-
-    .cases-arrow
-        display flex
-        //max-width 45vw
-        padding miniIndent 0 0 2.13vw
-
-    .cases-arrow:hover .main-services__svg
-        transition transform 0.2s
-        transform translateX(4vw)
 
     .about__skills
         grid-column 1/3
@@ -239,12 +223,11 @@
     .tariffs-mobile
         display block
 
-    #faqName11, #faqName14, #faqName17
-        border 0
+    .faq
+        padding-bottom miniIndent
 
-    .faq__wrap
-        border-top 1px solid
-        border-bottom 1px solid
+    .faq-title
+        padding-top miniIndent
 
     .faq__name
         padding 2.5vw 0 2.5vw 0
@@ -388,6 +371,15 @@
         grid-column 3/5
         font-size mainServicesFSMobile
 
+    .main-services__line
+        display block
+        align-self end
+        grid-row 8/9
+        grid-column 1/5
+        width 100%
+        height 15%
+        border-top 1px solid
+
     .main-services__item24
         grid-row 9/10
         grid-column 1/5
@@ -398,13 +390,10 @@
 
     .policy
         margin-top 0.1vh
-        padding 5vw 5vw 5vw 5vw
+        padding 5vw
 
     .grab-block
         min-width 55vw
-
-    .faq
-        padding-bottom 5vw
 
     .faq__plus
         padding 1vw

@@ -78,6 +78,7 @@ body
 	z-index 999
 	right 1.5vw
 	bottom 2.5vh
+	mix-blend-mode difference
 
 .toTopButton__svg
 	height 6vh
@@ -228,7 +229,7 @@ select
 
 .cases
 	min-height 78vh
-	padding defIndent 2.13vw
+	padding defIndent 2.13vw 0 2.13vw
 
 .cases_portfolio
 	padding 0 2.13vw
@@ -246,6 +247,26 @@ select
 
 .cases__cards_portfolio
 	padding-top 0.1vh
+
+.cases-arrow
+	display flex
+	width 170px
+	font-family headerFont
+	font-size main-services-font-size
+	margin miniIndent 2.13vw defIndent 2.13vw
+
+.arrow
+	height calc(16px + 4 * (100vw / 1240)) //20px
+	transition transform 0.2s
+	transform translateX(1vw)
+
+.main-services__item24:hover .arrow
+	transition transform 0.2s
+	transform translateX(4vw)
+
+.cases-arrow:hover .arrow
+	transition transform 0.2s
+	transform translateX(4vw)
 
 .card
 	display grid
