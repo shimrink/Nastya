@@ -181,7 +181,7 @@ select
 	display grid
 	grid-template-rows repeat(5, 1fr)
 	grid-template-columns repeat(12, 1fr)
-	grid-gap 1.6vw
+	grid-gap 30px
 	height 99.9vh
 
 .offer__bg
@@ -207,13 +207,13 @@ select
 	grid-column 1/6
 	align-self center
 	order 2
-	padding-left 2.13vw
+	padding-left 40px
 
 .offer__title
 	grid-row 4/6
 	grid-column 1/10
 	order 3
-	padding-left 2.13vw
+	padding-left 40px
 
 .offer__title_bottom
 	align-self end
@@ -225,25 +225,31 @@ select
 	justify-self end
 	align-self end
 	order 4
-	padding 0 2.13vw 3vw 0
+	padding 0 40px 3vw 0
 
 .cases
 	min-height 78vh
-	padding defIndent 2.13vw 0 2.13vw
+	padding defIndent 40px 0 40px
 
-.cases_portfolio
-	padding 0 2.13vw
+.cases__portfolio
+	padding 0 40px
+
+.carousel
+	display flex
+	cursor grab
+	overflow auto
+
+.carousel:active
+	cursor grabbing
 
 .casesGrab, .cases-title
 	display none
 
 .cases__cards
 	display grid
-	grid-template-rows repeat(2, 1fr)
-	grid-template-columns repeat(3, 1fr)
-	grid-gap 1.6vw
+	grid-template-columns 1fr 1fr 1fr
+	grid-gap 30px
 	padding-top miniIndent
-	min-height 30vh
 
 .cases__cards_portfolio
 	padding-top 0.1vh
@@ -253,7 +259,7 @@ select
 	width 170px
 	font-family headerFont
 	font-size main-services-font-size
-	margin miniIndent 2.13vw defIndent 2.13vw
+	margin miniIndent 40px defIndent 40px
 
 .arrow
 	height calc(16px + 4 * (100vw / 1240)) //20px
@@ -272,8 +278,8 @@ select
 	display grid
 	grid-template-rows 1fr 1fr 10fr 1fr
 	grid-template-columns repeat(6, 1fr)
-	grid-gap 1.6vw
-	padding 1.6vw
+	grid-gap 30px
+	padding 30px
 	border 1px solid
 	text-transform uppercase
 
@@ -287,15 +293,17 @@ select
 
 .card-name
 	font-family headerFont
-	font-size cardNameFontSize
+	font-size cardNameFS
 
 .card-date
 	font-family headerFont
+	font-size cardDateFS
 
 .card-disc
 	grid-row 2/3
 	grid-column 1/7
 	font-family headerFont
+	font-size cardDiscFS
 
 .card-tag
 	display flex

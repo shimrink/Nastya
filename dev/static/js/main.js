@@ -56,29 +56,20 @@ $('.burger-menu__contacts').click(function(){
     $('.burger-menu').toggleClass('burger-menu_closed burger-menu_opened');
 });
 
-// casesGrab - блок с горизонтальным скроллом
-/*casesGrab.onmousedown = () => {
-    let pageX = 0;
+//anchor on services page
+$('#drop-menu__item1').click(function(){
+    document.location.href = "../services.php#webDes";
+});
 
-    document.onmousemove = e => {
-        if (pageX !== 0) {
-            casesGrab.scrollLeft = casesGrab.scrollLeft + (pageX - e.pageX);
-        }
-        pageX = e.pageX;
-    };
+$('#drop-menu__item2').click(function(){
+    document.location.href = "../services.php#brand";
+});
 
-    // заканчиваем выполнение событий
-    document.onmouseup = () => {
-        document.onmousemove = null;
-        casesGrab.onmouseup = null;
-    };
+$('#drop-menu__item3').click(function(){
+    document.location.href = "../services.php#moreServ";
+});
 
-    // отменяем браузерный drag
-    casesGrab.ondragstart = () => {
-        return false;
-    };
-};
-
+// Drag horizontal scroll
 var movement = false;
 var mousedown = false;
 
@@ -112,4 +103,13 @@ function onMouseClick(e){
 function onDragStart(e){
     e.preventDefault();
     e.stopPropagation();
-}*/
+}
+
+var scr = $(".carousel");
+
+scr.mousemove(onMouseMove);
+scr.mousedown(onMouseDown);
+$(window).mouseup(onMouseUp);
+window.addEventListener('dragstart',onDragStart);
+window.addEventListener('blur',onMouseUp);
+$('.carousel a').click(onMouseClick);

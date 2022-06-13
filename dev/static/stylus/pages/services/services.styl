@@ -1,10 +1,10 @@
 .service
-    padding miniIndent 2.13vw 2.13vw 2.13vw
+    padding miniIndent 40px 40px 40px
     margin-top 0.1vh
     display grid
     grid-template-rows 0.2fr 1fr
     grid-template-columns 1fr 1fr
-    grid-gap 1.6vw
+    grid-gap 30px
     background-color textColor
     color bgColor
 
@@ -25,13 +25,13 @@
 
 .tariffs
     min-height 78vh
-    padding miniIndent 2.13vw
+    padding miniIndent 40px
 
 .tariffs__cards
     display grid
     grid-template-rows 1fr
     grid-template-columns repeat(3, 1fr)
-    grid-gap 1.6vw
+    grid-gap 30px
     padding-top miniIndent
     min-height 30vh
 
@@ -54,59 +54,40 @@
     display grid
     grid-template-rows repeat(6, 1fr)
     grid-template-columns 1fr 1fr
-    grid-column-gap 1.6vw
-    grid-row-gap 0.9vw
+    grid-column-gap 30px
+    grid-row-gap 17px
     font-size offerFontSize
 
 .service__price
     justify-self end
 
 .method-title
-    padding doubleIndent 2.13vw 0 2.13vw
+    padding doubleIndent 40px 0 40px
 
 .method
-    display flex
-    cursor grab
     margin miniIndent 0 defIndent 0
-    max-width 100vw
     padding-left 20vw
-    -webkit-user-select none
-    -moz-user-select none
-    overflow hidden
 
-.method:active
-    cursor grabbing
-
-.example1-content
-    display flex
-
-.grab-block
-    display flex
-    flex-direction column
+.carousel-cell
     min-width 27vw
     padding 1vw
 
-.grab-block__num
-    display flex
-
-.grab-block__name
-    display flex
+.carousel-cell__name
     text-transform uppercase
     padding-top 2vw
     width 75%
 
-.grab-block__desc
-    display flex
+.carousel-cell__desc
     padding-top 2vw
 
 .faq-title
-    padding defIndent 2.13vw 0 2.13vw
+    padding defIndent 40px 0 40px
 
 .faq
     display flex
     flex-direction column
     align-items center
-    padding miniIndent 2.13vw defIndent 2.13vw
+    padding miniIndent 40px defIndent 40px
 
 .faq__wrap
     border-top 1px solid
