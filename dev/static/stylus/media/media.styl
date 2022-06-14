@@ -1,5 +1,16 @@
-@media screen and (max-width 1240px)
+@media screen and (max-width 1279px)
     //Target tablet landscape
+    .card-name
+        font-size cardNameTLFS
+
+    .card-date, .card-disc
+        font-size cardDateDescTLFS
+
+    .card-tag
+        font-size tagTLFS
+
+@media screen and (max-width 1023px)
+    //Target tablet portrait
     .cursor-dot,
     .cursor-dot-outline,
     .nav__item1,
@@ -10,7 +21,8 @@
     .main-services__button,
     .cases__main,
     .about__prototype,
-    .tariffs
+    .tariffs,
+    .footer__item24
         display none
 
     h1, h2
@@ -19,7 +31,8 @@
     header
         grid-template-columns 1fr 2fr 1fr
         grid-gap 20px
-        padding 1vh 20px 1vh 20px
+        padding 0 20px 0 20px
+        height 50px
 
     .header__svg
         grid-row 1/2
@@ -27,7 +40,7 @@
 
     .header__logo
         fill #fff
-        height calc(23px + 20 * (100vw / 1240)) //50px
+        height 30px
 
     .header__contacts
         border 1px solid
@@ -49,7 +62,7 @@
     .header__burger
         display block
         cursor pointer
-        height calc(14px + 14 * (100vw / 1240)) //28px
+        height 19px
     
     .burger-menu
         position fixed
@@ -115,7 +128,7 @@
     .offer
         grid-template-rows 2fr 1fr 1fr
         grid-template-columns repeat(8, 1fr)
-        grid-gap 1vw
+        grid-gap 20px
 
     .offer__bg
         grid-row 1/4
@@ -125,47 +138,29 @@
         grid-row 2/3
         grid-column 1/6
         align-self end
+        padding-left 20px
         z-index 3
 
     .offer__title
         grid-row 3/4
         grid-column 1/9
+        padding-left 20px
         z-index 3
 
     .offer__title_bottom
         align-self center
 
     .main-services
-        grid-template-rows repeat(5, 1fr)
-        grid-template-columns repeat(6, 1fr)
+        grid-template-rows 1fr 1fr 0.5fr
+        grid-gap 20px
+        padding doubleIndent 20px defIndent 20px
 
-    .main-services__item11
-        grid-column 1/4
-
-    .main-services__discription
-        grid-column 4/7
-
-    .main-services__title_uxui
-        grid-column 1/3
-
-    .main-services__uxui-p
-        grid-column 1/3
-
-    .main-services__title_aidentika
-        grid-column 3/5
-
-    .main-services__aidentika-p
-        grid-column 3/5
-
-    .main-services__title_smm
-        grid-column 5/7
-
-    .main-services__smm-p
-        grid-column 5/7
+    .main-services__all-services
+        grid-column 1/5
 
     .main-services__item24
-        grid-row 5/6
-        grid-column 1/7
+        grid-row 3/4
+        grid-column 1/5
         align-self center
         justify-self start
 
@@ -179,15 +174,45 @@
 
     .casesGrab
         display flex
-        padding 0 20px
+        padding-left 20px
         margin-top miniIndent
 
     .card__grab
+        margin-right 20px
         min-width calc(280px + 200 * (100vw / 1240)) //280px
 
     .cases-title
         display block
         padding-left 20px
+
+    .casesGrab_portfolio
+        margin 0.1vh 0 defIndent 0
+
+    .cases-arrow
+        margin miniIndent 20px defIndent 20px
+
+    .card
+        grid-gap 20px
+        padding 20px
+
+    .card-name
+        font-size cardNameTPFS
+
+    .card-date, .card-disc
+        font-size cardDateDescTPFS
+
+    .card-tag
+        font-size tagTPFS
+
+    .cases__cards
+        grid-template-columns 1fr 1fr
+        grid-gap 20px
+
+    .about
+        padding defIndent 20px
+
+    .about__education
+        grid-gap 20px
 
     .about__skills
         grid-column 1/3
@@ -206,23 +231,34 @@
         grid-column 2/3
         grid-template-rows 1fr 1fr 1fr 1fr
         grid-template-columns 1fr 1fr
+        grid-gap 20px
 
     .about__all-clients
         grid-template-rows repeat(9, 1fr)
         grid-template-columns 1fr
-        grid-row-gap 3vw
+        grid-gap 20px
 
-    .casesGrab_portfolio
-        margin 0.1vh 0 defIndent 0
+    .service
+        padding miniIndent 20px 20px 20px
+        grid-gap 20px
 
     .tariffs-mobile
         display block
 
+    .service__all-services
+        grid-column-gap 20px
+
+    .method-title
+        padding doubleIndent 20px 0 20px
+
+    .carousel-cell
+        min-width 37vw
+
     .faq
-        padding-bottom miniIndent
+        padding miniIndent 20px
 
     .faq-title
-        padding-top miniIndent
+        padding miniIndent 20px 0 20px
 
     .faq__name
         padding 2.5vw 0 2.5vw 0
@@ -231,8 +267,12 @@
         padding-bottom 3vw
 
     footer
+        min-height 70vh
+        margin-top doubleIndent
         grid-template-rows 2fr 1fr 1fr 1fr 1fr 1fr
         grid-template-columns 1fr 1fr
+        grid-gap 20px
+        padding 0 20px 30px 20px
 
     .footer__title
         grid-column 1/3
@@ -249,9 +289,14 @@
         justify-self start
 
     .footer__button
+        display block
         grid-row 4/5
         grid-column 2/3
         justify-self start
+        border 1px solid
+        border-radius 9em
+        padding 1vw 2vw
+        font-size footerFS
 
     .footer__item31
         grid-row 6/7
@@ -266,13 +311,17 @@
         grid-column 2/3
         justify-self start
 
-@media screen and (max-width 768px)
-    //Target tablet portrait
+@media screen and (max-width 767px)
+    //Target tablet-mini
     h1, h2
         font-size mobileMainTitleFS
 
+    .header__contacts
+        padding 0.75vw 1.5vw
+
     .useful__title
         font-size mobileUsefulTitleFS
+
     .offer__bg
         display none
 
@@ -312,18 +361,19 @@
         background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
 
     .main-services
-        grid-template-rows 2fr 1.5fr 0.2fr 1fr 0.2fr 1fr 0.2fr 1fr 1fr
-        grid-template-columns repeat(4, 1fr)
-        grid-gap 20px
+        grid-template-rows none
+        grid-template-columns 1fr
         margin-top 0
         min-height 0
-        padding defIndent 20px
+        padding-top defIndent
 
     .main-services__item11
         grid-row 1/2
-        grid-column 1/5
+        grid-column 1/2
         justify-self center
-        padding 0 0 miniIndent 0
+        align-self start
+        padding 0
+        height auto
 
     .main-services__img
         max-width 100%
@@ -331,54 +381,64 @@
 
     .main-services__discription
         grid-row 2/3
-        grid-column 1/5
-        align-self start
+        grid-column 1/2
+        align-self center
         font-size mainServicesDescFSMobile
+
+    .main-services__all-services
+        grid-row 3/4
+        grid-column 1/2
+        grid-template-rows none
+        grid-template-columns 1fr 1fr
+        grid-column-gap 20px
+        grid-row-gap 0
 
     .main-services__title
         align-self flex-start
-        padding 3vw 0
+        padding 13px 0 16px 0
 
     .main-services__title_uxui
-        grid-row 3/4
-        grid-column 1/5
+        grid-row 1/2
+        grid-column 1/3
 
     .main-services__uxui-p
-        grid-row 4/5
-        grid-column 3/5
+        grid-row 2/3
+        grid-column 2/3
+        padding-bottom 26px
         font-size mainServicesFSMobile
 
     .main-services__title_aidentika
-        grid-row 5/6
-        grid-column 1/5
+        grid-row 3/4
+        grid-column 1/3
 
     .main-services__aidentika-p
-        grid-row 6/7
-        grid-column 3/5
+        grid-row 4/5
+        grid-column 2/3
+        padding-bottom 26px
         font-size mainServicesFSMobile
 
     .main-services__title_smm
-        grid-row 7/8
-        grid-column 1/5
+        grid-row 5/6
+        grid-column 1/3
 
     .main-services__smm-p
-        grid-row 8/9
-        grid-column 3/5
+        grid-row 6/7
+        grid-column 2/3
+        padding-bottom 26px
         font-size mainServicesFSMobile
 
     .main-services__line
         display block
         align-self end
-        grid-row 8/9
-        grid-column 1/5
+        grid-row 6/7
+        grid-column 1/3
         width 100%
-        height 15%
         border-top 1px solid
 
     .main-services__item24
-        grid-row 9/10
-        grid-column 1/5
-        align-self flex-start
+        grid-row 4/5
+        grid-column 1/2
+        margin-top 13px
 
     .service
         margin-top 0.1vh
@@ -390,23 +450,20 @@
     .faq__plus
         padding 1vw
 
-    .cases__cards
-        grid-template-columns 1fr 1fr
-
     .card-name
-        font-size cardNameTabletFS
+        font-size cardNameTMFS
 
-    .card-date
-        font-size cardDateTabletFS
-
-    .card-disc
-        font-size cardDiscTabletFS
+    .card-date, .card-disc
+        font-size cardDateDescTMFS
 
     .card-tag
-        font-size tagTabletFS
+        font-size tagTMFS
+
+//@media screen and (max-width 600px)
+//Target smartphone landscape
 
 @media screen and (max-width 480px)
-    //Target smartphone
+    //Target smartphone portrait
     .burger-menu__copyright,
     .burger-menu__free
         display none
@@ -433,7 +490,10 @@
     .burger-menu__social
         grid-row 3/4
         grid-column 1/3
-        align-self end
+        align-self center
+
+    .header__contacts
+        padding 1vw 2vw
 
     .offer__hi
         grid-column 1/8
@@ -449,7 +509,6 @@
 
     .about__education
         grid-template-columns 1fr 1fr 1fr 1fr
-        grid-gap 20px
 
     .about__education-title
         grid-column 1/5
@@ -466,7 +525,6 @@
         display grid
         grid-template-rows 0.2fr 1fr
         grid-template-columns 1fr 1fr 1fr 1fr
-        grid-gap 20px
 
     .about__skills-title
         grid-row 1/2
@@ -516,13 +574,10 @@
         grid-template-columns 1fr
 
     .card-name
-        font-size cardNameMobileFS
+        font-size cardNameMFS
 
-    .card-date
-        font-size cardDateMobileFS
-
-    .card-disc
-        font-size cardDiscMobileFS
+    .card-date, .card-disc
+        font-size cardDateDescMFS
 
     .card-tag
-        font-size tagMobileFS
+        font-size tagMFS
