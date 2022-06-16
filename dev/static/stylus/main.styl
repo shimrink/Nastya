@@ -208,13 +208,13 @@ select
 	grid-column 1/6
 	align-self center
 	order 2
-	padding-left 40px
+	padding 2vw 40px 0 40px
 
 .offer__title
 	grid-row 4/6
 	grid-column 1/10
 	order 3
-	padding-left 40px
+	padding 0 40px
 
 .offer__title_bottom
 	align-self end
@@ -223,6 +223,7 @@ select
 .offer__free
 	grid-row 5/6
 	grid-column 10/13
+	text-align right
 	justify-self end
 	align-self end
 	order 4
@@ -230,10 +231,10 @@ select
 
 .cases
 	min-height 78vh
-	padding defIndent 40px 0 40px
+	padding doubleIndent 40px 0 40px
 
 .cases__portfolio
-	padding 0 40px
+	padding 0 40px doubleIndent 40px
 
 .carousel
 	display flex
@@ -250,7 +251,7 @@ select
 	display grid
 	grid-template-columns 1fr 1fr 1fr
 	grid-gap 30px
-	padding-top miniIndent
+	padding-top defIndent
 
 .cases__cards_portfolio
 	padding-top 0.1vh
@@ -260,7 +261,7 @@ select
 	width 170px
 	font-family headerFont
 	font-size main-services-font-size
-	margin miniIndent 40px defIndent 40px
+	margin defIndent 40px doubleIndent 40px
 
 .arrow
 	height calc(16px + 4 * (100vw / 1240)) //20px
@@ -279,8 +280,8 @@ select
 	display grid
 	grid-template-rows 1fr 1fr 10fr 1fr
 	grid-template-columns repeat(6, 1fr)
-	grid-gap 30px
-	padding 30px
+	grid-gap calc(9px + 21 * (100vw / 1920))
+	padding calc(9px + 21 * (100vw / 1920))
 	border 1px solid
 	text-transform uppercase
 
@@ -316,6 +317,7 @@ select
 	align-self flex-end
 	font-family headerFont
 	font-size tagFS
+	white-space nowrap
 
 .card-tag_tag21
 	grid-row 4/5

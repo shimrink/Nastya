@@ -1,5 +1,5 @@
 .service
-    padding miniIndent 40px 40px 40px
+    padding defIndent 40px
     margin-top 0.1vh
     display grid
     grid-template-columns 1fr 1fr
@@ -24,13 +24,13 @@
 
 .tariffs
     min-height 78vh
-    padding miniIndent 40px
+    padding defIndent 40px
 
 .tariffs__cards
     display grid
     grid-template-columns repeat(3, 1fr)
     grid-gap 30px
-    padding-top miniIndent
+    padding-top defIndent
     min-height 30vh
 
 .card-disc-tariffs
@@ -59,36 +59,41 @@
     justify-content space-between
 
 .method-title
-    padding doubleIndent 40px 0 40px
+    padding quadrupleIndent 40px 0 40px
 
 .method
-    margin miniIndent 0 defIndent 0
+    margin defIndent 0 doubleIndent 0
     padding-left 20vw
 
 .carousel-cell
-    min-width 27vw
-    padding 1vw
+    min-width calc(300px + 130 * (100vw / 1920))
+    padding 0 30px
 
 .carousel-cell__name
     text-transform uppercase
     padding-top 2vw
-    width 75%
 
 .carousel-cell__desc
     padding-top 2vw
 
 .faq-title
-    padding defIndent 40px 0 40px
+    padding doubleIndent 40px 0 40px
+
+.faq__main-wrap
+    display grid
+    grid-template-columns 1fr 1fr 1fr
+    grid-gap 40px
 
 .faq
+    grid-column 2/4
     display flex
     flex-direction column
-    align-items center
-    padding miniIndent 40px defIndent 40px
+    padding defIndent 40px doubleIndent 40px
 
 .faq__wrap
     border-top 1px solid
     border-bottom 1px solid
+    width 100%
 
 #faqName8, #faqName11, #faqName14, #faqName17
     border 0
@@ -97,7 +102,7 @@
     display grid
     grid-template-columns 5fr 1fr
     align-items center
-    width 80vw
+    width 100%
     padding 1.5vw 0 1.5vw 0
     border-top 1px solid
 
@@ -120,14 +125,14 @@
     background-color rgba(30, 30, 30, 0)
 
 .faq__svg
-    width calc(20px + 5 * (100vw / 1920))
+    width calc(20px + 4 * (100vw / 1920))
     stroke none
-    stroke-width 0.1vw
+    stroke-width 1px
     fill none
     fill-rule evenodd
     stroke-linecap square
     stroke #fff
-    transform rotate(0)
+    transform translate(3%, 3%) rotate(0)
 
 .faq__name:hover
     cursor pointer
@@ -144,10 +149,14 @@
 .faq__answer
     padding-bottom 2vw
     overflow hidden
-    width 80vw
+    width 100%
+    font-size answerFS
+
+.faq__answer p
+    padding 1vw 0
 
 .faq__svg_opened
-    transform rotate(45deg)
+    transform translate(0, 6%) rotate(45deg)
 
 .tariffs-mobile
     display none

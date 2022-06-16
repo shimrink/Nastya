@@ -7,7 +7,7 @@ block variables
 block content
     .offer
         .offer__bg
-            img.offer__img(src="static/img/content/servicesAsya.png" alt="Ася")
+            img(src="static/img/content/servicesAsya.png" alt="Ася")
         .offer__bg-mobile.offer__bg-mobile_serv-grad
             img.offer__img(src="static/img/content/servicesAsyaMobile.png" alt="Ася")
         p.offer__hi Список услуг, которые может выполнить для Вас моя команда. Обратите внимание: стоимость услуг указана приблизительно. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
@@ -442,97 +442,98 @@ block content
     .carousel.method
         .carousel-cell
             h3.carousel-cell__num /1
-            h3.carousel-cell__name Заявка, консультация и&nbsp;бриф
-            p.carousel-cell__desc Мы договоримся о дате, времени и формате консультации, в ходе которой мы обсудим все условия, этапы работы. Также Вы заполните бриф, в котором поделитесь своими пожеланиями к функционалу и дизайну сайта.
+            h3.carousel-cell__name Заявка, консультация<br>и&nbsp;бриф
+            p.carousel-cell__desc Мы&nbsp;договоримся о&nbsp;дате, времени и&nbsp;формате консультации, в&nbsp;ходе которой мы&nbsp;обсудим все условия, этапы работы. Также Вы&nbsp;заполните бриф, в&nbsp;котором поделитесь своими пожеланиями к&nbsp;функционалу и&nbsp;дизайну сайта.
         .carousel-cell
             h3.carousel-cell__num /2
-            h3.carousel-cell__name Заключение договора и&nbsp;предоплата
-            p.carousel-cell__desc Я работаю официально и прозрачно: документально определим этапы работ и их согласование, сроки, порядок оплаты и прочие важные детали.
+            h3.carousel-cell__name Заключение договора<br>и&nbsp;предоплата
+            p.carousel-cell__desc Я&nbsp;работаю официально и&nbsp;прозрачно: документально определим этапы работ и&nbsp;их&nbsp;согласование, сроки, порядок оплаты и&nbsp;прочие важные детали.
         .carousel-cell
             h3.carousel-cell__num /3
             h3.carousel-cell__name Разработка<br>прототипа
-            p.carousel-cell__desc Я погружаюсь в Ваш бизнес, анализирую конкурентов, составляю логическую структуру будущего сайта, чтобы Вашим клиентам было удобно искать на нем информацию, и согласовываю ее с Вами.
+            p.carousel-cell__desc Я&nbsp;погружаюсь в&nbsp;Ваш бизнес, анализирую конкурентов, составляю логическую структуру будущего сайта, чтобы Вашим клиентам было удобно искать на&nbsp;нем информацию, и&nbsp;согласовываю ее&nbsp;с&nbsp;Вами.
         .carousel-cell
             h3.carousel-cell__num /4
-            h3.carousel-cell__name Разработка визуальной концепции
-            p.carousel-cell__desc Собираю шрифты, цвета, примеры удачных дизайнерских решений в единый мудборд и показываю его Вам, чтобы понять, в каком направлении двигаться в дизайне и чтобы конечный результат не стал сюрпризом.
+            h3.carousel-cell__name Разработка визуальной<br>концепции
+            p.carousel-cell__desc Собираю шрифты, цвета, примеры удачных дизайнерских решений в&nbsp;единый мудборд и&nbsp;показываю его Вам, чтобы понять, в&nbsp;каком направлении двигаться в&nbsp;дизайне и&nbsp;чтобы конечный результат не стал сюрпризом.
         .carousel-cell
             h3.carousel-cell__num /5
-            h3.carousel-cell__name Разработка сайта и настройка функционала
-            p.carousel-cell__desc На основании прототипа и дизайн-концепции собираю сайт на подходящей Вашим задачам платформе, создаю дизайн для всех видов устройств и добавляю анимацию.
+            h3.carousel-cell__name Разработка сайта<br>и&nbsp;настройка функционала
+            p.carousel-cell__desc На&nbsp;основании прототипа и&nbsp;дизайн-концепции собираю сайт на&nbsp;подходящей Вашим задачам платформе, создаю дизайн для всех видов устройств и&nbsp;добавляю анимацию.
         .carousel-cell
             h3.carousel-cell__num /6
             h3.carousel-cell__name Согласование<br>и запуск сайта
-            p.carousel-cell__desc Я пришлю Вам ссылку на Ваш новый сайт для тестирования и окончательного согласования.
+            p.carousel-cell__desc Я пришлю Вам ссылку на&nbsp;Ваш новый сайт для&nbsp;тестирования и&nbsp;окончательного согласования.
         .carousel-cell
             h3.carousel-cell__num /7
-            h3.carousel-cell__name Поддержка и обучение управлению сайтом
-            p.carousel-cell__desc В конце нашего сотрудничества я пришлю ссылку на уроки по работе с платформой и отвечу на все возникающие вопросы!
+            h3.carousel-cell__name Поддержка и обучение<br>управлению сайтом
+            p.carousel-cell__desc В&nbsp;конце нашего сотрудничества я пришлю ссылку на&nbsp;уроки по&nbsp;работе с&nbsp;платформой и&nbsp;отвечу на&nbsp;все возникающие вопросы!
 
     h2.faq-title ВОПРОС-ОТВЕТ
-    .faq
-        .faq__name(id="faqName1" onclick='showCloseItem(this)')
-            p.faq__p Вы работаете официально?
-            .faq__plus
-                svg.faq__svg(id="faqSvg_faqName1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    path(d="M0,11 L22,11")
-                    path(d="M11,0 L11,22")
-        .faq__answer.faq__answer_closed(id="faqAnswer_faqName1")
-            p Да, я работаю официально в статусе самозанятой, выдаю чеки об оплате услуг и плачу налоги ;)
-        .faq__name(id="faqName2")
-            p.faq__p Есть ли возможность составить договор?
-            .faq__plus
-                svg.faq__svg(id="faqSvg_faqName2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    path(d="M0,11 L22,11")
-                    path(d="M11,0 L11,22")
-        .faq__answer.faq__answer_closed(id="faqAnswer_faqName2")
-            p Для Вашего спокойствия и полной прозрачности работы заключается договор подряда, в котором прописывается объем работ, их этапы, сроки и стоимость. Этот документ защищает Вас, как заказчика, и меня, как исполнителя.
-        .faq__name(id="faqName3")
-            p.faq__p Есть ли предоплата?
-            .faq__plus
-                svg.faq__svg(id="faqSvg_faqName3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    path(d="M0,11 L22,11")
-                    path(d="M11,0 L11,22")
-        .faq__answer.faq__answer_closed(id="faqAnswer_faqName3")
-            p Я работаю по предоплате и поэтапной оплате. Сроки определяются индивидуально в ходе составления договора.
-        .faq__name(id="faqName4")
-            p.faq__p Стоимость указана фиксированная и уже не изменится?
-            .faq__plus
-                svg.faq__svg(id="faqSvg_faqName4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    path(d="M0,11 L22,11")
-                    path(d="M11,0 L11,22")
-        .faq__answer.faq__answer_closed(id="faqAnswer_faqName4")
-            p Стоимость работ в тарифах указана приблизительно, чтобы было легче сориентироваться. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
-        .faq__name(id="faqName5")
-            p.faq__p Можно ли вносить правки в ходе работы над проектом?
-            .faq__plus
-                svg.faq__svg(id="faqSvg_faqName5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    path(d="M0,11 L22,11")
-                    path(d="M11,0 L11,22")
-        .faq__answer.faq__answer_closed(id="faqAnswer_faqName5")
-            p Да. Для любой из моих услуг предусмотрено бесплатное количество правок для каждого из этапов работы. Дополнительные правки осуществляются на платной основе.<br><br>Пожалуйста, обратите внимание, что работа согласуется поэтапно, и правки ранее согласованных этапов <u>не осуществляются.</u>
-        .faq__name(id="faqName6")
-            p.faq__p Мне непонятно, что такое лендинг, брендинг, прототип... какая услуга нужна мне?
-            .faq__plus
-                svg.faq__svg(id="faqSvg_faqName6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    path(d="M0,11 L22,11")
-                    path(d="M11,0 L11,22")
-        .faq__answer.faq__answer_closed(id="faqAnswer_faqName6")
-            p В ходе бесплатной консультации перед началом нашей работы я отвечаю на все вопросы и консультирую по поводу необходимости той или иной услуги.
-        .faq__name(id="faqName7")
-            p.faq__p Сложно ли будет управлять созданным сайтом?
-            .faq__plus
-                svg.faq__svg(id="faqSvg_faqName7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    path(d="M0,11 L22,11")
-                    path(d="M11,0 L11,22")
-        .faq__answer.faq__answer_closed(id="faqAnswer_faqName7")
-            p В конце нашего сотрудничества я пришлю гайд с текстовыми и видеоуроками по управлению Вашим новым сайтом, а также не пропадаю и остаюсь на связи. Вы всегда можете связаться со мной, если возникнут дополнительные вопросы ;)
-        .faq__wrap
-            .faq__name(id="faqName8")
-                p.faq__p А если мне не понравится дизайн?
+    .faq__main-wrap
+        .faq
+            .faq__name(id="faqName1" onclick='showCloseItem(this)')
+                p.faq__p Вы работаете официально?
                 .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    svg.faq__svg(id="faqSvg_faqName1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName8")
-                p В ходе работы предусмотрено согласование дизайна поэтапно, а значит, Вы имеете возможность:<br><br>- следить за ходом работы;<br>- понимать, в каком направлении я двигаюсь;<br>- вносить правки на каждом из согласуемых этапов.<br>При таком порядке работы Вы можете напрямую влиять на результат, и он не станет для вас неприятным сюрпризом! ;)
+            .faq__answer.faq__answer_closed(id="faqAnswer_faqName1")
+                p Да, я работаю официально в статусе самозанятой, выдаю чеки об оплате услуг и плачу налоги ;)
+            .faq__name(id="faqName2")
+                p.faq__p Есть ли возможность составить договор?
+                .faq__plus
+                    svg.faq__svg(id="faqSvg_faqName2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        path(d="M0,11 L22,11")
+                        path(d="M11,0 L11,22")
+            .faq__answer.faq__answer_closed(id="faqAnswer_faqName2")
+                p Для Вашего спокойствия и полной прозрачности работы заключается договор подряда, в котором прописывается объем работ, их этапы, сроки и стоимость. Этот документ защищает Вас, как заказчика, и меня, как исполнителя.
+            .faq__name(id="faqName3")
+                p.faq__p Есть ли предоплата?
+                .faq__plus
+                    svg.faq__svg(id="faqSvg_faqName3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        path(d="M0,11 L22,11")
+                        path(d="M11,0 L11,22")
+            .faq__answer.faq__answer_closed(id="faqAnswer_faqName3")
+                p Я работаю по предоплате и поэтапной оплате. Сроки определяются индивидуально в ходе составления договора.
+            .faq__name(id="faqName4")
+                p.faq__p Стоимость указана фиксированная и уже не изменится?
+                .faq__plus
+                    svg.faq__svg(id="faqSvg_faqName4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        path(d="M0,11 L22,11")
+                        path(d="M11,0 L11,22")
+            .faq__answer.faq__answer_closed(id="faqAnswer_faqName4")
+                p Стоимость работ в тарифах указана приблизительно, чтобы было легче сориентироваться. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
+            .faq__name(id="faqName5")
+                p.faq__p Можно ли вносить правки в ходе работы над проектом?
+                .faq__plus
+                    svg.faq__svg(id="faqSvg_faqName5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        path(d="M0,11 L22,11")
+                        path(d="M11,0 L11,22")
+            .faq__answer.faq__answer_closed(id="faqAnswer_faqName5")
+                p Да. Для любой из моих услуг предусмотрено бесплатное количество правок для каждого из этапов работы. Дополнительные правки осуществляются на платной основе.<br><br>Пожалуйста, обратите внимание, что работа согласуется поэтапно, и правки ранее согласованных этапов <u>не осуществляются.</u>
+            .faq__name(id="faqName6")
+                p.faq__p Мне непонятно, что такое лендинг, брендинг, прототип... какая услуга нужна мне?
+                .faq__plus
+                    svg.faq__svg(id="faqSvg_faqName6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        path(d="M0,11 L22,11")
+                        path(d="M11,0 L11,22")
+            .faq__answer.faq__answer_closed(id="faqAnswer_faqName6")
+                p В ходе бесплатной консультации перед началом нашей работы я отвечаю на все вопросы и консультирую по поводу необходимости той или иной услуги.
+            .faq__name(id="faqName7")
+                p.faq__p Сложно ли будет управлять созданным сайтом?
+                .faq__plus
+                    svg.faq__svg(id="faqSvg_faqName7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                        path(d="M0,11 L22,11")
+                        path(d="M11,0 L11,22")
+            .faq__answer.faq__answer_closed(id="faqAnswer_faqName7")
+                p В конце нашего сотрудничества я пришлю гайд с текстовыми и видеоуроками по управлению Вашим новым сайтом, а также не пропадаю и остаюсь на связи. Вы всегда можете связаться со мной, если возникнут дополнительные вопросы ;)
+            .faq__wrap
+                .faq__name(id="faqName8")
+                    p.faq__p А если мне не понравится дизайн?
+                    .faq__plus
+                        svg.faq__svg(id="faqSvg_faqName8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+                            path(d="M0,11 L22,11")
+                            path(d="M11,0 L11,22")
+                .faq__answer.faq__answer_closed(id="faqAnswer_faqName8")
+                    p В ходе работы предусмотрено согласование дизайна поэтапно, а значит, Вы имеете возможность:<br><br>- следить за ходом работы;<br>- понимать, в каком направлении я двигаюсь;<br>- вносить правки на каждом из согласуемых этапов.<br>При таком порядке работы Вы можете напрямую влиять на результат, и он не станет для вас неприятным сюрпризом! ;)
