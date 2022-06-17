@@ -19,12 +19,12 @@
     .card-tag
         font-size tagTLFS
 
+    .tariffs__list
+        font-size tagTLFS
+
 @media screen and (max-width 1023px)
     //Target tablet portrait
-    .nav__item1,
-    .nav__item2,
-    .nav__item3,
-    .nav__item4,
+    .header__nav,
     .offer__free,
     .main-services__button,
     .cases__main,
@@ -36,9 +36,12 @@
     h1, h2
         font-size tabletMainTitleFS
 
+    .services__title
+        font-size tabletServTitleFS
+
     header
         grid-template-columns 1fr 2fr 1fr
-        grid-gap 20px
+        grid-column-gap 20px
         padding 0 20px 0 20px
         height 50px
 
@@ -121,6 +124,7 @@
     .burger-menu__social
         grid-row 4/5
         grid-column 2/3
+        font-size burgerContactsFS
 
     .burger-menu__copyright
         grid-row 5/6
@@ -147,16 +151,52 @@
         grid-column 1/6
         align-self end
         padding 0 20px
-        z-index 3
 
     .offer__title
         grid-row 3/4
         grid-column 1/9
         padding 0 20px
-        z-index 3
 
     .offer__title_bottom
         align-self center
+
+    .offer__bg_portf
+        display none
+
+    .offer__hi_portf
+        grid-column 1/7
+
+    .offer__bg-mobile_portf
+        display flex
+        justify-content center
+        grid-row 1/4
+        grid-column 1/9
+        order 1
+        overflow hidden
+
+    .offer__bg-mobile_main-grad:after
+        content ""
+        bottom 0
+        width 100%
+        height 95%
+        position absolute
+        background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
+
+    .offer__bg-mobile_serv-grad:after
+        content ""
+        bottom 0
+        width 100%
+        height 7%
+        position absolute
+        background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
+
+    .offer__bg-mobile_portf-grad:after
+        content ""
+        bottom 0
+        width 100%
+        height 80%
+        position absolute
+        background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
 
     .main-services
         grid-template-rows 1fr 1fr 0.5fr
@@ -180,6 +220,12 @@
     .main-services__svg
         display block
 
+    .cases
+        padding doubleIndent 20px 0 20px
+
+    .cases__portfolio
+        padding 0 20px doubleIndent 20px
+
     .casesGrab
         display flex
         padding-left 20px
@@ -187,6 +233,7 @@
 
     .card__grab
         margin-right 20px
+        min-height calc((280px + 200 * (100vw / 1240)) * 1.33)
         min-width calc(280px + 200 * (100vw / 1240)) //280px
 
     .cases-title
@@ -200,6 +247,7 @@
         margin calc(22px + 50 * (100vw / 1920)) 20px doubleIndent 20px
 
     .card
+        height 45vw * 1.33
         grid-gap calc(13px + 7 * (100vw / 1023))
         padding calc(13px + 7 * (100vw / 1023))
 
@@ -318,6 +366,7 @@
     .footer__item32
         grid-row 5/6
         grid-column 2/3
+        font-size footerFS
 
     .footer__item33
         grid-row 6/7
@@ -331,6 +380,12 @@
 
     .header__contacts
         padding 0.75vw 1.5vw
+
+    .portfolio__title
+        font-size mobilePortfTitleFS
+
+    .services__title
+        font-size mobileServTitleFS
 
     .useful__title
         font-size mobileUsefulTitleFS
@@ -348,30 +403,6 @@
         grid-column 1/9
         order 1
         overflow hidden
-
-    .offer__bg-mobile_main-grad:after
-        content ""
-        bottom 0
-        width 100%
-        height 95%
-        position absolute
-        background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
-
-    .offer__bg-mobile_serv-grad:after
-        content ""
-        bottom 0
-        width 100%
-        height 7%
-        position absolute
-        background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
-
-    .offer__bg-mobile_serv-portf:after
-        content ""
-        bottom 0
-        width 100%
-        height 80%
-        position absolute
-        background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
 
     .main-services
         grid-template-rows none
@@ -472,6 +503,18 @@
     .card-tag
         font-size tagTMFS
 
+    .card__grab .card-name
+        font-size calc(0px + 44 * (100vw / 1240))
+
+    .card__grab .card-date
+        font-size calc(0px + 23 * (100vw / 1240))
+
+    .card__grab .card-disc
+        font-size calc(0px + 23 * (100vw / 1240))
+
+    .card__grab .card-tag
+        font-size calc(0px + 24 * (100vw / 1240))
+
 @media screen and (max-width 600px)
     //Target smartphone
     .burger-menu__copyright,
@@ -500,7 +543,6 @@
     .burger-menu__social
         grid-row 3/4
         grid-column 1/3
-        align-self center
 
     .header__contacts
         padding 1vw 2vw
@@ -508,8 +550,20 @@
     .offer__hi
         grid-column 1/8
 
+    .main-services
+        padding defIndent 20px quadrupleIndent 20px
+
+    .main-services__all-services
+        grid-template-columns repeat(4, 1fr)
+
+    .main-services__title
+        grid-column 1/5
+
     .main-services__uxui-p
         grid-column 2/5
+
+    .main-services__line
+        grid-column 1/5
 
     .main-services__aidentika-p
         grid-column 2/5
@@ -574,6 +628,9 @@
     .cases__cards
         grid-template-columns 1fr
 
+    .card
+        height 86.5vw * 1.33
+
     .card-name
         font-size cardNameMFS
 
@@ -582,3 +639,18 @@
 
     .card-tag
         font-size tagMFS
+
+    .card__grab
+        height 50vw * 1.33
+
+    .card__grab .card-name
+        font-size calc(17px + 21 * (100vw / 1240))
+
+    .card__grab .card-date
+        font-size calc(7px + 10 * (100vw / 1240))
+
+    .card__grab .card-disc
+        font-size calc(7px + 10 * (100vw / 1240))
+
+    .card__grab .card-tag
+        font-size calc(8px + 10 * (100vw / 1240))
