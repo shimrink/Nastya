@@ -16,9 +16,17 @@ body
 
 .circle
 	border-radius 50%
-	min-width calc(6px + 2 * (100vw / 1920)) //8px
-	min-height calc(6px + 2 * (100vw / 1920)) //8px
+	min-width calc(6px + 2 * (100vw / 1920))
+	min-height calc(6px + 2 * (100vw / 1920))
 	transform translateY(75%)
+
+.circle_about
+	min-width calc(4px + 4 * (100vw / 1920))
+	min-height calc(4px + 4 * (100vw / 1920))
+
+.circle_tariffs
+	min-width calc(1px + 7 * (100vw / 1920))
+	min-height calc(1px + 7 * (100vw / 1920))
 
 .circle_margin-r
 	margin-right 1vw
@@ -378,6 +386,7 @@ select
 @import 'pages/portfolio/portfolio.styl'
 @import 'pages/useful/useful.styl'
 @import 'pages/policy/policy.styl'
+@import 'pages/rossiyanka/rossiyanka.styl'
 
 //Медиа-запросы
 @import "media/media.styl"

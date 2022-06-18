@@ -1,0 +1,27 @@
+extends ../layout/main
+
+block variables
+    - var title = 'Россиянка'
+    - var pageClass = 'rossiyanka-page'
+
+block content
+    .offer
+        .offer__bg.offer__bg_portf-grad
+            img(src="static/img/content/rossiyankaOffer.png" alt="Ася")
+        .offer__bg-mobile.offer__bg-mobile_portf-grad
+            img.offer__img(src="static/img/content/rossiyankaOfferMobile.png" alt="Ася")
+        p.offer__hi Концепт логотипа для образцового хореографического ансамбля "Россиянка"
+        h2.offer__title.useful__title.offer__title_bottom ЛОГОТИП ДЛЯ&nbsp;АНСАМБЛЯ
+
+    .work
+        .work__title
+            .circle.circle_margin-r.circle_white.circle_about
+            span ИДЕЯ
+        p.work__desc При создании логотипа в качестве основного мотива используется роспись по дереву Северной Двины — пермогорская роспись.<br><br>Первая буква названия образцового хореографического ансамбля заключила в себе традиционный образ трехлистного цветка.
+        .ticker
+            img.work__img(src="static/img/content/rossiyankaMove.png", alt="Роспись")
+            img.work__img(src="static/img/content/rossiyankaMove.png", alt="Роспись")
+        img.work__img(src="static/img/content/rossiyanka1.png", alt="Логотип")
+        img.work__img(src="static/img/content/rossiyanka2.png", alt="Кружка")
+        img.work__img(src="static/img/content/rossiyanka3.png", alt="Футболка")
+        img.work__img(src="static/img/content/rossiyanka4.png", alt="Худи")

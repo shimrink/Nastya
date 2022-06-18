@@ -547,14 +547,18 @@
     .header__contacts
         padding 1vw 2vw
 
+    .offer
+        height 90vh
+
     .offer__hi
         grid-column 1/8
 
     .main-services
-        padding defIndent 20px quadrupleIndent 20px
+        padding miniIndent 20px quadrupleIndent 20px
 
     .main-services__all-services
         grid-template-columns repeat(4, 1fr)
+        padding-top doubleIndent
 
     .main-services__title
         grid-column 1/5
@@ -618,6 +622,9 @@
     .service__disc
         grid-column 2/5
         font-size serviceFS
+
+    .service__all-services
+        font-size allServiceMFS
 
     .faq__answer p
         padding 2vw 0
