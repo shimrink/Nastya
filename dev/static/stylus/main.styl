@@ -9,10 +9,11 @@ html
 	line-height 1.3
 
 body
-	font-family mainFont
+	font-family mainFont, Arial, Helvetica, sans-serif
 	background-color bgColor
 	color textColor
 	height 100%
+	animation pageTransition 1.5s
 
 .circle
 	border-radius 50%
@@ -96,20 +97,20 @@ body
 
 h1, h2
 	font-weight 500
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size titleFontSize
 	line-height 1.1
 	margin 0
 
 h3
 	font-weight 500
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size subTitleFontSize
 	margin 0
 
 h4,h5,h6
 	font-weight 500
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	margin 0
 
 ul,li
@@ -292,7 +293,7 @@ select
 .cases-arrow
 	display flex
 	width 170px
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size main-services-font-size
 	margin defIndent 40px doubleIndent 40px
 
@@ -331,17 +332,17 @@ select
 	align-self flex-start
 
 .card-name
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size cardNameFS
 
 .card-date
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size cardDateDescFS
 
 .card-disc
 	grid-row 2/3
 	grid-column 1/7
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size cardDateDescFS
 
 .card-tag
@@ -352,7 +353,7 @@ select
 	justify-content center
 	align-items center
 	align-self flex-end
-	font-family headerFont
+	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size tagFS
 	white-space nowrap
 
@@ -375,6 +376,12 @@ select
 .card-tag_tag33
 	grid-row 4/5
 	grid-column 5/7
+
+@keyframes pageTransition
+	0%
+		opacity 0
+	100%
+		opacity 1
 
 
 //Модули
