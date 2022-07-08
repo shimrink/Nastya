@@ -12,7 +12,7 @@ block content
 			img.offer__img(src="static/img/content/mainAsyaMobile.jpg" alt="Ася")
 		p.offer__hi Привет, я Ася Дулова, UX/UI дизайнер из&nbsp;Архангельска. В&nbsp;настоящее время дизайню на фрилансе и вместе со&nbsp;своей командой помогаю брендам и бизнесам быть яркими, удобными и&nbsp;уникальными.
 		h1.offer__title САЙТЫ<br>И&nbsp;ДИЗАЙН ДЛЯ&nbsp;БИЗНЕСА
-		p.offer__free СВОБОДНА ДЛЯ ПРОЕКТОВ НА ИЮНЬ 2022
+		p.offer__free СВОБОДНА ДЛЯ ПРОЕКТОВ НА ИЮЛЬ 2022
 
 	.main-services(id="serv")
 		.main-services__item11
@@ -31,31 +31,44 @@ block content
 				.circle.circle_margin-r.circle_white
 				h3.main-services__smm-h SMM И РЕКЛАМА
 			p.main-services__smm-p Я постоянно улучшаю навыки в дизайне и маркетинге, чтобы помогать бизнесу с оформлением в Интернете.<br>Разрабатываю яркие рекламные макеты и оформление соцсетей, чтобы зацепить и заинтересовать аудиторию.
-			.main-services__line
 		.main-services__item24
 			a.button.main-services__button(href="../services") ВСЕ УСЛУГИ
-			a.linkUnderLine.main-services__button2(href="../services") ВСЕ УСЛУГИ
-			svg.arrow.main-services__svg(viewBox="0 0 306 130" xmlns="http://www.w3.org/2000/svg")
-				path(d="M5.5 60C2.73858 60 0.5 62.2386 0.5 65C0.5 67.7614 2.73858 70 5.5 70L5.5 60ZM301 65L304.595 68.4751C306.468 66.5371 306.468 63.4629 304.595 61.5249L301 65ZM246.595 1.52489C244.676 -0.460542 241.51 -0.514192 239.525 1.40506C237.539 3.32431 237.486 6.48968 239.405 8.47511L246.595 1.52489ZM239.405 121.525C237.486 123.51 237.539 126.676 239.525 128.595C241.51 130.514 244.676 130.461 246.595 128.475L239.405 121.525ZM5.5 70L301 70L301 60L5.5 60L5.5 70ZM304.595 61.5249L246.595 1.52489L239.405 8.47511L297.405 68.4751L304.595 61.5249ZM297.405 61.5249L239.405 121.525L246.595 128.475L304.595 68.4751L297.405 61.5249Z" fill="white")
+	.cases-arrow.cases-arrow_main-services
+		.line
+		a.button.cases-arrow__button(href="../services") ВСЕ УСЛУГИ
 
-	.cases.cases__main
-		h2 МОИ РАБОТЫ
-		.cases__cards
-			a.card(href="../index.php" target="_blank")
+	.white-block
+		.cases-title-wrap
+			h2.cases-title МОИ РАБОТЫ
+			.cases-hint
+				p.cases-text ТЯНИ МЫШКОЙ
+				.cases-svg-wrap
+					svg.cases-svg(viewBox="0 0 438 23" xmlns="http://www.w3.org/2000/svg")
+						line(y1="11.5" x2="437" y2="11.5")
+						path(d="M426 0.5L437 11.5L426 22.5" stroke-linecap="round")
+		.casesGrab.carousel
+			a.card.card__grab(href="../index.php" target="_blank")
 				.card-head
 					span.card-name Asya Dulova
 					span.card-date 05/2022
 				p.card-disc Персональный сайт-визитка<br>для UX/UI дизайнера
 				.card-tag.card-tag_tag21 UX/UI, Веб-дизайн
 				.card-tag.card-tag_tag22 Сайт-визитка
-			a.card(href="http://kuzmol29.tilda.ws/" target="_blank")
+			a.card.card__grab(href="http://pridebarbershop.tilda.ws/" target="_blank")
+				.card-head
+					span.card-name Барбершоп PRIDE
+					span.card-date 06/2022
+				p.card-disc Лендинг<br>для мужской парикмахерской в Архангельске
+				.card-tag.card-tag_tag21 UX/UI, Веб-дизайн
+				.card-tag.card-tag_tag22 Лендинг
+			a.card.card__grab(href="http://kuzmol29.tilda.ws/" target="_blank")
 				.card-head
 					span.card-name Кузнецы Молодцы
 					span.card-date 04/2022
 				p.card-disc Сайт-визитка<br>для студии сварки и ковки
 				.card-tag.card-tag_tag21 Веб-дизайн
 				.card-tag.card-tag_tag22 Сайт-визитка
-			a.card(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank")
+			a.card.card__grab(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank")
 				.card-head
 					span.card-name Красивый Бизнес
 					span.card-date 02/2022
@@ -63,15 +76,15 @@ block content
 				.card-tag.card-tag_tag31 Веб-дизайн
 				.card-tag.card-tag_tag32 Лендинг
 				.card-tag.card-tag_tag33 SMM
-			a.card(href="../rossiyanka.php" target="_blank")
+			a.card.card__grab(href="https://www.behance.net/gallery/123167773/UIV-production" target="_blank")
 				.card-head
-					span.card-name Россиянка
+					span.card-name UIV Production
 					span.card-date 07/2021
-				p.card-disc Логотип для образцового<br>хореографического ансамбля
+				p.card-disc Нейминг, логотип, айдентика<br>для студии видеопродакшена
 				.card-tag.card-tag_tag31 Брендинг
 				.card-tag.card-tag_tag32 Логотип
-				.card-tag.card-tag_tag33 Концепт
-			a.card(href="https://www.behance.net/gallery/116807759/kafedra-s%28a%29fu-imeni-mv-lomonosova" target="_blank")
+				.card-tag.card-tag_tag33 Айдентика
+			a.card.card__grab(href="https://www.behance.net/gallery/116807759/kafedra-s%28a%29fu-imeni-mv-lomonosova" target="_blank")
 				.card-head
 					span.card-name КПИиИБ САФУ
 					span.card-date 05/2021
@@ -79,52 +92,9 @@ block content
 				.card-tag.card-tag_tag31 Брендинг
 				.card-tag.card-tag_tag32 Айдентика
 				.card-tag.card-tag_tag33 Полиграфия
-
-	h2.cases-title МОИ РАБОТЫ
-	.casesGrab.carousel
-		a.card.card__grab(href="../index.php" target="_blank")
-			.card-head
-				span.card-name Asya Dulova
-				span.card-date 05/2022
-			p.card-disc Персональный сайт-визитка<br>для UX/UI дизайнера
-			.card-tag.card-tag_tag21 UX/UI, Веб-дизайн
-			.card-tag.card-tag_tag22 Сайт-визитка
-		a.card.card__grab(href="http://kuzmol29.tilda.ws/" target="_blank")
-			.card-head
-				span.card-name Кузнецы Молодцы
-				span.card-date 04/2022
-			p.card-disc Сайт-визитка<br>для студии сварки и ковки
-			.card-tag.card-tag_tag21 Веб-дизайн
-			.card-tag.card-tag_tag22 Сайт-визитка
-		a.card.card__grab(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank")
-			.card-head
-				span.card-name Красивый Бизнес
-				span.card-date 02/2022
-			p.card-disc Лендинг<br>для онлайн форума в сфере бьюти
-			.card-tag.card-tag_tag31 Веб-дизайн
-			.card-tag.card-tag_tag32 Лендинг
-			.card-tag.card-tag_tag33 SMM
-		a.card.card__grab(href="../rossiyanka.php" target="_blank")
-			.card-head
-				span.card-name Россиянка
-				span.card-date 07/2021
-			p.card-disc Логотип для образцового<br>хореографического ансамбля
-			.card-tag.card-tag_tag31 Брендинг
-			.card-tag.card-tag_tag32 Логотип
-			.card-tag.card-tag_tag33 Концепт
-		a.card.card__grab(href="https://www.behance.net/gallery/116807759/kafedra-s%28a%29fu-imeni-mv-lomonosova" target="_blank")
-			.card-head
-				span.card-name КПИиИБ САФУ
-				span.card-date 05/2021
-			p.card-disc Логотип, айдентика и макеты<br>для кафедры университета
-			.card-tag.card-tag_tag31 Брендинг
-			.card-tag.card-tag_tag32 Айдентика
-			.card-tag.card-tag_tag33 Полиграфия
-
-	.cases-arrow
-		a.linkUnderLine.cases-arrow__button(href="../portfolio") ВСЕ КЕЙСЫ
-		svg.arrow(viewBox="0 0 306 130" xmlns="http://www.w3.org/2000/svg")
-			path(d="M5.5 60C2.73858 60 0.5 62.2386 0.5 65C0.5 67.7614 2.73858 70 5.5 70L5.5 60ZM301 65L304.595 68.4751C306.468 66.5371 306.468 63.4629 304.595 61.5249L301 65ZM246.595 1.52489C244.676 -0.460542 241.51 -0.514192 239.525 1.40506C237.539 3.32431 237.486 6.48968 239.405 8.47511L246.595 1.52489ZM239.405 121.525C237.486 123.51 237.539 126.676 239.525 128.595C241.51 130.514 244.676 130.461 246.595 128.475L239.405 121.525ZM5.5 70L301 70L301 60L5.5 60L5.5 70ZM304.595 61.5249L246.595 1.52489L239.405 8.47511L297.405 68.4751L304.595 61.5249ZM297.405 61.5249L239.405 121.525L246.595 128.475L304.595 68.4751L297.405 61.5249Z" fill="white")
+		.cases-arrow
+			.line
+			a.button.cases-arrow__button(href="../portfolio") ВСЕ КЕЙСЫ
 
 	.about
 		.about__education
@@ -153,10 +123,10 @@ block content
 				span КЛИЕНТЫ
 			.about__all-clients
 				p АДМИНИСТРАЦИЯ АО
-				p VIDEOPRODUCTION
+				p UIV PRODUCTION
 				p КАФЕДА ПИИБ САФУ
 				p АРР АО
-				p BARBERSHOP
+				p BARBERSHOP PRIDE
 				p SAN PAOLO PRODUCTION GROUP
 				p МЭР Г. АРХАНГЕЛЬСКА
 				p КУЗНЕЦЫ МОЛОДЦЫ

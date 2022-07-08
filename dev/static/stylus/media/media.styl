@@ -1,7 +1,6 @@
 @media screen and (max-width 1279px)
     //Target tablet landscape
-    .cursor-dot,
-    .cursor-dot-outline
+    .cursor-dot
         display none
 
     .offer__hi
@@ -19,6 +18,18 @@
     .card-tag
         font-size tagTLFS
 
+    .card__grab .card-name
+        font-size calc(18px + 19 * (100vw / 1920))
+
+    .card__grab .card-date
+        font-size calc(8px + 8 * (100vw / 1920))
+
+    .card__grab .card-disc
+        font-size calc(8px + 8 * (100vw / 1920))
+
+    .card__grab .card-tag
+        font-size calc(9px + 9 * (100vw / 1920))
+
     .tariffs__list
         font-size tagTLFS
 
@@ -26,11 +37,9 @@
     //Target tablet portrait
     .header__nav,
     .offer__free,
-    .main-services__button,
-    .cases__main,
+    .main-services__item24,
     .about__prototype,
-    .tariffs,
-    .footer__item24
+    .tariffs
         display none
 
     h1, h2
@@ -202,26 +211,16 @@
         background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
 
     .main-services
-        grid-template-rows 1fr 1fr 0.5fr
+        grid-template-rows 1fr 1fr
         grid-gap 20px
-        padding quadrupleIndent 20px doubleIndent 20px
+        padding quadrupleIndent 20px 0 20px
 
     .main-services__all-services
         grid-column 1/5
 
-    .main-services__item24
-        grid-row 3/4
-        grid-column 1/5
-        align-self center
-        justify-self start
-
-    .main-services__button2
+    .cases-arrow_main-services
         display block
-        font-family headerFont, Arial, Helvetica, sans-serif
-        font-size main-services-font-size
-
-    .main-services__svg
-        display block
+        padding-bottom doubleIndent
 
     .cases
         padding doubleIndent 20px 0 20px
@@ -230,18 +229,24 @@
         padding 0 20px doubleIndent 20px
 
     .casesGrab
-        display flex
         padding-left 20px
-        margin-top miniIndent
 
-    .card__grab
-        margin-right 20px
-        min-height calc((280px + 200 * (100vw / 1240)) * 1.33)
-        min-width calc(280px + 200 * (100vw / 1240)) //280px
+    .cases-title-wrap
+        grid-column-gap 20px
+        grid-template-columns 3fr 2fr 2fr
+        padding 0 20px
 
     .cases-title
-        display block
-        padding-left 20px
+        font-size calc(15px + 150 * (100vw / 1920))
+
+    .cases-hint
+        grid-column-gap 20px
+
+    .cases-text
+        display none
+
+    .cases-svg-wrap
+        grid-column 1/5
 
     .casesGrab_portfolio
         margin 0.1vh 0 doubleIndent 0
@@ -266,6 +271,21 @@
     .cases__cards
         grid-template-columns 1fr 1fr
         grid-gap 20px
+
+    .card__grab
+        margin-right 20px
+
+    .card__grab .card-name
+        font-size calc(23px + 14 * (100vw / 1920))
+
+    .card__grab .card-date
+        font-size calc(10px + 6 * (100vw / 1920))
+
+    .card__grab .card-disc
+        font-size calc(10px + 6 * (100vw / 1920))
+
+    .card__grab .card-tag
+        font-size calc(12px + 6 * (100vw / 1920))
 
     .about
         padding doubleIndent 20px
@@ -359,12 +379,9 @@
         justify-self start
 
     .footer__button
-        display block
         grid-row 4/5
         grid-column 2/3
         justify-self start
-        border 1px solid
-        border-radius 9em
         padding 1vw 2vw
         font-size footerFS
 
@@ -483,14 +500,6 @@
         padding-bottom 26px
         font-size mainServicesFSMobile
 
-    .main-services__line
-        display block
-        align-self end
-        grid-row 6/7
-        grid-column 1/3
-        width 100%
-        border-top 1px solid
-
     .main-services__item24
         grid-row 4/5
         grid-column 1/2
@@ -506,6 +515,9 @@
     .faq__plus
         padding 1vw
 
+    .cases-hint
+        display none
+
     .card-name
         font-size cardNameTMFS
 
@@ -516,16 +528,16 @@
         font-size tagTMFS
 
     .card__grab .card-name
-        font-size calc(0px + 44 * (100vw / 1240))
+        font-size calc(9px + 33 * (100vw / 1240))
 
     .card__grab .card-date
-        font-size calc(0px + 23 * (100vw / 1240))
+        font-size calc(4px + 15 * (100vw / 1240))
 
     .card__grab .card-disc
-        font-size calc(0px + 23 * (100vw / 1240))
+        font-size calc(4px + 15 * (100vw / 1240))
 
     .card__grab .card-tag
-        font-size calc(0px + 24 * (100vw / 1240))
+        font-size calc(5px + 16 * (100vw / 1240))
 
 @media screen and (max-width 600px)
     //Target smartphone
@@ -566,7 +578,10 @@
         grid-column 1/8
 
     .main-services
-        padding miniIndent 20px quadrupleIndent 20px
+        padding miniIndent 20px 0 20px
+
+    .cases-arrow_main-services
+        padding-bottom quadrupleIndent
 
     .main-services__all-services
         grid-template-columns repeat(4, 1fr)
@@ -577,9 +592,6 @@
 
     .main-services__uxui-p
         grid-column 2/5
-
-    .main-services__line
-        grid-column 1/5
 
     .main-services__aidentika-p
         grid-column 2/5
