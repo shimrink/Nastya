@@ -1,10 +1,22 @@
 @media screen and (max-width 1279px)
     //Target tablet landscape
-    .cursor-dot
+    .cursor-dot,
+    .offer__free,
+    .terms
         display none
 
     .offer__hi
         grid-column 1/8
+
+    .terms-grab__title
+        display block
+        font-size termsTitleFS
+        padding doubleIndent 40px 0 40px
+
+    .terms-grab
+        display flex
+        margin defIndent 0 doubleIndent 0
+        padding-left 20vw
 
     .faq
         grid-column 1/4
@@ -36,7 +48,6 @@
 @media screen and (max-width 1023px)
     //Target tablet portrait
     .header__nav,
-    .offer__free,
     .main-services__item24,
     .about__prototype,
     .tariffs
@@ -44,6 +55,9 @@
 
     h1, h2
         font-size tabletMainTitleFS
+
+    .portfolio__title
+        font-size tabletPortfTitleFS
 
     .services__title
         font-size tabletServTitleFS
@@ -164,12 +178,19 @@
         align-self end
         padding 0 20px
 
+    .offer__wrap
+        grid-row 3/4
+        grid-column 1/9
+        padding 0 20px 1.5vw 20px
+        grid-gap 20px
+
     .offer__title
+        grid-row 1/2
+
+    .offer__title_bottom
         grid-row 3/4
         grid-column 1/9
         padding 0 20px
-
-    .offer__title_bottom
         align-self center
 
     .offer__bg_portf
@@ -321,6 +342,12 @@
         grid-template-columns 1fr
         grid-gap 20px
 
+    .terms-grab__title
+        padding doubleIndent 20px 0 20px
+
+    .terms-grab
+        margin defIndent 0 quadrupleIndent 0
+
     .service
         padding defIndent 20px
         grid-gap 20px
@@ -424,6 +451,21 @@
 
     .offer__hi
         grid-column 1/7
+
+    .offer__wrap
+        grid-template-rows 1fr 1fr
+
+    .offer__title
+        grid-column 1/7
+
+    .offer__button
+        grid-row 2/3
+
+    .offer__button_21
+        grid-column 1/4
+
+    .offer__button_22
+        grid-column 4/7
 
     .offer__bg-mobile
         display flex
