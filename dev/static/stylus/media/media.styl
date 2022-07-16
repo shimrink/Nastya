@@ -8,6 +8,9 @@
     .offer__hi
         grid-column 1/8
 
+    .offer__button
+        padding 1.25vw
+
     .terms-grab__title
         display block
         font-size termsTitleFS
@@ -42,8 +45,20 @@
     .card__grab .card-tag
         font-size calc(9px + 9 * (100vw / 1920))
 
+    .tariffs__cards .card-name
+        font-size calc(0px + 36 * (100vw / 1920))
+
+    .tariffs__cards .card-date
+        font-size calc(5px + 10 * (100vw / 1920))
+
+    .tariffs__cards .card-disc
+        font-size calc(5px + 10 * (100vw / 1920))
+
+    .tariffs__cards .card-tag
+        font-size calc(6px + 10 * (100vw / 1920))
+
     .tariffs__list
-        font-size tagTLFS
+        font-size calc(6px + 10 * (100vw / 1920))
 
 @media screen and (max-width 1023px)
     //Target tablet portrait
@@ -192,6 +207,9 @@
         grid-column 1/9
         padding 0 20px
         align-self center
+
+    .offer__button
+        padding 1.5vw
 
     .offer__bg_portf
         display none
@@ -348,6 +366,11 @@
     .terms-grab
         margin defIndent 0 quadrupleIndent 0
 
+    .look-wrap
+        padding defIndent 20px 0 20px
+        grid-row-gap 10px
+        grid-column-gap 20px
+
     .service
         padding defIndent 20px
         grid-gap 20px
@@ -459,13 +482,25 @@
         grid-column 1/7
 
     .offer__button
+        margin-bottom 0
+        align-self center
         grid-row 2/3
+        padding 2vw 1vw
 
     .offer__button_21
         grid-column 1/4
 
     .offer__button_22
         grid-column 4/7
+
+    .offer__button_31
+        grid-column 1/3
+
+    .offer__button_32
+        grid-column 3/5
+
+    .offer__button_33
+        grid-column 5/7
 
     .offer__bg-mobile
         display flex
@@ -547,6 +582,15 @@
         grid-column 1/2
         margin-top 13px
 
+    .look-wrap
+        grid-template-columns repeat(6, 1fr)
+
+    .look-wrap p
+        grid-column 1/7
+
+    .look
+        grid-column 2/6
+
     .service
         margin-top 0.1vh
 
@@ -619,6 +663,12 @@
     .offer__hi
         grid-column 1/8
 
+    .offer__wrap
+        grid-gap 10px
+
+    .offer__button
+        padding 3vw 1vw
+
     .main-services
         padding miniIndent 20px 0 20px
 
@@ -675,6 +725,9 @@
 
     .about__all-clients
         grid-column 2/5
+
+    .look
+        grid-column 1/7
 
     .service
         grid-template-columns 1fr 1fr 1fr 1fr

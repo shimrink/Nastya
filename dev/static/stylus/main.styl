@@ -23,9 +23,12 @@ body
 
 .circle
 	border-radius 50%
+	margin-right 1vw
 	min-width calc(6px + 2 * (100vw / 1920))
 	min-height calc(6px + 2 * (100vw / 1920))
 	transform translateY(75%)
+	transition all 0.4s ease
+	background-color textColor
 
 .circle_about
 	min-width calc(4px + 4 * (100vw / 1920))
@@ -35,13 +38,8 @@ body
 	min-width calc(1px + 7 * (100vw / 1920))
 	min-height calc(1px + 7 * (100vw / 1920))
 
-.circle_margin-r
-	margin-right 1vw
-
 .circle_white
-	background-color textColor
-
-.circle_black
+	transition all 0.4s ease
 	background-color bgColor
 
 .cursor-dot
@@ -257,7 +255,7 @@ select
 
 .offer__title
 	grid-row 1/2
-	grid-column 1/5
+	grid-column 1/4
 	opacity 0
 	transform translateY(70%)
 	transition all 0.8s ease 0.2s
@@ -284,25 +282,34 @@ select
 .offer__button
 	grid-row 1/2
 	display flex
+	justify-content center
+	align-items center
 	border 1px solid
 	border-radius 9em
 	border-color accentColor
-	padding 0.5vw 1vw
+	padding 1vw
 	margin-bottom 1.7vw
-	justify-content center
-	align-items center
 	align-self end
 	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size offerButtonFS
+	line-height 0
 	color bgColor
 	background-color accentColor
 	cursor pointer
 	white-space nowrap
 
-.offer__button_21
+.offer__button_active
+	color textColor
+	border-color textColor
+	background-color rgba(30, 30, 30, 0)
+
+.offer__button_31
+	grid-column 4/5
+
+.offer__button_21, .offer__button_32
 	grid-column 5/6
 
-.offer__button_22
+.offer__button_22, .offer__button_33
 	grid-column 6/7
 
 .offer__transition
@@ -433,6 +440,7 @@ select
 	transition all 0.4s ease
 	color textColor
 	text-transform uppercase
+	font-family headerFont, Arial, Helvetica, sans-serif
 
 .card__white
 	transition all 0.4s ease
@@ -450,17 +458,14 @@ select
 	align-self flex-start
 
 .card-name
-	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size cardNameFS
 
 .card-date
-	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size cardDateDescFS
 
 .card-disc
 	grid-row 2/3
 	grid-column 1/7
-	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size cardDateDescFS
 
 .card-tag
@@ -471,7 +476,6 @@ select
 	justify-content center
 	align-items center
 	align-self flex-end
-	font-family headerFont, Arial, Helvetica, sans-serif
 	font-size tagFS
 	white-space nowrap
 
