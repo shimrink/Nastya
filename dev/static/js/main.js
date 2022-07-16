@@ -116,7 +116,9 @@ window.addEventListener('blur',onMouseUp);
 $('.carousel a').click(onMouseClick);
 
 //offer tabs
+$('#21').addClass('offer__button_active');
 $('#31').addClass('offer__button_active');
+$('.concept').hide();
 $('.identity').hide();
 $('.more-services').hide();
 $('.offer__button').click(function() {
@@ -141,6 +143,14 @@ $('.offer__button').click(function() {
             $('.web-design').hide();
             $('.identity').hide();
             $('.more-services').show();
+        }
+
+        if(num == 21) {
+            $('.project').show();
+            $('.concept').hide();
+        } else if(num == 22) {
+            $('.project').hide();
+            $('.concept').show();
         }
     }
 });
