@@ -4,6 +4,15 @@ $(document).ready(function () {
 
 // show and hide faq-block
 $('.faq__answer').slideUp(300);
+$('#faqAnswer_faqName9').slideDown(300);
+$('#faqName9').addClass('faq__name_active');
+$('#faqSvg_faqName9').addClass('faq__svg_opened');
+$('#faqAnswer_faqName12').slideDown(300);
+$('#faqName12').addClass('faq__name_active');
+$('#faqSvg_faqName12').addClass('faq__svg_opened');
+$('#faqAnswer_faqName15').slideDown(300);
+$('#faqName15').addClass('faq__name_active');
+$('#faqSvg_faqName15').addClass('faq__svg_opened');
 
 $('.faq__name').click(function() {
     var id=$(this).attr('id');
@@ -121,6 +130,7 @@ $('#31').addClass('offer__button_active');
 $('.concept').hide();
 $('.identity').hide();
 $('.more-services').hide();
+$('.method-identity').hide();
 $('.offer__button').click(function() {
     var num=$(this).attr('id');
 
@@ -133,11 +143,15 @@ $('.offer__button').click(function() {
             $('.web-design').show();
             $('.identity').hide();
             $('.more-services').hide();
+            $('.method-web').show();
+            $('.method-identity').hide();
         } else if(num == 32) {
             $('.look-wrap').hide();
             $('.web-design').hide();
             $('.identity').show();
             $('.more-services').hide();
+            $('.method-web').hide();
+            $('.method-identity').show();
         } else if(num == 33) {
             $('.look-wrap').hide();
             $('.web-design').hide();
@@ -167,9 +181,11 @@ $('.look__button').click(function() {
         if(num == 41) {
             $('.web-design__landing').show();
             $('.web-design__site').hide();
+            $('.look__button').css('transform', 'translate(-1px, -1px)');
         } else if(num == 42) {
             $('.web-design__site').show();
             $('.web-design__landing').hide();
+            $('.look__button').css('transform', 'translate(1px, -1px)');
         }
     }
 });
