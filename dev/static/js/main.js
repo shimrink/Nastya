@@ -214,4 +214,4 @@ if(animItems.length > 0) {
 
 $('.offer__hi').addClass('offer__transition');
 $('.offer__title').addClass('offer__transition');
-$('.offer__free').addClass('offer__transition');
+$('.offer__wrap').addClass('offer__transition');

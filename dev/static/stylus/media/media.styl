@@ -250,9 +250,11 @@
         background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
 
     .main-services
-        grid-template-rows 1fr 1fr
         grid-gap 20px
         padding quadrupleIndent 20px 0 20px
+
+    .main-services__wrap
+        grid-gap 20px
 
     .main-services__all-services
         grid-column 1/5
@@ -341,6 +343,10 @@
         display grid
         grid-gap 20px
         grid-template-columns 1fr 1fr
+
+    .about__skills .top-line
+        grid-row 1/2
+        grid-column 1/3
 
     .about__skills-title
         grid-row 1/2
@@ -511,11 +517,16 @@
         overflow hidden
 
     .main-services
-        grid-template-rows none
         grid-template-columns 1fr
         margin-top 0
         min-height 0
         padding-top doubleIndent
+
+    .main-services__wrap
+        display none
+
+    .main-services__item11_mobile, .main-services__discription_mobile
+        display block
 
     .main-services__item11
         grid-row 1/2
@@ -542,6 +553,18 @@
         grid-template-columns 1fr 1fr
         grid-column-gap 20px
         grid-row-gap 0
+
+    .main-services__first
+        grid-row 1/2
+        grid-column 1/3
+
+    .main-services__second
+        grid-row 3/4
+        grid-column 1/3
+
+    .main-services__third
+        grid-row 5/6
+        grid-column 1/3
 
     .main-services__title
         align-self flex-start
@@ -576,11 +599,6 @@
         grid-column 2/3
         padding-bottom 26px
         font-size mainServicesFSMobile
-
-    .main-services__item24
-        grid-row 4/5
-        grid-column 1/2
-        margin-top 13px
 
     .look-wrap
         grid-template-columns repeat(6, 1fr)
@@ -679,15 +697,14 @@
         grid-template-columns repeat(4, 1fr)
         padding-top doubleIndent
 
-    .main-services__title
+    .main-services__title,
+    .main-services__first,
+    .main-services__second,
+    .main-services__third
         grid-column 1/5
 
-    .main-services__uxui-p
-        grid-column 2/5
-
-    .main-services__aidentika-p
-        grid-column 2/5
-
+    .main-services__uxui-p,
+    .main-services__aidentika-p,
     .main-services__smm-p
         grid-column 2/5
 
@@ -712,58 +729,40 @@
         grid-column 2/4
         align-self center
 
-    .about__education
-        grid-template-columns 1fr 1fr 1fr 1fr
+    .about__education,
+    .about__clients
+        grid-template-columns repeat(4, 1fr)
 
-    .about__education-title
+    .about__education-title,
+    .about__skills-title,
+    .about__clients-title,
+    .service__title,
+    .top-line_about,
+    .about__skills .top-line
         grid-column 1/5
 
-    .about__narfu
-        grid-column 2/5
-
-    .about__samsung
+    .about__narfu,
+    .about__samsung,
+    .about__all-skills,
+    .about__all-clients
         grid-column 2/5
 
     .about__skills
         grid-column 1/5
-        display grid
-        grid-template-columns 1fr 1fr 1fr 1fr
-
-    .about__skills-title
-        grid-row 1/2
-        grid-column 1/5
-
-    .about__all-skills
-        grid-row 2/3
-        grid-column 2/5
-
-    .about__clients
-        grid-template-columns 1fr 1fr 1fr 1fr
-        grid-gap 20px
-
-    .about__clients-title
-        grid-column 1/5
-
-    .about__all-clients
-        grid-column 2/5
+        grid-template-columns repeat(4, 1fr)
 
     .look
         grid-column 1/7
 
     .service
-        grid-template-columns 1fr 1fr 1fr 1fr
-
-    .service__title
-        grid-column 1/5
-
-    .service__all-services
-        grid-column 2/5
+        grid-template-columns repeat(4, 1fr)
 
     .service__disc
         grid-column 2/5
         font-size serviceFS
 
     .service__all-services
+        grid-column 2/5
         font-size allServiceMFS
 
     .faq__answer p
@@ -803,7 +802,7 @@
         font-size calc(8px + 10 * (100vw / 1240))
 
     .work
-        grid-template-columns 1fr 1fr 1fr 1fr
+        grid-template-columns repeat(4, 1fr)
 
     .work__title
         grid-column 1/5
