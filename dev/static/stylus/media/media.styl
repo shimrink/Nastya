@@ -92,7 +92,7 @@
 
     .header__logo
         fill #fff
-        height 30px
+        height 25px
 
     .header__contacts
         border 1px solid
@@ -115,7 +115,7 @@
         display block
         cursor pointer
         height 19px
-    
+
     .burger-menu
         position fixed
         z-index 11
@@ -123,11 +123,11 @@
         grid-template-rows repeat(5, 1fr)
         grid-template-columns 1fr 1fr
         grid-gap 20px
-        padding 1vh 20px 1vh 20px
+        padding 1.3vh 20px 30px 20px
         width 100vw
         height 100vh
         background-color bgColor
-    
+
     .burger-menu_closed
         transition transform 0.4s
         transform translateX(100%)
@@ -146,14 +146,13 @@
         justify-self end
 
     .burger-menu__svg
-        height calc(30px + 20 * (100vw / 1240))
+        height 19px
         stroke none
-        stroke-width 0.1vw
+        stroke-width 1px
         fill none
         fill-rule evenodd
         stroke-linecap square
-        stroke #fff
-        transform rotate(45deg)
+        stroke textColor
         cursor pointer
 
     .burger-menu__nav
@@ -250,14 +249,16 @@
         background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
 
     .main-services
+        grid-template-columns 1fr
         grid-gap 20px
         padding quadrupleIndent 20px 0 20px
 
     .main-services__wrap
+        grid-column 1/2
         grid-gap 20px
 
     .main-services__all-services
-        grid-column 1/5
+        grid-column 1/2
 
     .cases-arrow_main-services
         display block
@@ -801,3 +802,18 @@
 
     .ticker
         grid-column 1/5
+
+@media screen and (max-width 480px) and (orientation landscape)
+    .content, header, .burger-menu, footer
+        display none
+
+    .rotate-please
+        display flex
+        width 100vw
+        height 100vh
+        align-items center
+        justify-content center
+    
+    .rotate-please p
+        width 85%
+        text-align center

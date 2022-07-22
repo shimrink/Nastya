@@ -24,35 +24,16 @@ header
 
 .header__svg
     grid-column 1/2
+    height 25px
 
 .header__logo
     fill #fff
-    height 35px
+    height 25px
 
 .header__nav
     display flex
     grid-column 2/3
     justify-content space-between
 
-.drop-menu
-    display flex
-    flex-direction column
-    position absolute
-    transition height 0.5s 0.4s
-    height 0
-    margin-top 50px
-    transform translateX(-2.5vw)
-    overflow hidden
-    background-color rgba(30, 30, 30, 0.8)
-    -webkit-backdrop-filter blur(6px)
-    backdrop-filter blur(6px)
-
-.drop-menu .drop-menu__item
-    margin 30px 20px 0 20px
-
-.nav__item1:hover .drop-menu
-    transition height 0.5s
-    height 175px
-
-.header__item5, .header__burger, .burger-menu
+.header__item5, .header__burger, .burger-menu, .rotate-please
     display none

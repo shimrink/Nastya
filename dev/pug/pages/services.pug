@@ -6,9 +6,11 @@ block variables
 
 block content
     .offer
-        .offer__bg.offer__bg_serv-grad
+        picture.offer__bg.offer__bg_serv-grad
+            source(srcset="static/img/content/servicesAsya.webp" type="image/webp")
             img(src="static/img/content/servicesAsya.jpg" alt="Ася")
-        .offer__bg-mobile.offer__bg-mobile_serv-grad
+        picture.offer__bg-mobile.offer__bg-mobile_serv-grad
+            source(srcset="static/img/content/servicesAsyaMobile.webp" type="image/webp")
             img.offer__img(src="static/img/content/servicesAsyaMobile.jpg" alt="Ася")
         p.offer__hi Список услуг, которые может выполнить для Вас моя команда. Обратите внимание: стоимость услуг указана приблизительно. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
         .offer__wrap
@@ -430,33 +432,32 @@ block content
                             p СРОК РАЗРАБОТКИ – от 14 дней
                             p *Другие необходимые макеты заказываются и оплачиваются дополнительно (при необходимости).
 
-    .white-block(id="white-block_5")
-        .more-services
-            .service(id="moreServ")
-                .service__title
-                    .circle.circle_about
-                    span ПРОЧИЕ УСЛУГИ
-                .service__all-services
-                    .service__row
-                        p ОФОРМЛЕНИЕ ВК
-                        p ОТ 3500 ₽
-                    .service__row
-                        p ВЕБ-ДИЗАЙН (БЕЗ ВЕРСТКИ)
-                        p ОТ 10 000 ₽
-                    .service__row
-                        p ПРЕЗЕНТАЦИЯ
-                        p 1000 ₽/СТРАНИЦА
-                    .service__row
-                        p ГАЙД
-                        p 500 ₽/СТРАНИЦА
-                    .service__row
-                        p МАКЕТЫ ПОЛИГРАФИИ
-                        p ОТ 1000 ₽/МАКЕТ
-                    .service__row
-                        p РЕКЛАМНЫЕ КРЕАТИВЫ
-                        p 1000 ₽/МАКЕТ
+    .more-services
+        .service(id="moreServ")
+            .service__title
+                .circle.circle_about
+                span ПРОЧИЕ УСЛУГИ
+            .service__all-services
+                .service__row
+                    p ОФОРМЛЕНИЕ ВК
+                    p ОТ 3500 ₽
+                .service__row
+                    p ВЕБ-ДИЗАЙН (БЕЗ ВЕРСТКИ)
+                    p ОТ 10 000 ₽
+                .service__row
+                    p ПРЕЗЕНТАЦИЯ
+                    p 700 ₽/СТРАНИЦА
+                .service__row
+                    p ГАЙД
+                    p 700 ₽/СТРАНИЦА
+                .service__row
+                    p МАКЕТЫ ПОЛИГРАФИИ
+                    p ОТ 1000 ₽/МАКЕТ
+                .service__row
+                    p РЕКЛАМНЫЕ КРЕАТИВЫ
+                    p 500 ₽/МАКЕТ
 
-    .white-block(id="white-block_6")
+    .white-block(id="white-block_5")
         .method-web
             h2.method-title ПОРЯДОК РАБОТЫ
             .carousel.method

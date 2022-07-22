@@ -6,9 +6,11 @@ block variables
 
 block content
     .offer
-        .offer__bg.offer__bg_portf-grad
+        picture.offer__bg.offer__bg_portf-grad
+            source(srcset="static/img/content/rossiyankaOffer.webp" type="image/webp")
             img(src="static/img/content/rossiyankaOffer.jpg" alt="Ася")
-        .offer__bg-mobile.offer__bg-mobile_portf-grad
+        picture.offer__bg-mobile.offer__bg-mobile_portf-grad
+            source(srcset="static/img/content/rossiyankaOfferMobile.webp" type="image/webp")
             img.offer__img(src="static/img/content/rossiyankaOfferMobile.jpg" alt="Ася")
         p.offer__hi Концепт логотипа для образцового хореографического ансамбля "Россиянка"
         .offer__wrap
@@ -20,9 +22,21 @@ block content
             span ИДЕЯ
         p.work__desc При создании логотипа в качестве основного мотива используется роспись по дереву Северной Двины — пермогорская роспись.<br><br>Первая буква названия образцового хореографического ансамбля заключила в себе традиционный образ трехлистного цветка.
         .ticker
-            img.work__img(src="static/img/content/rossiyankaMove.png", alt="Роспись")
-            img.work__img(src="static/img/content/rossiyankaMove.png", alt="Роспись")
-        img.work__img(src="static/img/content/rossiyanka1.jpg", alt="Логотип")
-        img.work__img(src="static/img/content/rossiyanka2.jpg", alt="Кружка")
-        img.work__img(src="static/img/content/rossiyanka3.jpg", alt="Футболка")
-        img.work__img(src="static/img/content/rossiyanka4.jpg", alt="Худи")
+            picture
+                source(srcset="static/img/content/rossiyankaMove.webp" type="image/webp")
+                img.work__img(src="static/img/content/rossiyankaMove.png", alt="Роспись")
+            picture
+                source(srcset="static/img/content/rossiyankaMove.webp" type="image/webp")
+                img.work__img(src="static/img/content/rossiyankaMove.png", alt="Роспись")
+        picture.work__img
+            source(srcset="static/img/content/rossiyanka1.webp" type="image/webp")
+            img.work__img_img(src="static/img/content/rossiyanka1.jpg", alt="Логотип")
+        picture.work__img
+            source(srcset="static/img/content/rossiyanka2.webp" type="image/webp")
+            img.work__img_img(src="static/img/content/rossiyanka2.jpg", alt="Кружка")
+        picture.work__img
+            source(srcset="static/img/content/rossiyanka3.webp" type="image/webp")
+            img.work__img_img(src="static/img/content/rossiyanka3.jpg", alt="Футболка")
+        picture.work__img
+            source(srcset="static/img/content/rossiyanka4.webp" type="image/webp")
+            img.work__img_img(src="static/img/content/rossiyanka4.jpg", alt="Худи")

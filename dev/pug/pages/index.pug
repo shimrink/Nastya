@@ -6,9 +6,11 @@ block variables
 
 block content
 	.offer
-		.offer__bg.offer__bg_main-grad
+		picture.offer__bg.offer__bg_main-grad
+			source(srcset="static/img/content/mainAsya.webp" type="image/webp")
 			img.offer__img(src="static/img/content/mainAsya.jpg" alt="Ася")
-		.offer__bg-mobile.offer__bg-mobile_main-grad
+		picture.offer__bg-mobile.offer__bg-mobile_main-grad
+			source(srcset="static/img/content/mainAsyaMobile.webp" type="image/webp")
 			img.offer__img(src="static/img/content/mainAsyaMobile.jpg" alt="Ася")
 		p.offer__hi Привет, я Ася Дулова, UX/UI дизайнер из&nbsp;Архангельска. В&nbsp;настоящее время дизайню на фрилансе и вместе со&nbsp;своей командой помогаю брендам и бизнесам быть яркими, удобными и&nbsp;уникальными.
 		h1.offer__title.offer__title_bottom САЙТЫ<br>И&nbsp;ДИЗАЙН ДЛЯ&nbsp;БИЗНЕСА
@@ -17,32 +19,34 @@ block content
 
 	.main-services(id="serv")
 		.main-services__wrap._anim-items._anim-show
-			.main-services__item11
+			picture.main-services__item11
+				source.main-services__img(srcset="static/img/content/asya.webp" type="image/webp")
 				img.main-services__img(src="static/img/content/asya.png" alt="Ася")
 			p.main-services__discription Я UX/UI дизайнер с навыками маркетинга. В своей работе я создаю не просто красивую картинку, а эффективную и стильную упаковку для бизнеса онлайн и оффлайн.<br>Мне нравится работать с проектами и людьми, которые хотят стать ближе для своих клиентов, рассказывать им о себе ярко, красиво и удобно.
-		.main-services__item11.main-services__item11_mobile
+		picture.main-services__item11.main-services__item11_mobile
+			source.main-services__img(srcset="static/img/content/asya.webp" type="image/webp")
 			img.main-services__img(src="static/img/content/asya.png" alt="Ася")
 		p.main-services__discription.main-services__discription_mobile._anim-items._anim-show Я UX/UI дизайнер с навыками маркетинга. В своей работе я создаю не просто красивую картинку, а эффективную и стильную упаковку для бизнеса онлайн и оффлайн.<br>Мне нравится работать с проектами и людьми, которые хотят стать ближе для своих клиентов, рассказывать им о себе ярко, красиво и удобно.
 		.main-services__all-services
 			.main-services__first
-				.top-line._anim-items._anim-show-left._anim-no-hide
-			.main-services__title.main-services__title_uxui._anim-items._anim-show
+				.top-line._anim-items._anim-show-opacity
+			.main-services__title.main-services__title_uxui._anim-items._anim-show-huge
 				.circle
 				h3.main-services__uxui-h UX/UI ДИЗАЙН
-			p.main-services__uxui-p._anim-items._anim-show Я разрабатываю разные виды веб-проектов в зависимости от задач бизнеса: лендинги, сайты-визитки, интернет-магазины и другие. В создании сайта для меня главное — соблюсти баланс между интересным дизайном и его удобством для зрителя.
+			p.main-services__uxui-p._anim-items._anim-show-big Я разрабатываю разные виды веб-проектов в зависимости от задач бизнеса: лендинги, сайты-визитки, интернет-магазины и другие. В создании сайта для меня главное — соблюсти баланс между интересным дизайном и его удобством для зрителя.
 			.main-services__second
-				.top-line._anim-items._anim-show-left._anim-no-hide
-			.main-services__title.main-services__title_aidentika._anim-items._anim-show
+				.top-line._anim-delay-one._anim-items._anim-show-opacity
+			.main-services__title.main-services__title_aidentika._anim-delay-one._anim-items._anim-show-huge
 				.circle
 				h3.main-services__aidentika-h АЙДЕНТИКА
-			p.main-services__aidentika-p._anim-items._anim-show Мне нравится выражать идеи и настроение бизнеса через цвета, шрифты и визуальные образы. Это помогает при создании айдентики, которая формирует имидж бренда в глазах клиентов, вызывает их доверие и лояльность.
+			p.main-services__aidentika-p._anim-delay-one._anim-items._anim-show-big Мне нравится выражать идеи и настроение бизнеса через цвета, шрифты и визуальные образы. Это помогает при создании айдентики, которая формирует имидж бренда в глазах клиентов, вызывает их доверие и лояльность.
 			.main-services__third
-				.top-line._anim-items._anim-show-left._anim-no-hide
-			.main-services__title.main-services__title_smm._anim-items._anim-show
+				.top-line._anim-delay-two._anim-items._anim-show-opacity
+			.main-services__title.main-services__title_smm._anim-delay-two._anim-items._anim-show-huge
 				.circle
 				h3.main-services__smm-h SMM И РЕКЛАМА
-			p.main-services__smm-p._anim-items._anim-show Я постоянно улучшаю навыки в дизайне и маркетинге, чтобы помогать бизнесу с оформлением в Интернете.<br>Разрабатываю яркие рекламные макеты и оформление соцсетей, чтобы зацепить и заинтересовать аудиторию.
-		.main-services__item24._anim-items._anim-show-right._anim-no-hide
+			p.main-services__smm-p._anim-delay-two._anim-items._anim-show-big Я постоянно улучшаю навыки в дизайне и маркетинге, чтобы помогать бизнесу с оформлением в Интернете.<br>Разрабатываю яркие рекламные макеты и оформление соцсетей, чтобы зацепить и заинтересовать аудиторию.
+		.main-services__item24._anim-delay-three._anim-items._anim-show-right._anim-no-hide
 			a.button.main-services__button(href="../services") ВСЕ УСЛУГИ
 	.cases-arrow.cases-arrow_main-services
 		.line._anim-items._anim-show-center._anim-no-hide
@@ -58,28 +62,28 @@ block content
 						line(y1="11.5" x2="437" y2="11.5")
 						path(d="M426 0.5L437 11.5L426 22.5" stroke-linecap="round")
 		.casesGrab.carousel
-			a.card.card__grab(href="../index.php" target="_blank")
+			a.card.card__grab._anim-items._anim-show-opacity._anim-no-hide(href="../index.php" target="_blank")
 				.card-head
 					span.card-name Asya Dulova
 					span.card-date 05/2022
 				p.card-disc Персональный сайт-визитка<br>для UX/UI дизайнера
 				.card-tag.card-tag_tag21 UX/UI, Веб-дизайн
 				.card-tag.card-tag_tag22 Сайт
-			a.card.card__grab(href="http://pridebarbershop.tilda.ws/" target="_blank")
+			a.card.card__grab._anim-delay-one._anim-items._anim-show-opacity._anim-no-hide(href="http://pridebarbershop.tilda.ws/" target="_blank")
 				.card-head
 					span.card-name Барбершоп PRIDE
 					span.card-date 06/2022
 				p.card-disc Лендинг<br>для мужской парикмахерской в Архангельске
 				.card-tag.card-tag_tag21 UX/UI, Веб-дизайн
 				.card-tag.card-tag_tag22 Лендинг
-			a.card.card__grab(href="http://kuzmol29.tilda.ws/" target="_blank")
+			a.card.card__grab._anim-delay-two._anim-items._anim-show-opacity._anim-no-hide(href="http://kuzmol29.tilda.ws/" target="_blank")
 				.card-head
 					span.card-name Кузнецы Молодцы
 					span.card-date 04/2022
 				p.card-disc Сайт-визитка<br>для студии сварки и ковки
 				.card-tag.card-tag_tag21 Веб-дизайн
 				.card-tag.card-tag_tag22 Сайт
-			a.card.card__grab(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank")
+			a.card.card__grab._anim-delay-three._anim-items._anim-show-opacity._anim-no-hide(href="https://www.behance.net/gallery/140243567/onlajn-forum-krasivyj-biznes-2022" target="_blank")
 				.card-head
 					span.card-name Красивый Бизнес
 					span.card-date 02/2022
