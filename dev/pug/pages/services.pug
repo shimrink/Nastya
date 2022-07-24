@@ -27,7 +27,7 @@ block content
 
     .web-design
         .web-design__landing
-            .service(id="webDes")
+            .service
                 .service__title
                     .circle.circle_about
                     span ЛЕНДИНГ
@@ -37,10 +37,9 @@ block content
                 .tariffs
                     h2 ТАРИФЫ
                     .tariffs__cards
-                        .card.card_tariff.card_tariff_first
-                            .card-head
-                                span.card-name ЭКОНОМ
-                            p.card-disc.card-disc-tariffs ОДНОСТРАНИЧНЫЙ САЙТ В КОРОТКИЕ СРОКИ СО СТАНДАРТНЫМ ДИЗАЙНОМ
+                        .card_tariff.card_tariff_first
+                            p.card-name ЭКОНОМ
+                            p.card-disc ОДНОСТРАНИЧНЫЙ САЙТ В КОРОТКИЕ СРОКИ СО СТАНДАРТНЫМ ДИЗАЙНОМ
                             .tariffs__list
                                 p В ТАРИФ ВХОДИТ:<br><br>
                                 .tariffs__list-row
@@ -64,12 +63,11 @@ block content
                                 .tariffs__list-row
                                     .circle.circle_tariffs
                                     span Без анимации
-                            .card-tag.card-tag_tag21 ОТ 8000 ₽
+                            .card-tag.card-tag_tag21 ОТ 10 000 ₽
                             .card-tag.card-tag_tag22 5 - 7 ДНЕЙ
-                        .card.card_tariff.card_tariff_second
-                            .card-head
-                                span.card-name СТАНДАРТ
-                            p.card-disc.card-disc-tariffs ОДНОСТРАНИЧНЫЙ САЙТ С ПРОСТОЙ АНИМАЦИЕЙ, ИМЕЮЩИЙ НЕСКОЛЬКО УНИКАЛЬНЫХ БЛОКОВ
+                        .card_tariff.card_tariff_second
+                            p.card-name СТАНДАРТ
+                            p.card-disc ОДНОСТРАНИЧНЫЙ САЙТ С ПРОСТОЙ АНИМАЦИЕЙ, ИМЕЮЩИЙ НЕСКОЛЬКО УНИКАЛЬНЫХ БЛОКОВ
                             .tariffs__list
                                 p В ТАРИФ ВХОДИТ:<br><br>
                                 .tariffs__list-row
@@ -93,12 +91,11 @@ block content
                                 .tariffs__list-row
                                     .circle.circle_tariffs
                                     span <u>Простая анимация</u>
-                            .card-tag.card-tag_tag21 ОТ 14 000 ₽
+                            .card-tag.card-tag_tag21 ОТ 18 000 ₽
                             .card-tag.card-tag_tag22 7 - 10 ДНЕЙ
-                        .card.card_tariff.card_tariff_third
-                            .card-head
-                                span.card-name ПРЕМИУМ
-                            p.card-disc.card-disc-tariffs ЭФФЕКТНЫЙ САЙТ С УНИКАЛЬНЫМ ДИЗАЙНОМ И СЛОЖНОЙ АНИМАЦИЕЙ
+                        .card_tariff.card_tariff_third
+                            p.card-name ПРЕМИУМ
+                            p.card-disc ЭФФЕКТНЫЙ САЙТ С УНИКАЛЬНЫМ ДИЗАЙНОМ И СЛОЖНОЙ АНИМАЦИЕЙ
                             .tariffs__list
                                 p В ТАРИФ ВХОДИТ:<br><br>
                                 .tariffs__list-row
@@ -122,14 +119,14 @@ block content
                                 .tariffs__list-row
                                     .circle.circle_tariffs
                                     span <u>Сложная анимация</u>
-                            .card-tag.card-tag_tag21 ОТ 20 000 ₽
+                            .card-tag.card-tag_tag21 ОТ 25 000 ₽
                             .card-tag.card-tag_tag22 10 - 15 ДНЕЙ
 
                 .tariffs-mobile
                     h2.faq-title ТАРИФЫ
                     .faq
                         .faq__name(id="faqName9" onclick='showCloseItem(this)')
-                            p.faq__p ЭКОНОМ – ОТ&nbsp;8000&nbsp;₽
+                            p.faq__p ЭКОНОМ – ОТ&nbsp;10&nbsp;000&nbsp;₽
                             .faq__plus
                                 svg.faq__svg(id="faqSvg_faqName9" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                                     path(d="M0,11 L22,11")
@@ -140,7 +137,7 @@ block content
                             p ⦁ Подбор дизайн-концепции, прототип<br>⦁ Подбор фотографий со стоков<br>⦁ 5 - 6 информационных блоков на странице<br>⦁ Страница «Политика конфиденциальности»<br>⦁ Подключение сбора заявок и систем оплаты<br>⦁ Дизайн блоков, меню, всплывающих окон, виджетов – стандартный, с использованием шаблонов<br>⦁ Без анимации
                             p СРОК РАЗРАБОТКИ – 5 - 7 дней
                         .faq__name(id="faqName10")
-                            p.faq__p СТАНДАРТ – ОТ&nbsp;14&nbsp;000&nbsp;₽
+                            p.faq__p СТАНДАРТ – ОТ&nbsp;18&nbsp;000&nbsp;₽
                             .faq__plus
                                 svg.faq__svg(id="faqSvg_faqName10" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                                     path(d="M0,11 L22,11")
@@ -152,7 +149,7 @@ block content
                             p СРОК РАЗРАБОТКИ – 7 - 10 дней
                         .faq__wrap
                             .faq__name(id="faqName11")
-                                p.faq__p ПРЕМИУМ – ОТ&nbsp;20&nbsp;000&nbsp;₽
+                                p.faq__p ПРЕМИУМ – ОТ&nbsp;25&nbsp;000&nbsp;₽
                                 .faq__plus
                                     svg.faq__svg(id="faqSvg_faqName11" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                                         path(d="M0,11 L22,11")
@@ -174,10 +171,9 @@ block content
                 .tariffs
                     h2 ТАРИФЫ
                     .tariffs__cards
-                        .card.card_tariff.card_tariff_first
-                            .card-head
-                                span.card-name САЙТ-ВИЗИТКА
-                            p.card-disc.card-disc-tariffs МНОГОСТРАНИЧНЫЙ САЙТ-ВИЗИТКА ДЛЯ ЭКСПЕРТА ИЛИ БРЕНДА С ИНФОРМАЦИЕЙ И ПОРТФОЛИО РАБОТ
+                        .card_tariff.card_tariff_first
+                            p.card-name САЙТ-ВИЗИТКА
+                            p.card-disc МНОГОСТРАНИЧНЫЙ САЙТ-ВИЗИТКА ДЛЯ ЭКСПЕРТА ИЛИ БРЕНДА С ИНФОРМАЦИЕЙ И ПОРТФОЛИО РАБОТ
                             .tariffs__list
                                 p В ТАРИФ ВХОДИТ:<br><br>
                                 .tariffs__list-row
@@ -203,10 +199,9 @@ block content
                                     span Анимация и дизайн - обсуждаются индивидуально; уникальный дизайн и сложная анимация увеличивают стоимость
                             .card-tag.card-tag_tag21 ОТ 30 000 ₽
                             .card-tag.card-tag_tag22 ОТ 14 ДНЕЙ
-                        .card.card_tariff.card_tariff_second
-                            .card-head
-                                span.card-name САЙТ БРЕНДА/КОМПАНИИ
-                            p.card-disc.card-disc-tariffs МНОГОСТРАНИЧНЫЙ САЙТ ДЛЯ КОМПАНИИ С БОЛЬШИМ КОЛИЧЕСТВОМ ИНФОРМАЦИИ, КАТАЛОГАМИ И СТАТЬЯМИ
+                        .card_tariff.card_tariff_second
+                            p.card-name САЙТ БРЕНДА/КОМПАНИИ
+                            p.card-disc МНОГОСТРАНИЧНЫЙ САЙТ ДЛЯ КОМПАНИИ С БОЛЬШИМ КОЛИЧЕСТВОМ ИНФОРМАЦИИ, КАТАЛОГАМИ И СТАТЬЯМИ
                             .tariffs__list
                                 p В ТАРИФ ВХОДИТ:<br><br>
                                 .tariffs__list-row
@@ -235,10 +230,9 @@ block content
                                     span Анимация и дизайн - обсуждаются индивидуально; уникальный дизайн и сложная анимация увеличивают стоимость
                             .card-tag.card-tag_tag21 ОТ 35 000 ₽
                             .card-tag.card-tag_tag22 ОТ 16 ДНЕЙ
-                        .card.card_tariff.card_tariff_third
-                            .card-head
-                                span.card-name ИНТЕРНЕТ-МАГАЗИН
-                            p.card-disc.card-disc-tariffs МНОГОСТРАНИЧНЫЙ САЙТ ДЛЯ КОМПАНИИ С КАТАЛОГОМ ТОВАРОВ И ОНЛАЙН-ОПЛАТОЙ
+                        .card_tariff.card_tariff_third
+                            p.card-name ИНТЕРНЕТ-МАГАЗИН
+                            p.card-disc МНОГОСТРАНИЧНЫЙ САЙТ ДЛЯ КОМПАНИИ С КАТАЛОГОМ ТОВАРОВ И ОНЛАЙН-ОПЛАТОЙ
                             .tariffs__list
                                 p В ТАРИФ ВХОДИТ:<br><br>
                                 .tariffs__list-row
@@ -310,7 +304,7 @@ block content
                                 p СРОК РАЗРАБОТКИ – от 20 дней
 
     .identity
-        .service(id="brand")
+        .service
             .service__title
                 .circle.circle_about
                 span АЙДЕНТИКА
@@ -320,18 +314,16 @@ block content
             .tariffs
                 h2 ТАРИФЫ
                 .tariffs__cards
-                    .card.card_tariff.card_tariff_first
-                        .card-head
-                            span.card-name ЛОГОТИП (ЛАЙТ)
-                        p.card-disc.card-disc-tariffs УНИКАЛЬНЫЙ ЛОГОТИП ДЛЯ ВАШЕГО БРЕНДА
+                    .card_tariff.card_tariff_first
+                        p.card-name ЛОГОТИП (ЛАЙТ)
+                        p.card-disc УНИКАЛЬНЫЙ ЛОГОТИП ДЛЯ ВАШЕГО БРЕНДА
                         .tariffs__list
                             p При отсутствии у Вашего бренда или продукта своего логотипа, при заказе сайта я могу предложить простой, но стильный вариант шрифтового логотипа для быстрого старта
                         .card-tag.card-tag_tag21 БЕСПЛАТНО
                         .card-tag.card-tag_tag22 1 ЧАС
-                    .card.card_tariff.card_tariff_second
-                        .card-head
-                            span.card-name ЛОГОТИП
-                        p.card-disc.card-disc-tariffs УНИКАЛЬНЫЙ ЛОГОТИП ДЛЯ ВАШЕГО БРЕНДА
+                    .card_tariff.card_tariff_second
+                        p.card-name ЛОГОТИП
+                        p.card-disc УНИКАЛЬНЫЙ ЛОГОТИП ДЛЯ ВАШЕГО БРЕНДА
                         .tariffs__list
                             p В ТАРИФ ВХОДИТ:<br><br>
                             .tariffs__list-row
@@ -358,10 +350,9 @@ block content
                             p СРОК РАЗРАБОТКИ – от 7 дней
                         .card-tag.card-tag_tag21 ОТ 8 000 ₽
                         .card-tag.card-tag_tag22 От 7 ДНЕЙ
-                    .card.card_tariff.card_tariff_third
-                        .card-head
-                            span.card-name АЙДЕНТИКА
-                        p.card-disc.card-disc-tariffs УНИКАЛЬНЫЙ ЛОГОТИП И ФИРМЕННЫЙ СТИЛЬ ДЛЯ ВАШЕГО БРЕНДА
+                    .card_tariff.card_tariff_third
+                        p.card-name АЙДЕНТИКА
+                        p.card-disc УНИКАЛЬНЫЙ ЛОГОТИП И ФИРМЕННЫЙ СТИЛЬ ДЛЯ ВАШЕГО БРЕНДА
                         .tariffs__list
                             p В ТАРИФ ВХОДИТ:<br><br>
                             .tariffs__list-row
@@ -433,7 +424,7 @@ block content
                             p *Другие необходимые макеты заказываются и оплачиваются дополнительно (при необходимости).
 
     .more-services
-        .service(id="moreServ")
+        .service
             .service__title
                 .circle.circle_about
                 span ПРОЧИЕ УСЛУГИ
@@ -520,68 +511,68 @@ block content
     h2.faq-title ВОПРОС-ОТВЕТ
     .faq__main-wrap
         .faq
-            .faq__name(id="faqName1" onclick='showCloseItem(this)')
-                p.faq__p Вы работаете официально?
-                .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__name(id="faqqName1" onclick='showCloseItem(this)')
+                p.faqq__p Вы работаете официально?
+                .faqq__plus
+                    svg.faqq__svg(id="faqqSvg_faqqName1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName1")
+            .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName1")
                 p Да, я работаю официально в статусе самозанятой, выдаю чеки об оплате услуг и плачу налоги ;)
-            .faq__name(id="faqName2")
-                p.faq__p Есть ли возможность составить договор?
-                .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__name(id="faqqName2")
+                p.faqq__p Есть ли возможность составить договор?
+                .faqq__plus
+                    svg.faqq__svg(id="faqqSvg_faqqName2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName2")
+            .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName2")
                 p Для Вашего спокойствия и полной прозрачности работы заключается договор подряда, в котором прописывается объем работ, их этапы, сроки и стоимость. Этот документ защищает Вас, как заказчика, и меня, как исполнителя.
-            .faq__name(id="faqName3")
-                p.faq__p Есть ли предоплата?
-                .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__name(id="faqqName3")
+                p.faqq__p Есть ли предоплата?
+                .faqq__plus
+                    svg.faqq__svg(id="faqqSvg_faqqName3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName3")
+            .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName3")
                 p Я работаю по предоплате и поэтапной оплате. Сроки определяются индивидуально в ходе составления договора.
-            .faq__name(id="faqName4")
-                p.faq__p Стоимость указана фиксированная и уже не изменится?
-                .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__name(id="faqqName4")
+                p.faqq__p Стоимость указана фиксированная и уже не изменится?
+                .faqq__plus
+                    svg.faqq__svg(id="faqqSvg_faqqName4" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName4")
+            .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName4")
                 p Стоимость работ в тарифах указана приблизительно, чтобы было легче сориентироваться. Точную стоимость я смогу назвать после заполнения брифа и понимания объема работы.
-            .faq__name(id="faqName5")
-                p.faq__p Можно ли вносить правки в ходе работы над проектом?
-                .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__name(id="faqqName5")
+                p.faqq__p Можно ли вносить правки в ходе работы над проектом?
+                .faqq__plus
+                    svg.faqq__svg(id="faqqSvg_faqqName5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName5")
+            .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName5")
                 p Да. Для любой из моих услуг предусмотрено бесплатное количество правок для каждого из этапов работы. Дополнительные правки осуществляются на платной основе.<br><br>Пожалуйста, обратите внимание, что работа согласуется поэтапно, и правки ранее согласованных этапов <u>не осуществляются.</u>
-            .faq__name(id="faqName6")
-                p.faq__p Мне непонятно, что такое лендинг, брендинг, прототип... какая услуга нужна мне?
-                .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__name(id="faqqName6")
+                p.faqq__p Мне непонятно, что такое лендинг, брендинг, прототип... какая услуга нужна мне?
+                .faqq__plus
+                    svg.faqq__svg(id="faqqSvg_faqqName6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName6")
+            .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName6")
                 p В ходе бесплатной консультации перед началом нашей работы я отвечаю на все вопросы и консультирую по поводу необходимости той или иной услуги.
-            .faq__name(id="faqName7")
-                p.faq__p Сложно ли будет управлять созданным сайтом?
-                .faq__plus
-                    svg.faq__svg(id="faqSvg_faqName7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__name(id="faqqName7")
+                p.faqq__p Сложно ли будет управлять созданным сайтом?
+                .faqq__plus
+                    svg.faqq__svg(id="faqqSvg_faqqName7" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                         path(d="M0,11 L22,11")
                         path(d="M11,0 L11,22")
-            .faq__answer.faq__answer_closed(id="faqAnswer_faqName7")
+            .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName7")
                 p В конце нашего сотрудничества я пришлю гайд с текстовыми и видеоуроками по управлению Вашим новым сайтом, а также не пропадаю и остаюсь на связи. Вы всегда можете связаться со мной, если возникнут дополнительные вопросы ;)
-            .faq__wrap
-                .faq__name(id="faqName8")
-                    p.faq__p А если мне не понравится дизайн?
-                    .faq__plus
-                        svg.faq__svg(id="faqSvg_faqName8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+            .faqq__wrap
+                .faqq__name(id="faqqName8")
+                    p.faqq__p А если мне не понравится дизайн?
+                    .faqq__plus
+                        svg.faqq__svg(id="faqqSvg_faqqName8" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
                             path(d="M0,11 L22,11")
                             path(d="M11,0 L11,22")
-                .faq__answer.faq__answer_closed(id="faqAnswer_faqName8")
+                .faqq__answer.faqq__answer_closed(id="faqqAnswer_faqqName8")
                     p В ходе работы предусмотрено согласование дизайна поэтапно, а значит, Вы имеете возможность:<br><br>- следить за ходом работы;<br>- понимать, в каком направлении я двигаюсь;<br>- вносить правки на каждом из согласуемых этапов.<br>При таком порядке работы Вы можете напрямую влиять на результат, и он не станет для вас неприятным сюрпризом! ;)

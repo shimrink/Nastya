@@ -5,7 +5,7 @@ $(document).scroll(function() {
     || $(window).scrollTop() > $('#white-block_5').offset().top - 300 && $(window).scrollTop() < $('#white-block_5').offset().top + $('#white-block_5').innerHeight() - 300)
     || $('body').hasClass('index-page') && ($(window).scrollTop() > $('#white-block_1').offset().top - 300 && $(window).scrollTop() < $('#white-block_1').offset().top + $('#white-block_1').innerHeight() - 300)) {
         $('.wrapper').addClass('wrapper__white');
-        $('.card').addClass('card__white');
+        $('.card_tariff').addClass('card_tariff__white');
         $('.cases-arrow').addClass('cases-arrow_white');
         $('.line').addClass('line_white');
         $('.cases-svg').addClass('cases-svg_white');
@@ -14,7 +14,7 @@ $(document).scroll(function() {
         $('.top-line').addClass('top-line_white');
     } else {
         $('.wrapper').removeClass('wrapper__white');
-        $('.card').removeClass('card__white');
+        $('.card_tariff').removeClass('card_tariff__white');
         $('.cases-arrow').removeClass('cases-arrow_white');
         $('.line').removeClass('line_white');
         $('.cases-svg').removeClass('cases-svg_white');

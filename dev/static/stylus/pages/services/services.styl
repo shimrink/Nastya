@@ -90,15 +90,13 @@
     grid-row 3/6
     grid-column 3/4
 
-.tariffs__cards .card-name
-    white-space nowrap
-
 .tariffs__list
     grid-row 3/4
     grid-column 1/7
     font-size tagFS
     text-transform none
     font-family mainFont, Arial, Helvetica, sans-serif
+    margin-top 48px
 
 .tariffs__list-row
     display flex
@@ -137,15 +135,15 @@
     flex-direction column
     padding defIndent 40px doubleIndent 40px
 
-.faq__wrap
+.faq__wrap, .faqq__wrap
     border-top 1px solid
     border-bottom 1px solid
     width 100%
 
-#faqName8, #faqName11, #faqName14, #faqName17
+#faqqName8, #faqName11, #faqName14, #faqName17
     border 0
 
-.faq__name
+.faq__name, .faqq__name
     display grid
     grid-template-columns 5fr 1fr
     align-items center
@@ -153,12 +151,12 @@
     padding 1.5vw 0 1.5vw 0
     border-top 1px solid
 
-.faq__p
+.faq__p, .faqq__p
     grid-row 1/2
     grid-column 1/2
     font-size main-services-button-font-size
 
-.faq__plus
+.faq__plus, .faqq__plus
     grid-row 1/2
     grid-column 2/3
     display flex
@@ -170,7 +168,7 @@
     transition background-color 0.3s ease-out
     background-color rgba(30, 30, 30, 0)
 
-.faq__svg
+.faq__svg, .faqq__svg
     width calc(20px + 4 * (100vw / 1920))
     stroke none
     stroke-width 1px
@@ -181,14 +179,21 @@
     stroke textColor
     transform translate(3%, 3%) rotate(0)
 
-.faq__svg_white
+.faq__svg_white, .faqq__svg_white
     transition all 0.4s ease
     stroke bgColor
 
 .faq__name:hover
     cursor pointer
 
+.faqq__name:hover
+    cursor pointer
+
 .faq__name:hover .faq__plus
+    transition background-color 0.3s ease-out
+    background-color accentColor
+
+.faqq__name:hover .faqq__plus
     transition background-color 0.3s ease-out
     background-color accentColor
 
@@ -196,7 +201,11 @@
     transition stroke 0.3s
     stroke #1e1e1e
 
-.faq__answer
+.faqq__name:hover .faqq__svg
+    transition stroke 0.3s
+    stroke #1e1e1e
+
+.faq__answer, .faqq__answer
     padding-bottom 2vw
     overflow hidden
     width 100%
@@ -205,7 +214,10 @@
 .faq__answer p
     padding 1vw 0
 
-.faq__svg_opened
+.faqq__answer p
+    padding 1vw 0
+
+.faq__svg_opened, .faqq__svg_opened
     transform translate(0, 6%) rotate(45deg)
 
 .tariffs-mobile

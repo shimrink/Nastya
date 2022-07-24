@@ -35,30 +35,6 @@ body
 	transition all 0.4s ease
 	background-color bgColor
 
-.cursor-dot
-	mix-blend-mode normal
-	pointer-events none
-	position absolute
-	top 50%
-	left 50%
-	border-radius 50%
-	opacity 0
-	position fixed
-	-webkit-transform translate(-50%, -50%)
-	transform translate(-50%, -50%)
-	-webkit-transition opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out
-	transition opacity 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out
-	transition opacity 0.3s ease-in-out, transform 0.3s ease-in-out
-	transition opacity 0.3s ease-in-out, transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out
-	z-index 99999999
-	width 8px
-	height 8px
-	background-color rgba(255, 255, 255, 0.72)
-	border solid
-	border-radius 50%
-	border-width 0px
-	border-color #ffffff
-
 ::-webkit-scrollbar
 	display none
 
@@ -81,7 +57,7 @@ body
 	height 6vh
 
 .toTopButton__path
-	fill #fff
+	fill textColor
 
 h1, h2
 	font-weight 500
@@ -186,19 +162,27 @@ select
 .offer
 	position relative
 	display grid
-	grid-template-rows repeat(5, 1fr)
-	grid-template-columns repeat(12, 1fr)
+	grid-template-rows 2fr 1fr 1fr
+	grid-template-columns repeat(8, 1fr)
 	grid-gap 30px
 	height 100vh
 
+.offer_main
+	grid-template-rows repeat(5, 1fr)
+	grid-template-columns repeat(12, 1fr)
+
 .offer__bg
 	display flex
-	grid-row 1/6
-	grid-column 1/13
+	grid-row 1/4
+	grid-column 1/9
 	justify-self end
 	justify-content flex-end
 	height 100%
 	overflow hidden
+
+.offer__bg_main
+	grid-row 1/6
+	grid-column 1/13
 
 .offer__bg_main-grad:after
 	content ""
@@ -233,20 +217,32 @@ select
 	object-fit cover
 	-webkit-user-drag none
 
+.back
+	font-size offerFontSize
+	grid-row 1/2
+	grid-column 1/9
+	align-self center
+	z-index 3
+	padding 0 40px
+
 .offer__hi
 	font-size offerFontSize
-	grid-row 2/4
+	grid-row 2/3
 	grid-column 1/6
-	align-self center
+	align-self end
 	z-index 3
 	padding 2vw 40px 0 40px
 	opacity 0
 	transform translateY(40%)
-	transition transform 0.8s ease-out, opacity 0.8s ease-out
+	transition transform 0.8s ease-out 0.4s, opacity 0.8s ease-out 0.4s
+
+.offer__hi_main
+	grid-row 2/4
+	align-self center
 
 .offer__wrap
-	grid-row 4/6
-	grid-column 1/13
+	grid-row 3/4
+	grid-column 1/9
 	display grid
 	grid-template-rows 1fr
 	grid-template-columns repeat(6, 1fr)
@@ -255,7 +251,11 @@ select
 	z-index 3
 	opacity 0
 	transform translateY(15%)
-	transition transform 0.8s ease-out 0.4s, opacity 0.8s ease-out 0.4s
+	transition transform 0.8s ease-out, opacity 0.8s ease-out
+
+.offer__wrap_main
+	grid-row 4/6
+	grid-column 1/13
 
 .offer__title
 	grid-row 1/2
@@ -263,9 +263,9 @@ select
 	align-self end
 	opacity 0
 	transform translateY(30%)
-	transition transform 0.8s ease-out 0.2s, opacity 0.8s ease-out 0.2s
+	transition transform 0.8s ease-out, opacity 0.8s ease-out
 
-.offer__title_bottom
+.offer__title_main
 	grid-row 4/6
 	grid-column 1/9
 	align-self start
@@ -354,6 +354,7 @@ select
 .cases-title
 	grid-row 1/2
 	grid-column 1/3
+	font-size casesTitleFS
 	white-space nowrap
 
 .cases-hint
@@ -397,10 +398,6 @@ select
 	display grid
 	grid-template-columns 1fr 1fr 1fr
 	grid-gap 30px
-	padding-top defIndent
-
-.cases__cards_portfolio
-	padding-top 0
 
 .cases-arrow
 	position relative
@@ -444,44 +441,31 @@ select
 	transform translate(-50%, -50%)
 	white-space nowrap
 
-.card
+.card_tariff
 	display grid
-	grid-template-rows 1fr 1fr 10fr 1fr
 	grid-template-columns repeat(6, 1fr)
-	grid-gap calc(9px + 21 * (100vw / 1920))
+	grid-column-gap calc(9px + 21 * (100vw / 1920))
 	padding calc(9px + 21 * (100vw / 1920))
 	border 1px solid
-	height 29.75vw * 1.33
 	transition all 0.4s ease
 	color textColor
 	text-transform uppercase
 	font-family headerFont, Arial, Helvetica, sans-serif
 
-.card__white
+.card_tariff__white
 	transition all 0.4s ease
 	color bgColor
 
-.card_tariff
-	height auto
-
-.card-head
-	display flex
+.card-name
 	grid-row 1/2
 	grid-column 1/7
-	justify-content space-between
-	align-items center
-	align-self flex-start
-
-.card-name
 	font-size cardNameFS
-
-.card-date
-	font-size cardDateDescFS
+	margin-bottom 13px
 
 .card-disc
 	grid-row 2/3
 	grid-column 1/7
-	font-size cardDateDescFS
+	font-size tagFS
 
 .card-tag
 	display flex
@@ -493,6 +477,7 @@ select
 	align-self flex-end
 	font-size tagFS
 	white-space nowrap
+	margin-top calc(0px + 250 * (100vw / 1920))
 
 .card-tag_tag21
 	grid-row 4/5
@@ -516,20 +501,123 @@ select
 
 .card__grab
 	margin-right 30px
-	min-height calc((280px + 200 * (100vw / 1240)) * 1.33)
-	min-width calc(280px + 200 * (100vw / 1240))
+	display grid
+	text-transform uppercase
+	font-family headerFont, Arial, Helvetica, sans-serif
+	z-index 1
 
-.card__grab .card-name
-	font-size calc(18px + 19 * (100vw / 1920))
+.card__grab_portfolio
+	margin-right 0
 
-.card__grab .card-date
-	font-size calc(8px + 8 * (100vw / 1920))
+.card__grab-shadow-low
+	grid-row 1/2
+	grid-column 1/2
+	align-self end
+	height 27%
+	background linear-gradient(to top, #1e1e1eff, #1e1e1e00)
+	z-index 2
+	transition all 0.4s ease
+	opacity 70%
 
-.card__grab .card-disc
-	font-size calc(8px + 8 * (100vw / 1920))
+.card__grab-shadow
+	grid-row 1/2
+	grid-column 1/2
+	background bgColor
+	z-index 2
+	transition all 0.4s ease
+	opacity 0
 
-.card__grab .card-tag
-	font-size calc(9px + 9 * (100vw / 1920))
+.card__grab-img
+	grid-row 1/2
+	grid-column 1/2
+	line-height 0
+	height calc(340px + 450 * (100vw / 1920))
+
+.card__grab-img_portfolio
+	height auto
+
+.card__grab-img img
+	height 100%
+
+.card__grab-img_portfolio img
+	width 100%
+	height auto
+
+.card__grab-tags
+	grid-row 1/2
+	grid-column 1/2
+	display grid
+	grid-template-columns repeat(5, 1fr)
+	grid-row-gap 20px
+	grid-column-gap 10px
+	align-self start
+	margin 40px
+	z-index 3
+	transition all 0.4s ease
+	opacity 0
+
+.card__grab-foot
+	grid-row 1/2
+	grid-column 1/2
+	display grid
+	grid-template-columns repeat(5, 1fr)
+	grid-row-gap 25px
+	grid-column-gap 10px
+	align-self end
+	margin 40px
+	z-index 3
+
+.card__grab-foot_tags
+	display none
+
+.card__grab-tag
+	grid-column 1/3
+	display flex
+	border 1px solid
+	border-radius 9em
+	padding 0.5vw 1vw
+	justify-content center
+	align-items center
+	font-size cardGrabTagFS
+	white-space nowrap
+
+.card__grab-tag1
+	grid-row 1/2
+
+.card__grab-tag2
+	grid-row 2/3
+
+.card__grab-tag3
+	grid-row 3/4
+
+.card__grab-name
+	grid-row 1/2
+	grid-column 1/6
+	font-size cardGrabNameFS
+
+.card__grab-line
+	grid-row 2/3
+	grid-column 1/3
+	width 100%
+	height 1px
+	background-color textColor
+
+.card__grab-desc
+	grid-row 3/4
+	grid-column 1/6
+	font-size cardGrabDescFS
+
+.card__grab:hover .card__grab-tags
+	transition all 0.4s ease
+	opacity 1
+
+.card__grab:hover .card__grab-shadow
+	transition all 0.4s ease
+	opacity 70%
+
+.card__grab:hover .card__grab-shadow-low
+	transition all 0.4s ease
+	opacity 20%
 
 ._active
 	transform translateY(0) scaleX(100%)

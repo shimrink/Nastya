@@ -1,8 +1,6 @@
 @media screen and (max-width 1279px)
     //Target tablet landscape
-    .cursor-dot,
-    .offer__free,
-    .terms
+    .offer__free
         display none
 
     .offer__hi
@@ -11,54 +9,77 @@
     .offer__button
         padding 1.25vw
 
-    .terms-grab__title
-        display block
-        font-size termsTitleFS
-        padding doubleIndent 40px 0 40px
-
-    .terms-grab
-        display flex
-        margin defIndent 0 doubleIndent 0
-        padding-left 20vw
-
     .faq
         grid-column 1/4
 
-    .card-name
-        font-size cardNameTLFS
+    .card__grab
+        margin-right 20px
 
-    .card-date, .card-disc
-        font-size cardDateDescTLFS
+    .card__grab_portfolio
+        margin-right 0
 
-    .card-tag
-        font-size tagTLFS
+    .card__grab-foot
+        grid-template-columns repeat(6, 1fr)
+        grid-gap 10px
+        margin 20px
 
-    .card__grab .card-name
-        font-size calc(18px + 19 * (100vw / 1920))
+    .card__grab-name, .card__grab-desc
+        grid-column 1/7
 
-    .card__grab .card-date
-        font-size calc(8px + 8 * (100vw / 1920))
+    .card__grab-foot_tags
+        grid-row 4/5
+        grid-column 1/7
+        display grid
+        grid-template-columns repeat(6, 1fr)
+        grid-column-gap 10px
+        margin-top 10px
 
-    .card__grab .card-disc
-        font-size calc(8px + 8 * (100vw / 1920))
+    .card__grab-foot_tag
+        grid-row 1/2
+        display flex
+        border 1px solid
+        border-radius 9em
+        padding 0.4vw 1vw
+        justify-content center
+        align-items center
+        align-self flex-end
+        white-space nowrap
 
-    .card__grab .card-tag
-        font-size calc(9px + 9 * (100vw / 1920))
+    .card__grab-foot_tag21
+        grid-column 1/4
 
-    .tariffs__cards .card-name
-        font-size calc(0px + 36 * (100vw / 1920))
+    .card__grab-foot_tag22
+        grid-column 4/7
 
-    .tariffs__cards .card-date
-        font-size calc(5px + 10 * (100vw / 1920))
+    .card__grab-foot_tag31
+        grid-column 1/3
 
-    .tariffs__cards .card-disc
-        font-size calc(5px + 10 * (100vw / 1920))
+    .card__grab-foot_tag32
+        grid-column 3/5
 
-    .tariffs__cards .card-tag
-        font-size calc(6px + 10 * (100vw / 1920))
+    .card__grab-foot_tag33
+        grid-column 5/7
 
-    .tariffs__list
-        font-size calc(6px + 10 * (100vw / 1920))
+    .card__grab-shadow-low
+        height 50%
+
+    .card__grab:hover .card__grab-tags
+        opacity 0
+
+    .card__grab:hover .card__grab-shadow
+        opacity 0
+
+    .card__grab:hover .card__grab-shadow-low
+        opacity 70%
+
+    .card__grab-name_portfolio
+        font-size cardPortfNameTFS
+
+    .card__grab-desc_portfolio
+        font-size cardPortfDescTFS
+
+    .card__grab-tag_portfolio
+        font-size cardPortfTagTFS
 
 @media screen and (max-width 1023px)
     //Target tablet portrait
@@ -178,32 +199,40 @@
         justify-self end
 
     .offer
-        grid-template-rows 2fr 1fr 1fr
-        grid-template-columns repeat(8, 1fr)
         grid-gap 20px
 
-    .offer__bg
+    .offer_main
+        grid-template-rows 2fr 1fr 1fr
+        grid-template-columns repeat(8, 1fr)
+
+    .offer__bg_main
         grid-row 1/4
         grid-column 1/9
 
-    .offer__hi
-        grid-row 2/3
-        grid-column 1/6
-        align-self end
+    .back
         padding 0 20px
 
+    .bottom-back
+        margin 0 20px
+
+    .offer__hi
+        grid-column 1/6
+        padding 0 20px
+
+    .offer__hi_main
+        grid-row 2/3
+        align-self end
+
     .offer__wrap
-        grid-row 3/4
-        grid-column 1/9
         padding 0 20px 1.5vw 20px
         grid-gap 20px
 
-    .offer__title
-        grid-row 1/2
-
-    .offer__title_bottom
+    .offer__wrap_main
         grid-row 3/4
         grid-column 1/9
+
+    .offer__title_main
+        grid-row 3/4
         padding 0 20px
         align-self center
 
@@ -212,9 +241,6 @@
 
     .offer__bg_portf
         display none
-
-    .offer__hi_portf
-        grid-column 1/7
 
     .offer__bg-mobile_portf
         display flex
@@ -293,38 +319,13 @@
     .cases-arrow
         margin calc(22px + 50 * (100vw / 1920)) 20px doubleIndent 20px
 
-    .card
-        height 45vw * 1.33
+    .card_tariff
         grid-gap calc(13px + 7 * (100vw / 1023))
         padding calc(13px + 7 * (100vw / 1023))
-
-    .card-name
-        font-size cardNameTPFS
-
-    .card-date, .card-disc
-        font-size cardDateDescTPFS
-
-    .card-tag
-        font-size tagTPFS
 
     .cases__cards
         grid-template-columns 1fr 1fr
         grid-gap 20px
-
-    .card__grab
-        margin-right 20px
-
-    .card__grab .card-name
-        font-size calc(23px + 14 * (100vw / 1920))
-
-    .card__grab .card-date
-        font-size calc(10px + 6 * (100vw / 1920))
-
-    .card__grab .card-disc
-        font-size calc(10px + 6 * (100vw / 1920))
-
-    .card__grab .card-tag
-        font-size calc(12px + 6 * (100vw / 1920))
 
     .about
         padding doubleIndent 20px
@@ -452,6 +453,15 @@
         grid-row 6/7
         grid-column 2/3
         justify-self start
+
+    .card__grab-name_portfolio
+        font-size cardGrabNameFS
+
+    .card__grab-desc_portfolio
+        font-size cardGrabDescFS
+
+    .card__grab-tag_portfolio
+        font-size cardGrabTagFS
 
 @media screen and (max-width 767px)
     //Target tablet-mini
@@ -616,26 +626,14 @@
     .cases-hint
         display none
 
-    .card-name
-        font-size cardNameTMFS
+    .card__grab-name_portfolio
+        font-size cardPortfNameMFS
 
-    .card-date, .card-disc
-        font-size cardDateDescTMFS
+    .card__grab-desc_portfolio
+        font-size cardPortfDescMFS
 
-    .card-tag
-        font-size tagTMFS
-
-    .card__grab .card-name
-        font-size calc(9px + 33 * (100vw / 1240))
-
-    .card__grab .card-date
-        font-size calc(4px + 15 * (100vw / 1240))
-
-    .card__grab .card-disc
-        font-size calc(4px + 15 * (100vw / 1240))
-
-    .card__grab .card-tag
-        font-size calc(5px + 16 * (100vw / 1240))
+    .card__grab-tag_portfolio
+        font-size cardPortfTagMFS
 
 @media screen and (max-width 600px)
     //Target smartphone
@@ -761,33 +759,6 @@
     .cases__cards
         grid-template-columns 1fr
 
-    .card
-        height 86.5vw * 1.33
-
-    .card-name
-        font-size cardNameMFS
-
-    .card-date, .card-disc
-        font-size cardDateDescMFS
-
-    .card-tag
-        font-size tagMFS
-
-    .card__grab
-        height 50vw * 1.33
-
-    .card__grab .card-name
-        font-size calc(17px + 21 * (100vw / 1240))
-
-    .card__grab .card-date
-        font-size calc(7px + 10 * (100vw / 1240))
-
-    .card__grab .card-disc
-        font-size calc(7px + 10 * (100vw / 1240))
-
-    .card__grab .card-tag
-        font-size calc(8px + 10 * (100vw / 1240))
-
     .work
         grid-template-columns repeat(4, 1fr)
 
@@ -803,7 +774,19 @@
     .ticker
         grid-column 1/5
 
-@media screen and (max-width 480px) and (orientation landscape)
+    .card__grab-foot_tag
+        padding 0.5vw 1vw
+
+    .card__grab-name_portfolio
+        font-size cardGrabNameFS
+
+    .card__grab-desc_portfolio
+        font-size cardGrabDescFS
+
+    .card__grab-tag_portfolio
+        font-size cardGrabTagFS
+
+@media screen and (max-width 964px) and (orientation landscape)
     .content, header, .burger-menu, footer
         display none
 
@@ -813,7 +796,7 @@
         height 100vh
         align-items center
         justify-content center
-    
+
     .rotate-please p
         width 85%
         text-align center

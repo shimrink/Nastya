@@ -4,6 +4,7 @@ $(document).ready(function () {
 
 // show and hide faq-block
 $('.faq__answer').slideUp(300);
+$('.faqq__answer').slideUp(300);
 $('#faqAnswer_faqName9').slideDown(300);
 $('#faqName9').addClass('faq__name_active');
 $('#faqSvg_faqName9').addClass('faq__svg_opened');
@@ -28,6 +29,23 @@ $('.faq__name').click(function() {
         $('.faq__name').removeClass('faq__name_active');
         $('#faqSvg_'+id).removeClass('faq__svg_opened');
         $('#faqSvg_'+id).css('transition', 'transform 0.3s');
+    }
+});
+
+$('.faqq__name').click(function() {
+    var id=$(this).attr('id');
+    $('.faqq__answer').slideUp(300);
+    if(!$(this).hasClass('faqq__name_active')) {
+        $('.faqq__name').removeClass('faqq__name_active');
+        $(this).addClass('faqq__name_active');
+        $('#faqqAnswer_'+id).slideDown(300);
+        $('.faqq__svg').removeClass('faqq__svg_opened');
+        $('#faqqSvg_'+id).addClass('faqq__svg_opened');
+        $('#faqqSvg_'+id).css('transition', 'transform 0.3s');
+    } else {
+        $('.faqq__name').removeClass('faqq__name_active');
+        $('#faqqSvg_'+id).removeClass('faqq__svg_opened');
+        $('#faqqSvg_'+id).css('transition', 'transform 0.3s');
     }
 });
 
@@ -67,16 +85,12 @@ $('.burger-menu__contacts').click(function() {
 });
 
 //anchor on services page
-$('#drop-menu__item1').click(function() {
-    document.location.href = "../services.php#webDes";
+$('#stage1').click(function() {
+    document.location.href = "../services.php#white-block_5";
 });
 
-$('#drop-menu__item2').click(function() {
-    document.location.href = "../services.php#brand";
-});
-
-$('#drop-menu__item3').click(function() {
-    document.location.href = "../services.php#moreServ";
+$('#stage2').click(function() {
+    document.location.href = "../services.php#white-block_5";
 });
 
 // drag horizontal scroll
@@ -157,6 +171,8 @@ $('.offer__button').click(function() {
             $('.web-design').hide();
             $('.identity').hide();
             $('.more-services').show();
+            $('.method-web').hide();
+            $('.method-identity').hide();
         }
 
         if(num == 21) {
@@ -231,3 +247,10 @@ if(animItems.length > 0) {
 $('.offer__hi').addClass('offer__transition');
 $('.offer__title').addClass('offer__transition');
 $('.offer__wrap').addClass('offer__transition');
+
+//animate asya circ $('.main-services__img_mobile')
+window.addEventListener("scroll", function () {
+    let scroll = window.pageYOffset;
+    let banner = document.querySelector(".main-services__img_mobile");
+    banner.style.transform = "translateY(-" + scroll / 80 + "%) scale(" + (80 + scroll / 50) / 100 + ")";
+});
