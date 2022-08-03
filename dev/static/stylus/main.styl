@@ -175,8 +175,6 @@ select
 	display flex
 	grid-row 1/4
 	grid-column 1/9
-	justify-self end
-	justify-content flex-end
 	height 100%
 	overflow hidden
 
@@ -327,7 +325,8 @@ select
 .carousel
 	display flex
 	cursor grab
-	overflow auto
+	overflow-x auto
+	overflow-y hidden
 
 .carousel:active
 	cursor grabbing

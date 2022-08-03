@@ -252,5 +252,5 @@ $('.offer__wrap').addClass('offer__transition');
 window.addEventListener("scroll", function () {
     let scroll = window.pageYOffset;
     let banner = document.querySelector(".main-services__img_mobile");
-    banner.style.transform = "translateY(-" + scroll / 80 + "%) scale(" + (80 + scroll / 50) / 100 + ")";
+    banner.style.transform = "translateY(" + (800 - scroll) / 50 + "%) scale(" + (80 + scroll / 50) / 100 + ")";
 });
